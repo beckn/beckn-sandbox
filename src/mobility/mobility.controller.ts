@@ -1,70 +1,140 @@
-import { Body, Controller, Get, Post } from "@nestjs/common";
-
+import { Body, Controller, Get, NotAcceptableException, Post } from "@nestjs/common";
 import { MobilityRequestDto } from "./dto/request.dto";
 import { MobilityService } from "./mobility.service";
 
 @Controller()
 export class MobilityController {
     constructor(private readonly service: MobilityService) { }
-
     @Post("/search")
     search(@Body() mobilityRequest: MobilityRequestDto) {
-        return this.service.get(mobilityRequest.context.domain).search(mobilityRequest);
+        if(mobilityRequest.context ===undefined||mobilityRequest.context.domain === undefined )
+        {
+            throw new NotAcceptableException('Invalid Request', { cause: new Error(), description: 'Invalid Request, check the format of request' });
+        }
+        else{
+            return this.service.get(mobilityRequest.context.domain).search(mobilityRequest);   
+        }
     }
 
     @Post("/select")
     select(@Body() mobilityRequest: MobilityRequestDto) {
-        return this.service.get(mobilityRequest.context.domain).select(mobilityRequest);
+        if(mobilityRequest.context ===undefined||mobilityRequest.context.domain === undefined )
+        {
+            throw new NotAcceptableException('Invalid Request', { cause: new Error(), description: 'Invalid Request, check the format of request' });
+        }
+        else{
+            return this.service.get(mobilityRequest.context.domain).select(mobilityRequest);  
+        }
     }
 
     @Post("/init")
     init(@Body() mobilityRequest: MobilityRequestDto) {
-        return this.service.get(mobilityRequest.context.domain).init(mobilityRequest);
+        if(mobilityRequest.context ===undefined||mobilityRequest.context.domain === undefined )
+        {
+            throw new NotAcceptableException('Invalid Request', { cause: new Error(), description: 'Invalid Request, check the format of request' });
+        }
+        else{
+            return this.service.get(mobilityRequest.context.domain).init(mobilityRequest);
+        }
     }
 
     @Post("/confirm")
     confirm(@Body() mobilityRequest: MobilityRequestDto) {
-        return this.service.get(mobilityRequest.context.domain).confirm(mobilityRequest);
+        if(mobilityRequest.context ===undefined||mobilityRequest.context.domain === undefined )
+        {
+            throw new NotAcceptableException('Invalid Request', { cause: new Error(), description: 'Invalid Request, check the format of request' });
+        }
+        else{
+            return this.service.get(mobilityRequest.context.domain).confirm(mobilityRequest);
+        }
     }
 
     @Post("/status")
     status(@Body() mobilityRequest: MobilityRequestDto) {
-        return this.service.get(mobilityRequest.context.domain).status(mobilityRequest);
+        if(mobilityRequest.context ===undefined||mobilityRequest.context.domain === undefined )
+        {
+            throw new NotAcceptableException('Invalid Request', { cause: new Error(), description: 'Invalid Request, check the format of request' });
+        }
+        else{
+            return this.service.get(mobilityRequest.context.domain).status(mobilityRequest);
+        }
     }
 
     @Post("/track")
     track(@Body() mobilityRequest: MobilityRequestDto) {
-        return this.service.get(mobilityRequest.context.domain).track(mobilityRequest);
+        if(mobilityRequest.context ===undefined||mobilityRequest.context.domain === undefined )
+        {
+            throw new NotAcceptableException('Invalid Request', { cause: new Error(), description: 'Invalid Request, check the format of request' });
+        }
+        else{
+            return this.service.get(mobilityRequest.context.domain).track(mobilityRequest);
+        }
     }
 
     @Post("/cancel")
     cancel(@Body() mobilityRequest: MobilityRequestDto) {
-        return this.service.get(mobilityRequest.context.domain).cancel(mobilityRequest);
+        if(mobilityRequest.context ===undefined||mobilityRequest.context.domain === undefined )
+        {
+            throw new NotAcceptableException('Invalid Request', { cause: new Error(), description: 'Invalid Request, check the format of request' });
+        }
+        else{
+            return this.service.get(mobilityRequest.context.domain).cancel(mobilityRequest);
+        }
     }
 
     @Post("/update")
     update(@Body() mobilityRequest: MobilityRequestDto) {
-        return this.service.get(mobilityRequest.context.domain).update(mobilityRequest);
+        if(mobilityRequest.context ===undefined||mobilityRequest.context.domain === undefined )
+        {
+            throw new NotAcceptableException('Invalid Request', { cause: new Error(), description: 'Invalid Request, check the format of request' });
+        }
+        else{
+            return this.service.get(mobilityRequest.context.domain).update(mobilityRequest);
+        }
     }
 
     @Post("/support")
     support(@Body() mobilityRequest: MobilityRequestDto) {
-        return this.service.get(mobilityRequest.context.domain).support(mobilityRequest);
+        if(mobilityRequest.context ===undefined||mobilityRequest.context.domain === undefined )
+        {
+            throw new NotAcceptableException('Invalid Request', { cause: new Error(), description: 'Invalid Request, check the format of request' });
+        }
+        else{
+            return this.service.get(mobilityRequest.context.domain).support(mobilityRequest);
+        }
     }
 
     @Post("/rating")
     rating(@Body() mobilityRequest: MobilityRequestDto) {
-        return this.service.get(mobilityRequest.context.domain).rating(mobilityRequest);
+        if(mobilityRequest.context ===undefined||mobilityRequest.context.domain === undefined )
+        {
+            throw new NotAcceptableException('Invalid Request', { cause: new Error(), description: 'Invalid Request, check the format of request' });
+        }
+        else{
+            return this.service.get(mobilityRequest.context.domain).rating(mobilityRequest);
+        }
     }
 
     @Post("/get_cancellation_reasons")
     cancellationReasons(@Body() mobilityRequest: MobilityRequestDto) {
-        return this.service.get(mobilityRequest.context.domain).cancellationReasons(mobilityRequest);
+        if(mobilityRequest.context ===undefined||mobilityRequest.context.domain === undefined )
+        {
+            throw new NotAcceptableException('Invalid Request', { cause: new Error(), description: 'Invalid Request, check the format of request' });
+        }
+        else{
+            return this.service.get(mobilityRequest.context.domain).cancellationReasons(mobilityRequest);
+        }
     }
 
     @Post("/get_rating_categories")
     ratingCategories(@Body() mobilityRequest: MobilityRequestDto) {
-        return this.service.get(mobilityRequest.context.domain).ratingCategories(mobilityRequest);
+        if(mobilityRequest.context ===undefined||mobilityRequest.context.domain === undefined )
+        {
+            throw new NotAcceptableException('Invalid Request', { cause: new Error(), description: 'Invalid Request, check the format of request' });
+        }
+        else{
+            return this.service.get(mobilityRequest.context.domain).ratingCategories(mobilityRequest);
+        }
     }
 
 }
