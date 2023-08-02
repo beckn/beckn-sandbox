@@ -1,0 +1,110 @@
+{
+    "context": {
+        "domain": "dsep:scholarships",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "action": "on_search",
+        "timestamp": "2023-08-02T07:39:43.312Z",
+        "ttl": "PT10M",
+        "version": "1.0.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "http://dsep-fossgen.centralindia.cloudapp.azure.com:8001/",
+        "bpp_uri": "http://dsep-fossgen.centralindia.cloudapp.azure.com:8001/public",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-022723112309",
+        "message_id": "a7e9fae8-7008-4e7a-a2b9-8f02fddf3d06"
+    },
+    "message": {
+        "catalog": {
+            "descriptor": {
+                "name": "Protean DSEP Scholarships and Grants BPP Platform"
+            },
+            "providers": [
+                {
+                    "id": "BX213573733",
+                    "descriptor": {
+                        "name": "XYZ Education Foundation"
+                    },
+                    "categories": [
+                        {
+                            "id": "DSEP_CAT_2",
+                            "descriptor": {
+                                "code": "pg",
+                                "name": "Post Graduate"
+                            }
+                        }
+                    ],
+                    "fulfillments": [
+                        {
+                            "id": "DSEP_FUL_31095975",
+                            "type": "SCHOLARSHIP",
+                            "tracking": false,
+                            "contact": {
+                                "phone": "9876543210",
+                                "email": "maryg@xyz.com"
+                            },
+                            "stops": [
+                                {
+                                    "type": "APPLICATION-START",
+                                    "time": {
+                                        "timestamp": "2022-10-01T00:00:00.000Z"
+                                    }
+                                },
+                                {
+                                    "type": "APPLICATION-END",
+                                    "time": {
+                                        "timestamp": "2022-10-31T00:00:00.000Z"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "SCM_31095975",
+                            "descriptor": {
+                                "name": "XYZ Post Graduation scholarship for Economically Backward Female Students",
+                                "long_desc": "XYZ Post Graduation scholarship for Economically Backward Female Students"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "45000"
+                            },
+                            "rateable": false,
+                            "tags": [
+                                {
+                                    "display": true,
+                                    "descriptor": {
+                                        "code": "benefits",
+                                        "name": "Benefits"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "scholarship-amount",
+                                                "name": "Scholarship Amount"
+                                            },
+                                            "value": "Upto Rs.45000 per year",
+                                            "display": true
+                                        }
+                                    ]
+                                }
+                            ],
+                            "category_ids": ["DSEP_CAT_2"],
+                            "fulfillment_ids": ["DSEP_FUL_31095975"]
+                        }
+                    ],
+                    "rateable": false
+                }
+            ]
+        }
+    }
+}

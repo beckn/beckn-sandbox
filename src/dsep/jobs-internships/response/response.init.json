@@ -1,0 +1,357 @@
+{
+    "context": {
+        "domain": "dsep:jobs",
+        "location": {
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "action": "on_init",
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "affinidi.com.bpp",
+        "bpp_uri": "https://6vs8xnx5i7.execute-api.ap-south-1.amazonaws.com/dsep",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
+        "message_id": "bf887707-df95-4e6a-beca-0f68dc407776",
+        "timestamp": "2023-08-02T11:35:04.8545249+00:00",
+        "ttl": "P1M"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "descriptor": {
+                    "name": "Affinidi"
+                },
+                "fulfillments": [
+                    {
+                        "id": "1",
+                        "type": "remote",
+                        "tracking": false
+                    },
+                    {
+                        "id": "2",
+                        "type": "hybrid",
+                        "tracking": false
+                    },
+                    {
+                        "id": "3",
+                        "type": "Onsite",
+                        "tracking": false
+                    }
+                ],
+                "locations": [
+                    {
+                        "id": "1",
+                        "city": {
+                            "name": "Bangalore"
+                        }
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "D7F8606A370DA9966DF15E62A81C374B",
+                    "descriptor": {
+                        "name": "Database Engineer",
+                        "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                    },
+                    "category_ids": ["1", "2"],
+                    "fulfillment_ids": ["1", "2", "3"],
+                    "location_ids": ["1"],
+                    "xinput": {
+                        "form": {
+                            "url": "https://6vs8xnx5i7.execute-api.ap-south-1.amazonaws.com/dsep/xinput/formid/D7F8606A370DA9966DF15E62A81C374B"
+                        }
+                    },
+                    "time": {
+                        "range": {
+                            "start": "2023-01-03T13:23:01+00:00",
+                            "end": "2023-02-03T13:23:01+00:00"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "name": "Minimum Educational Qualifications"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "degree",
+                                        "code": "degree"
+                                    },
+                                    "value": "Bachelors"
+                                },
+                                {
+                                    "descriptor": {},
+                                    "value": "Bachelors or Equivalent Practical Experience"
+                                }
+                            ],
+                            "display": true
+                        },
+                        {
+                            "descriptor": {
+                                "name": "Preferred Educational Qualifications"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "degree",
+                                        "code": "degree"
+                                    },
+                                    "value": "Masters"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "degree",
+                                        "code": "degree"
+                                    },
+                                    "value": "PhD"
+                                },
+                                {
+                                    "descriptor": {},
+                                    "value": "Master's degree or PhD in Computer Science or related technical field."
+                                }
+                            ],
+                            "display": true
+                        },
+                        {
+                            "descriptor": {
+                                "name": "Work Experience"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "Software Development Experienceegree",
+                                        "code": "Software Development Experienceegree"
+                                    },
+                                    "value": "3 years"
+                                },
+                                {
+                                    "descriptor": {},
+                                    "value": "2 years of Technical Leadership Experience"
+                                },
+                                {
+                                    "descriptor": {},
+                                    "value": "3 years of experience working in a complex, matrixed organization"
+                                }
+                            ],
+                            "display": true
+                        },
+                        {
+                            "descriptor": {
+                                "name": "Responsibilities"
+                            },
+                            "list": [
+                                {
+                                    "value": "Build frontend experiences for our tools (Web, PWA and React Native) "
+                                },
+                                {
+                                    "value": "Articulate a long term technical direction and vision for building, maintaining, and scaling our web and mobile platforms"
+                                },
+                                {
+                                    "value": "Create trustworthy user experiences by building interfaces that are simple, easy to comprehend, performant and reliable using modern tools like React, React Native, Typescript, Node.js, Jest and Webpack."
+                                },
+                                {
+                                    "value": "Mentor and train other team members on design techniques and coding standards. "
+                                },
+                                {
+                                    "value": "Own all aspects of our front-end architecture "
+                                },
+                                {
+                                    "value": "Contribute to process improvements and build a high-performance engineering culture "
+                                }
+                            ],
+                            "display": true
+                        },
+                        {
+                            "descriptor": {
+                                "name": "Employment Information",
+                                "code": "employment-info"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "Employment Duration Type",
+                                        "code": "emp-duration-type"
+                                    },
+                                    "value": "FULL_TIME"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Employment Duration Type",
+                                        "code": "emp-duration-type"
+                                    },
+                                    "value": ""
+                                }
+                            ],
+                            "display": true
+                        },
+                        {
+                            "descriptor": {
+                                "name": "skill requirement",
+                                "code": "Skills"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "You have 8+ years of engineering experience, predominantly in shipping user-facing production features"
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "You are an expert in React.js and React Native, ideally using TypeScript language extensions  "
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "You have a good understanding of JavaScript Design Patterns "
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "You have good experience writing front end test cases  "
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "You’re familiar with current trends and best practices in front-end architecture, including performance, security and usability.  "
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "You’re familiar with product and design lifecycles, and collaborating closely with designers, engineers, and product managers "
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "You have experience with Test Driven Development and know when to apply it."
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "You have experience working on AWS or other cloud stacks and Docker.  "
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "You have experience building systems with high data protection requirements, anonymous data and data encryption. "
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "You have experience with IaaC. "
+                                    }
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "You have worked on building responsive UI using React Native. "
+                                    }
+                                }
+                            ],
+                            "display": true
+                        },
+                        {
+                            "descriptor": {
+                                "name": "Salary Compensation",
+                                "code": "salary-info"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "baseSalary"
+                                    },
+                                    "value": "60000"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "variableSalary"
+                                    },
+                                    "value": "60000"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "allowance"
+                                    },
+                                    "value": "60000"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "commission"
+                                    },
+                                    "value": "60000"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "overtime"
+                                    },
+                                    "value": "8"
+                                }
+                            ],
+                            "display": true
+                        }
+                    ]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "tracking": false,
+                    "customer": {
+                        "person": {
+                            "url": "https://linkedin.com/john-doe",
+                            "name": "John Doe",
+                            "creds": [
+                                {
+                                    "type": "application/vc+json",
+                                    "url": "https://cbse.nic.in/link/to/college-marksheet.json"
+                                },
+                                {
+                                    "type": "application/vc+json",
+                                    "url": "https://drive.google.com/link/to/pass-certificate.json"
+                                },
+                                {
+                                    "type": "application/vc+json",
+                                    "url": "https://digilocker.com/link/to/python-skill-certificate.json"
+                                },
+                                {
+                                    "type": "application/pdf",
+                                    "url": "https://drive.google.com/link/to/python-skill-certificate.pdf"
+                                },
+                                {
+                                    "type": "application/pdf",
+                                    "url": "https://drive.google.com/link/to/experience-certificate.pdf"
+                                }
+                            ],
+                            "languages": [
+                                {
+                                    "code": "ENG"
+                                },
+                                {
+                                    "code": "HIN"
+                                }
+                            ],
+                            "skills": [
+                                {
+                                    "name": "NodeJS"
+                                },
+                                {
+                                    "name": "React"
+                                },
+                                {
+                                    "name": "Project Management"
+                                },
+                                {
+                                    "name": "Enterprise Architecture"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "type": "DEFAULT"
+        }
+    }
+}
