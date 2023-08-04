@@ -26,13 +26,28 @@ export class DsepController {
         return this.dsepService.get(dsepRequest.context.domain).confirm(dsepRequest);
     }
 
-    @Post("/status")
-    status(@Body() dsepRequest: DSEPRequestDto) {
-        return this.dsepService.get(dsepRequest.context.domain).status(dsepRequest);
+    @Post("/support")
+    support(@Body() dsepRequest: DSEPRequestDto) {
+        return this.dsepService.get(dsepRequest.context.domain).support(dsepRequest);
     }
 
     @Post("/cancel")
     cancel(@Body() dsepRequest: DSEPRequestDto) {
         return this.dsepService.get(dsepRequest.context.domain).cancel(dsepRequest);
+    }
+
+    @Post("/rating")
+    rating(@Body() dsepRequest: DSEPRequestDto) {
+        return this.dsepService.get(dsepRequest.context.domain).rating(dsepRequest);
+    }
+
+    @Post("/update")
+    update(@Body() dsepRequest: DSEPRequestDto) {
+        return this.dsepService.get(dsepRequest.context.domain).update(dsepRequest);
+    }
+
+    @Post("/status")
+    status(@Body() dsepRequest: DSEPRequestDto) {
+        return this.dsepService.get(dsepRequest.context.domain).status(dsepRequest);
     }
 }

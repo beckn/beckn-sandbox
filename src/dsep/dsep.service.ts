@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { DSEPModulesEnum } from "./dsep-modules.enum";
 import { ScholarshipsGrantsService } from "./scholarships-grants/scholarships-grants.service";
-import { DomainNotFoundException } from "src/common/exception/domain-notfound.exception";
+import { DomainNotFoundException } from "../common/exception/domain-notfound.exception";
 import { JobsInternshipsService } from "./jobs-internships/jobs-internships.service";
 import { TutoringMentorshipService } from "./tutoring-mentorship/tutoring-mentorship.service";
 import { CoursesTrainingService } from "./courses-training/courses-training.service";

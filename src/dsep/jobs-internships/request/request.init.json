@@ -1,0 +1,90 @@
+{
+    "context": {
+        "domain": "dsep:jobs",
+        "action": "init",
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
+        "message_id": "a9aaecca-10b7-4d19-b640-b047a7c60009",
+        "timestamp": "2023-02-06T09:55:41.161Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "1"
+            },
+            "items": [
+                {
+                    "id": "D7F8606A370DA9966DF15E62A81C374B"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "customer": {
+                        "person": {
+                            "name": "John Doe",
+                            "languages": [
+                                {
+                                    "code": "ENG"
+                                },
+                                {
+                                    "code": "HIN"
+                                }
+                            ],
+                            "url": "https://linkedin.com/john-doe",
+                            "creds": [
+                                {
+                                    "url": "https://cbse.nic.in/link/to/college-marksheet.json",
+                                    "type": "application/vc+json"
+                                },
+                                {
+                                    "url": "https://drive.google.com/link/to/pass-certificate.json",
+                                    "type": "application/vc+json"
+                                },
+                                {
+                                    "url": "https://digilocker.com/link/to/python-skill-certificate.json",
+                                    "type": "application/vc+json"
+                                },
+                                {
+                                    "url": "https://drive.google.com/link/to/python-skill-certificate.pdf",
+                                    "type": "application/pdf"
+                                },
+                                {
+                                    "url": "https://drive.google.com/link/to/experience-certificate.pdf",
+                                    "type": "application/pdf"
+                                }
+                            ],
+                            "skills": [
+                                {
+                                    "name": "NodeJS"
+                                },
+                                {
+                                    "name": "React"
+                                },
+                                {
+                                    "name": "Project Management"
+                                },
+                                {
+                                    "name": "Enterprise Architecture"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "xinput": {
+                "data": {
+                    "resume": "data:application/pdf;base64,JVBERi0xLjUKJd...c3RyZWFtCnjarVhLc9s2...",
+                    "work-mode": "hybrid",
+                    "exp-years": "10",
+                    "sop": "I am interested in this job because my prior experience is highly relevant to this role."
+                },
+                "submission_id": 12345
+            }
+        }
+    }
+}

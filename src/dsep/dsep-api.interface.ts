@@ -7,4 +7,7 @@ export interface DSEPApiInterface {
     confirm: (dsepRequest: DSEPRequestDto) => any;
     status: (dsepRequest: DSEPRequestDto) => any;
     cancel: (dsepRequest: DSEPRequestDto) => any;
+    support: (dsepRequest: DSEPRequestDto) => any;
+    rating: (dsepRequest: DSEPRequestDto) => any;
+    update: (dsepRequest: DSEPRequestDto) => any;
 }

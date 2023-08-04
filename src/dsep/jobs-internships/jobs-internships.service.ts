@@ -8,6 +8,9 @@ import * as SearchWithTitleEngineer from "./response/response.searchWithTitleEng
 import * as SelectResponse from "./response/response.select.json";
 import * as StatusResponse from "./response/response.status.json";
 import * as InitResponse from "./response/response.init.json";
+import * as UpdateResponse from "./response/response.update.json";
+import * as SupportResponse from "./response/response.support.json";
+import * as RatingResponse from "./response/response.rating.json";
 
 @Injectable()
 export class JobsInternshipsService implements DSEPApiInterface {
@@ -39,5 +42,14 @@ export class JobsInternshipsService implements DSEPApiInterface {
     };
     cancel = (dsepRequestDto: DSEPRequestDto) => {
         return {};
+    };
+    update = (dsepRequestDto: DSEPRequestDto) => {
+        return UpdateResponse;
+    };
+    support = (dsepRequestDto: DSEPRequestDto) => {
+        return SupportResponse;
+    };
+    rating = (dsepRequestDto: DSEPRequestDto) => {
+        return RatingResponse;
     };
 }

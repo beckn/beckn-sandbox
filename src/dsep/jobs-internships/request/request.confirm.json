@@ -1,0 +1,66 @@
+{
+    "context": {
+        "domain": "dsep:jobs",
+        "action": "confirm",
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
+        "message_id": "a9aaecca-10b7-4d19-b640-b047a7c60009",
+        "timestamp": "2023-02-06T09:55:41.161Z"
+    },
+    "message": {
+        "order": {
+            "id": "jdhflks",
+            "items": [
+                {
+                    "id": "8A690F158A37965A2CC0E69EC8B360B2",
+                    "fulfillment_ids": ["1"]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "customer": {
+                        "person": {
+                            "name": "Sanjay",
+
+                            "gender": "M",
+                            "creds": [
+                                {
+                                    "id": "claimId:af7e0b1b5c4858eb",
+                                    "type": "GenderData",
+                                    "url": "https://cloud-wallet-api.prod.affinity-project.org/api/v1/share/b8a2c0cbc5a02da03d2aecb59094672a8e0b16a1c845456bd18678529d6901df?key=beda347c431e02319bd31c63e5f5f5f5e14939efdb6697ce4d93c87eade27c47"
+                                },
+                                {
+                                    "id": "claimId:af7e0b1b5c4858eb",
+                                    "type": "ResumeVC",
+                                    "url": "https://cloud-wallet-api.prod.affinity-project.org/api/v1/share/b8a2c0cbc5a02da03d2aecb59094672a8e0b16a1c845456bd18678529d6901df?key=beda347c431e02319bd31c63e5f5f5f5e14939efdb6697ce4d93c87eade27c47"
+                                }
+                            ],
+                            "tags": [
+                                {
+                                    "code": "func_skills",
+                                    "list": [
+                                        {
+                                            "code": "Android"
+                                        },
+                                        {
+                                            "code": "AWS"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "contact": {
+                            "phone": "9999999999999",
+                            "email": "abc@abc.bc"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
