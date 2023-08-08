@@ -1,6 +1,6 @@
 {
     "context": {
-        "action": "on_select",
+        "action": "on_cancel",
         "bap_id": "fis.test.bap.io",
         "bap_uri": "https://fis.test.bap.io/",
         "bpp_id": "fis.test.bpp.io",
