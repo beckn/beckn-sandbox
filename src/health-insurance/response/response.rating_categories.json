@@ -1,0 +1,25 @@
+{
+    "context": {
+        "domain": "mobility:ridehailing:0.8.0",
+        "core_version": "0.9.4",
+        "action": "rating_categories",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io",
+        "country": "IND",
+        "city": "std:080",
+        "bap_id": "beckn-sandbox-bap.becknprotocol.io",
+        "bap_uri": "https://sandbox-bap-network.becknprotocol.io",
+        "transaction_id": "7afe44fd-d947-4a0a-81bc-d286784df2c1",
+        "message_id": "22f34773-081b-490a-89da-3fb1da82484b",
+        "ttl": "PT10M",
+        "timestamp": "2023-05-24T12:43:38.600Z"
+    },
+    "message": {
+        "rating_categories": [
+            "RIDE",
+            "DRIVER",
+            "VEHICLE",
+            "CONDUCTOR"
+        ]
+    }
+}

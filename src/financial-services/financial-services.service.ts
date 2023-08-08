@@ -6,6 +6,7 @@ import { Injectable } from "@nestjs/common";
 
 import { FinancialServicesApiInterface } from "./financial-services-api.interface";
 import { FinancialServicesTypeEnum } from "./financial-services-type.enum";
+import { HealthInsuranceApiService } from "src/health-insurance/health-insurance-api.service";
 
 @Injectable()
 export class FinancialServicesService {
@@ -15,6 +16,8 @@ export class FinancialServicesService {
                 return new CreditPersonalApiService();
             case FinancialServicesTypeEnum.CREDITINVOICE:
                 return new CreditInvoiceApiService();
+            case FinancialServicesTypeEnum.HEALTHINSURANCE:
+                return new HealthInsuranceApiService();
             default:
                 throw new DomainNotFoundException();
         }
