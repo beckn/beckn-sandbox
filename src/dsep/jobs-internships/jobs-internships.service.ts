@@ -11,7 +11,8 @@ import * as InitResponse from "./response/response.init.json";
 import * as UpdateResponse from "./response/response.update.json";
 import * as SupportResponse from "./response/response.support.json";
 import * as RatingResponse from "./response/response.rating.json";
-
+import * as CancelResponse from "./response/response.cancel.json";
+import * as TrackResponse from "./response/response.track.json";
 @Injectable()
 export class JobsInternshipsService implements DSEPApiInterface {
     search = (dsepRequestDto: DSEPRequestDto) => {
@@ -23,7 +24,6 @@ export class JobsInternshipsService implements DSEPApiInterface {
             return SearchWithTitleEngineer;
         }
         if (isSearchWithTitleAndLocation) {
-            console.log("Here");
             return SearchWithTitleAndLocationReponse;
         }
         return SearchWithDeveloperTitle;
@@ -41,7 +41,7 @@ export class JobsInternshipsService implements DSEPApiInterface {
         return StatusResponse;
     };
     cancel = (dsepRequestDto: DSEPRequestDto) => {
-        return {};
+        return CancelResponse;
     };
     update = (dsepRequestDto: DSEPRequestDto) => {
         return UpdateResponse;
@@ -51,5 +51,8 @@ export class JobsInternshipsService implements DSEPApiInterface {
     };
     rating = (dsepRequestDto: DSEPRequestDto) => {
         return RatingResponse;
+    };
+    track = (dsepRequestDto: DSEPRequestDto) => {
+        return TrackResponse;
     };
 }

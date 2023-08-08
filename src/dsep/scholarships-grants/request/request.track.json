@@ -1,0 +1,28 @@
+{
+    "context": {
+        "domain": "dsep:scholarships",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "action": "track",
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "edea17fa-b5c4-48c9-86dd-1b80dda67d37",
+        "message_id": "444904a1-ddfc-4db2-b854-5067900dee5f",
+        "timestamp": "2023-02-17T17:20:40.065Z",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "order_id": "APP_53280729"
+    }
+}

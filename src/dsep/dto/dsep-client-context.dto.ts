@@ -5,7 +5,7 @@ export class DSEPClientContextDto {
     action: string;
     bap_id: string;
     bap_uri: string;
-    location: {
+    location?: {
         city: {
             name: string;
             code: string;

@@ -3,6 +3,7 @@ import { DsepController } from "./dsep.controller";
 import { DsepService } from "./dsep.service";
 import { DSEPRequestDto } from "./dto/request.dto";
 
+// Request Response JSON imports for Scholarship
 import * as SearchOnScholarshipNameRequest from "./scholarships-grants/request/request.searchOnScholarshipName.json";
 import * as SearchOnScholarshipNameResponse from "./scholarships-grants/response/response.searchOnScholarshipName.json";
 import * as SearchOnGenderResponse from "./scholarships-grants/response/response.searchOnGender.json";
@@ -23,7 +24,12 @@ import * as ScholarshipSupportRequest from "./scholarships-grants/request/reques
 import * as ScholarshipSupportResponse from "./scholarships-grants/response/response.support.json";
 import * as ScholarshipRatingRequest from "./scholarships-grants/request/request.rating.json";
 import * as ScholarshipRatingResponse from "./scholarships-grants/response/response.rating.json";
+import * as ScholarshipCancelRequest from "./scholarships-grants/request/request.cancel.json";
+import * as ScholarshipCancelResponse from "./scholarships-grants/response/response.cancel.json";
+import * as ScholarshipTrackRequest from "./scholarships-grants/request/request.track.json";
+import * as ScholarshipTrackResponse from "./scholarships-grants/response/response.track.json";
 
+// Request Response JSON imports for Jobs
 import * as SearchOnTitleEngineerRequest from "./jobs-internships/request/request.searchWithTitleEngineer.json";
 import * as SearchOnTitleEngineerResponse from "./jobs-internships/response/response.searchWithTitleEngineer.json";
 import * as SearchOnTitleDeveloperRequest from "./jobs-internships/request/request.searchWithTitleDeveloper.json";
@@ -44,7 +50,12 @@ import * as JobsRatingRequest from "./jobs-internships/request/request.rating.js
 import * as JobsRatingResponse from "./jobs-internships/response/response.rating.json";
 import * as JobsSupportRequest from "./jobs-internships/request/request.support.json";
 import * as JobsSupportResponse from "./jobs-internships/response/response.support.json";
+import * as JobsCancelRequest from "./jobs-internships/request/request.cancel.json";
+import * as JobsCancelResponse from "./jobs-internships/response/response.cancel.json";
+import * as JobsTrackRequest from "./jobs-internships/request/request.track.json";
+import * as JobsTrackResponse from "./jobs-internships/response/response.track.json";
 
+// Request Response JSON imports for Courses
 import * as CoursesSearchRequest from "./courses-training/request/request.searchByCategorySchool.json";
 import * as CoursesSearchResponse from "./courses-training/response/response.searchByCategorySchool.json";
 import * as CoursesSelectRequest from "./courses-training/request/request.select.json";
@@ -61,7 +72,12 @@ import * as CoursesSupportRequest from "./courses-training/request/request.suppo
 import * as CoursesSupportResponse from "./courses-training/response/response.support.json";
 import * as CoursesRatingRequest from "./courses-training/request/request.rating.json";
 import * as CoursesRatingResponse from "./courses-training/response/response.rating.json";
+import * as CoursesCancelRequest from "./courses-training/request/request.cancel.json";
+import * as CoursesCancelResponse from "./courses-training/response/response.cancel.json";
+import * as CoursesTrackRequest from "./courses-training/request/request.track.json";
+import * as CoursesTrackResponse from "./courses-training/response/response.track.json";
 
+// Request Response JSON imports for Tutoring
 import * as TutoringSearchRequest from "./tutoring-mentorship/request/request.search.json";
 import * as TutoringSearchResponse from "./tutoring-mentorship/response/response.search.json";
 import * as TutoringSelectRequest from "./tutoring-mentorship/request/request.select.json";
@@ -78,6 +94,10 @@ import * as TutoringSupportRequest from "./tutoring-mentorship/request/request.s
 import * as TutoringSupportResponse from "./tutoring-mentorship/response/response.support.json";
 import * as TutoringRatingRequest from "./tutoring-mentorship/request/request.rating.json";
 import * as TutoringRatingResponse from "./tutoring-mentorship/response/response.rating.json";
+import * as TutoringCancelRequest from "./tutoring-mentorship/request/request.cancel.json";
+import * as TutoringCancelResponse from "./tutoring-mentorship/response/response.cancel.json";
+import * as TutoringTrackRequest from "./tutoring-mentorship/request/request.track.json";
+import * as TutoringTrackResponse from "./tutoring-mentorship/response/response.track.json";
 
 describe("DSEP:Scholarships and Grants Controller", () => {
     let controller: DsepController;
@@ -125,6 +145,12 @@ describe("DSEP:Scholarships and Grants Controller", () => {
     });
     it("Should return Update response", () => {
         expect(controller.update(ScholarshipUpdaterequest as DSEPRequestDto)).toEqual(ScholarshipUpdateResponse);
+    });
+    it("Should return Cancel response", () => {
+        expect(controller.cancel(ScholarshipCancelRequest as DSEPRequestDto)).toEqual(ScholarshipCancelResponse);
+    });
+    it("Should return Track response", () => {
+        expect(controller.track(ScholarshipTrackRequest as DSEPRequestDto)).toEqual(ScholarshipTrackResponse);
     });
 });
 
@@ -175,6 +201,12 @@ describe("DSEP:Jobs and Internships Controller", () => {
     it("Should return Rating response", () => {
         expect(controller.rating(JobsRatingRequest as DSEPRequestDto)).toEqual(JobsRatingResponse);
     });
+    it("Should return Cancel response", () => {
+        expect(controller.cancel(JobsCancelRequest as DSEPRequestDto)).toEqual(JobsCancelResponse);
+    });
+    it("Should return Track response", () => {
+        expect(controller.track(JobsTrackRequest as DSEPRequestDto)).toEqual(JobsTrackResponse);
+    });
 });
 
 describe("DSEP:Training and Courses Controller", () => {
@@ -218,6 +250,12 @@ describe("DSEP:Training and Courses Controller", () => {
     it("Should return Rating response", () => {
         expect(controller.rating(CoursesRatingRequest as DSEPRequestDto)).toEqual(CoursesRatingResponse);
     });
+    it("Should return Cancel response", () => {
+        expect(controller.cancel(CoursesCancelRequest as DSEPRequestDto)).toEqual(CoursesCancelResponse);
+    });
+    it("Should return Track response", () => {
+        expect(controller.track(CoursesTrackRequest as DSEPRequestDto)).toEqual(CoursesTrackResponse);
+    });
 });
 
 describe("DSEP:Tutoring and Mentorship Controller", () => {
@@ -260,5 +298,11 @@ describe("DSEP:Tutoring and Mentorship Controller", () => {
     });
     it("Should return Rating response", () => {
         expect(controller.rating(TutoringRatingRequest as DSEPRequestDto)).toEqual(TutoringRatingResponse);
+    });
+    it("Should return Cancel response", () => {
+        expect(controller.cancel(TutoringCancelRequest as DSEPRequestDto)).toEqual(TutoringCancelResponse);
+    });
+    it("Should return Track response", () => {
+        expect(controller.track(TutoringTrackRequest as DSEPRequestDto)).toEqual(TutoringTrackResponse);
     });
 });

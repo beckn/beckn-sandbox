@@ -9,6 +9,8 @@ import * as StatusResponse from "./response/response.status.json";
 import * as UpdateResponse from "./response/response.update.json";
 import * as SupportResponse from "./response/response.support.json";
 import * as RatingResponse from "./response/response.rating.json";
+import * as CancelResponse from "./response/response.cancel.json";
+import * as TrackResponse from "./response/response.track.json";
 
 @Injectable()
 export class TutoringMentorshipService implements DSEPApiInterface {
@@ -28,7 +30,7 @@ export class TutoringMentorshipService implements DSEPApiInterface {
         return StatusResponse;
     };
     cancel = (dsepRequestDto: DSEPRequestDto) => {
-        return {};
+        return CancelResponse;
     };
     update = (dsepRequestDto: DSEPRequestDto) => {
         return UpdateResponse;
@@ -38,5 +40,8 @@ export class TutoringMentorshipService implements DSEPApiInterface {
     };
     rating = (dsepRequestDto: DSEPRequestDto) => {
         return RatingResponse;
+    };
+    track = (dsepRequestDto: DSEPRequestDto) => {
+        return TrackResponse;
     };
 }

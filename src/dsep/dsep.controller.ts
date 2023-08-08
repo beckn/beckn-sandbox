@@ -50,4 +50,9 @@ export class DsepController {
     status(@Body() dsepRequest: DSEPRequestDto) {
         return this.dsepService.get(dsepRequest.context.domain).status(dsepRequest);
     }
+
+    @Post("/track")
+    track(@Body() dsepRequest: DSEPRequestDto) {
+        return this.dsepService.get(dsepRequest.context.domain).track(dsepRequest);
+    }
 }

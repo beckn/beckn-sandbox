@@ -10,4 +10,5 @@ export interface DSEPApiInterface {
     support: (dsepRequest: DSEPRequestDto) => any;
     rating: (dsepRequest: DSEPRequestDto) => any;
     update: (dsepRequest: DSEPRequestDto) => any;
+    track: (dsepRequest: DSEPRequestDto) => any;
 }
