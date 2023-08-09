@@ -23,7 +23,9 @@
         "message_id": "cde057c1-3fcf-43a4-9c03-b9f3fb2dc6fb"
     },
     "message": {
-        "url": "https://scholarships-arena/liveorder/orderid/jnd12hebkn1j3nkas",
-        "status": "active"
+        "tracking": {
+            "url": "https://scholarships-arena/liveorder/orderid/jnd12hebkn1j3nkas",
+            "status": "active"
+        }
     }
 }

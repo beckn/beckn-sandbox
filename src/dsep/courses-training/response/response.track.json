@@ -12,8 +12,11 @@
         "ttl": "PT10M",
         "timestamp": "2023-02-20T15:26:16.949Z"
     },
+
     "message": {
-        "url": "https://courses-training-network/order/8912389bdfdnads",
-        "status": "active"
+        "tracking": {
+            "url": "https://courses-training-network/order/8912389bdfdnads",
+            "status": "active"
+        }
     }
 }
