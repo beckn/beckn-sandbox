@@ -7,7 +7,7 @@
             }
         },
         "action": "on_select",
-        "core_version": "1.1.0",
+        "version": "1.1.0",
         "bap_id": "credit-protocol.becknprotocol.io",
         "bap_uri": "https://credit-protocol-network.becknprotocol.io/",
         "bpp_id": "bpp.credit.icicibank.io",
@@ -24,10 +24,10 @@
                 "descriptor": {
                     "images": [
                         {
-                            "url": "https://www.icicibank.com/content/dam/icicibank/india/assets/images/header/logo.png"
+                            "url": "https://www.icicibank.com/content/dam/icicibank/india/assets/images/header/logo.png",
+                            "size_type": "sm"
                         }
                     ],
-                    "code": "ICICIBANK",
                     "name": "ICICI Bank",
                     "short_desc": "ICICI Bank Ltd",
                     "long_desc": "ICICI Bank Ltd, India."
@@ -37,18 +37,13 @@
                 {
                     "id": "66b7b9bad166-4a3f-ada6-ca063dc9d321",
                     "descriptor": {
-                        "name": "Invoice based Loan",
-                        "short_desc": "Invoice based Loan of INR 2,00,000 at price INR 2,45,000"
-                    },
-                    "price": {
-                        "currency": "INR",
-                        "offered_value": "2,00,000",
-                        "computed_value": "2,45,000"
+                        "code": "invoice-based-loan",
+                        "name": "Invoice Based Loan Offer: INR 2,00,000"
                     },
                     "tags": [
                         {
                             "descriptor": {
-                                "name": "General Information"
+                                "name": "Invoice based loan terms"
                             },
                             "list": [
                                 {
@@ -63,12 +58,12 @@
                                         "name": "Interest Type",
                                         "short_desc": "Type of Interest Rate"
                                     },
-                                    "value": "FIXED"
+                                    "value": "FLOATING"
                                 },
                                 {
                                     "descriptor": {
                                         "name": "Term",
-                                        "short_desc": "Loan Term"
+                                        "short_desc": "Max Loan Term"
                                     },
                                     "value": "5 months"
                                 },
@@ -85,36 +80,69 @@
                                         "short_desc": "Delayed payments penalty"
                                     },
                                     "value": "5%"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Terms & Conditions",
+                                        "short_desc": "Terms and Conditions"
+                                    },
+                                    "value": "https://icicibank.com/loan/tnc.html"
                                 }
                             ],
                             "display": true
                         }
-                    ]
-                }
-            ],
-            "type": "DEFAULT",
-            "tags": [
-                {
-                    "descriptor": {
-                        "code": "consentRequest"
-                    },
-                    "list": [
-                        {
-                            "descriptor": {
-                                "code": "consentUrl"
-                            },
-                            "value": "https://fiu-uat.setu.co/consents/webview/c8f6e545-4627-4e4e-b47f-e8b11f299fb7"
-                        }
                     ],
-                    "display": false
+                    "xinput": {
+                        "head": {
+                            "descriptor": {
+                                "name": "Customer Information"
+                            },
+                            "index": {
+                                "min": 0,
+                                "cur": 2,
+                                "max": 2
+                            },
+                            "headings": ["Financial Information", "Individual KYC", "Entity KYC"]
+                        },
+                        "form": {
+                            "mime_type": "text/html",
+                            "url": "https://6vs8xnx5i7.icicibank.co.in/individual-kyc/xinput/formid/a23f2fdfbbb8ac402bfd54f",
+                            "resubmit": false,
+                            "multiple_sumbissions": false
+                        },
+                        "required": true
+                    }
                 }
             ],
-            "xinput": {
-                "form": {
-                    "mime_type": "text/html",
-                    "url": "https://6vs8xnx5i7.icicibank.co.in/loans/xinput/formid/a23f2fdfbbb8ac402bf259d75"
+            "quote": {
+                "id": "b469bb12-9f67-4898-8f39-ea7816f54289",
+                "price": {
+                    "currency": "INR",
+                    "value": "171800"
                 },
-                "required": true
+                "breakup": [
+                    {
+                        "title": "Principal",
+                        "price": {
+                            "value": "150000",
+                            "currency": "INR"
+                        }
+                    },
+                    {
+                        "title": "Interest",
+                        "price": {
+                            "value": "20000",
+                            "currency": "INR"
+                        }
+                    },
+                    {
+                        "title": "Processing fee",
+                        "price": {
+                            "value": "1800",
+                            "currency": "INR"
+                        }
+                    }
+                ]
             }
         }
     }

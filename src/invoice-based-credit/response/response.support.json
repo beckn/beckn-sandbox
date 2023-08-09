@@ -10,7 +10,7 @@
         "message_id": "$bb579fb8-cb82-4824-be12-fcbc405b6608",
         "action": "on_support",
         "timestamp": "2023-05-25T05:23:03.443Z",
-        "core_version": "1.1.0",
+        "version": "1.1.0",
         "bap_uri": "https://credit-protocol-network.becknprotocol.io/",
         "bap_id": "credit-protocol.becknprotocol.io",
         "ttl": "PT10M",

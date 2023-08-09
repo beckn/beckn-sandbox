@@ -5,12 +5,10 @@ import { Injectable } from "@nestjs/common";
 import * as cancelResponse from "./response/response.cancel.json";
 import * as confirmResponse from "./response/response.confirm.json";
 import * as initResponse from "./response/response.init.json";
-import * as ratingResponse from "./response/response.rating.json";
 import * as searchResponse from "./response/response.search.json";
 import * as selectResponse from "./response/response.select.json";
 import * as statusResonse from "./response/response.status.json";
 import * as supportResponse from "./response/response.support.json";
-import * as trackResponse from "./response/response.track.json";
 import * as updateResponse from "./response/response.update.json";
 import * as cancellationResponse from "./response/response.cancellation_reasons.json";
 import * as ratingCategories from "./response/response.rating_categories.json";
@@ -33,7 +31,7 @@ export class CreditInvoiceApiService implements FinancialServicesApiInterface {
         return statusResonse;
     };
     track = function () {
-        return trackResponse;
+        return "";
     };
     cancel = function () {
         return cancelResponse;
@@ -42,7 +40,7 @@ export class CreditInvoiceApiService implements FinancialServicesApiInterface {
         return updateResponse;
     };
     rating = function () {
-        return ratingResponse;
+        return "";
     };
     support = function () {
         return supportResponse;

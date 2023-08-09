@@ -1,247 +1,210 @@
 {
     "context": {
-        "domain": "financial-services:credit-personal:0.2.0",
+        "action": "on_status",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "domain": "financial-services:health-insurance:0.2.0",
         "location": {
             "country": {
                 "code": "IND"
             }
         },
-        "core_version": "1.1.0",
-        "action": "on_status",
-        "bap_uri": "https://credit-protocol-network.becknprotocol.io/",
-        "bap_id": "credit-protocol.becknprotocol.io",
-        "bpp_id": "bpp.credit.icicibank.io",
-        "bpp_uri": "https://bpp.credit.icicibank.io",
-        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
-        "message_id": "166a5633-66d2-4ec8-bdcb-65cfeb1e4697",
-        "ttl": "PT10M",
-        "timestamp": "2023-05-25T05:23:03.443Z"
+        "message_id": "de5bcc49-27ab-4516-b548-7535240c8dfd",
+        "timestamp": "2023-07-24T05:42:00.067Z",
+        "transaction_id": "c04a04ee-d892-400f-bbe6-479a43b4448a",
+        "ttl": "PT24H",
+        "version": "1.1.0"
     },
     "message": {
         "order": {
-            "id": "66B7AEDF45",
-            "provider": {
-                "id": "1",
-                "descriptor": {
-                    "images": [
-                        {
-                            "url": "https://www.icicibank.com/content/dam/icicibank/india/assets/images/header/logo.png"
+            "fulfillments": [
+                {
+                    "customer": {
+                        "id": "gstin:20JDVIEHVJDSN",
+                        "contact": {
+                            "email": "joe.adam@abc.org",
+                            "phone": "+91-9999999999"
+                        },
+                        "person": {
+                            "dob": "1990-01-21",
+                            "gender": "male",
+                            "name": "Joe Adam"
                         }
-                    ],
-                    "code": "ICICIBANK",
-                    "name": "ICICI Bank",
-                    "short_desc": "ICICI Bank Ltd",
-                    "long_desc": "ICICI Bank Ltd, India."
+                    },
+                    "id": "1",
+                    "state": {
+                        "descriptor": {
+                            "name": "Evaluation in Progress"
+                        }
+                    }
                 }
-            },
+            ],
             "items": [
                 {
-                    "id": "66b7b9bad166-4a3f-ada6-ca063dc9d321",
+                    "add_ons": [
+                        {
+                            "id": "1",
+                            "descriptor": {
+                                "code": "NO_CLAIM_BONUS",
+                                "name": "No Claim Bonus"
+                            },
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            }
+                        }
+                    ],
                     "descriptor": {
-                        "name": "Loan Offer : INR 2,00,000"
+                        "name": "ABC Individaul Health Insurance Policy",
+                        "short_desc": "ABC Individaul Health Insurance Class A with custom addon"
                     },
+                    "fulfillment_ids": ["1"],
+                    "id": "36db0d40-c7ca-47db-82d8-6cdadf671c3c",
                     "price": {
-                        "currency": "INR",
-                        "value": "230000"
+                        "value": "1000"
                     },
                     "tags": [
                         {
                             "descriptor": {
-                                "name": "Personal loan terms"
+                                "name": "Policy Inclusive Offers"
                             },
                             "list": [
                                 {
                                     "descriptor": {
-                                        "name": "Interest Rate",
-                                        "short_desc": "Rate of Interest (p.a)"
+                                        "name": "Coverage amount"
                                     },
-                                    "value": "12%"
+                                    "value": "10000000"
                                 },
                                 {
                                     "descriptor": {
-                                        "name": "Interest Type",
-                                        "short_desc": "Type of Interest Rate"
+                                        "name": "Co-payment"
                                     },
-                                    "value": "FLOATING"
+                                    "value": "Yes"
                                 },
                                 {
                                     "descriptor": {
-                                        "name": "Term",
-                                        "short_desc": "Max Loan Term"
+                                        "name": "Room rent cap"
                                     },
-                                    "value": "5 months"
+                                    "value": "25000"
                                 },
                                 {
                                     "descriptor": {
-                                        "name": "Foreclosure Penalty",
-                                        "short_desc": "Loan Foreclosure Penalty"
+                                        "name": "Restoration benefit"
                                     },
-                                    "value": "0.5%"
+                                    "value": "No"
                                 },
                                 {
                                     "descriptor": {
-                                        "name": "Delayed payments penalty",
-                                        "short_desc": "Delayed payments penalty"
+                                        "name": "Claim settlement ratio"
                                     },
-                                    "value": "5%"
+                                    "value": "0.8"
                                 },
                                 {
                                     "descriptor": {
-                                        "name": "Terms & Conditions",
-                                        "short_desc": "Terms and Conditions"
+                                        "name": "Pre-hospitalization coverage days"
                                     },
-                                    "value": "https://icicibank.com/loan/tnc.html"
+                                    "value": "2"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Post-hospitalization coverage days"
+                                    },
+                                    "value": "5"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Maternity coverage"
+                                    },
+                                    "value": "Yes"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Initial waiting period"
+                                    },
+                                    "value": "No"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Cashless hospitals"
+                                    },
+                                    "value": "50"
                                 }
-                            ],
-                            "display": true
+                            ]
                         }
-                    ]
-                }
-            ],
-            "quote": {
-                "price": {
-                    "currency": "INR",
-                    "value": "231800"
-                },
-                "breakup": [
-                    {
-                        "title": "Principal",
-                        "price": {
-                            "value": "200000",
-                            "currency": "INR"
-                        }
-                    },
-                    {
-                        "title": "Interest",
-                        "price": {
-                            "value": "30000",
-                            "currency": "INR"
-                        }
-                    },
-                    {
-                        "title": "Processing fee",
-                        "price": {
-                            "value": "1800",
-                            "currency": "INR"
-                        }
-                    }
-                ]
-            },
-            "fulfillments": [
-                {
-                    "customer": {
-                        "person": {
-                            "name": "John Doe"
-                        },
-                        "contact": {
-                            "phone": "+91-9999999999",
-                            "email": "john.doe@example.com"
-                        }
-                    },
-                    "state": {
-                        "descriptor": {
-                            "name": "Installment 1/5 received"
-                        }
+                    ],
+                    "time": {
+                        "duration": "P1Y",
+                        "label": "TENURE"
                     }
                 }
             ],
+            "id": "04389d8c-6a50-4664-9c08-4ee45fef44e8",
             "payments": [
                 {
-                    "type": "ON-FULFILLMENT",
-                    "url": "https://emandate.icicibank.in",
+                    "collected_by": "BPP",
                     "params": {
-                        "amount": "46360",
+                        "amount": "1000",
+                        "bank_account_number": "1800002341",
+                        "bank_code": "SBIN0001234",
                         "currency": "INR"
                     },
                     "status": "PAID",
-                    "time": {
-                        "range": {
-                            "start": "2023-06-01T00:00:00.00Z",
-                            "end": "2023-06-30T23:59:59.0Z"
-                        }
-                    }
-                },
-                {
-                    "params": {
-                        "amount": "46360",
-                        "currency": "INR"
-                    },
-                    "status": "NOT-PAID",
-                    "time": {
-                        "range": {
-                            "start": "2023-07-01T00:00:00.00Z",
-                            "end": "2023-07-31T23:59:59.00Z"
-                        }
-                    }
-                },
-                {
-                    "params": {
-                        "amount": "46360",
-                        "currency": "INR"
-                    },
-                    "status": "NOT-PAID",
-                    "time": {
-                        "range": {
-                            "start": "2023-08-01T00:00:00.00Z",
-                            "end": "2023-08-30T23:59:59.00Z"
-                        }
-                    }
-                },
-                {
-                    "params": {
-                        "amount": "46360",
-                        "currency": "INR"
-                    },
-                    "status": "NOT-PAID",
-                    "time": {
-                        "range": {
-                            "start": "2023-09-01T00:00:00.00Z",
-                            "end": "2023-09-31T23:59:59.00Z"
-                        }
-                    }
-                },
-                {
-                    "params": {
-                        "amount": "46360",
-                        "currency": "INR"
-                    },
-                    "status": "NOT-PAID",
-                    "time": {
-                        "range": {
-                            "start": "2023-10-01T00:00:00.00Z",
-                            "end": "2023-10-01T23:59:59.00Z"
-                        }
-                    }
+                    "type": "PRE-ORDER",
+                    "transaction_id": "85742a36-6636-4dcf-ae56-c47d3387d1d0"
                 }
             ],
-            "cancellation_terms": [
-                {
-                    "fulfillment_state": {
-                        "descriptor": {
-                            "name": "Loan sanctioned"
+            "provider": {
+                "descriptor": {
+                    "long_desc": "ABC Insurance Ltd. Deals in multiple Insurance Services like Health, Motor, Marine etc",
+                    "name": "ABC Insurance Ltd.",
+                    "short_desc": "ABC Insurance Ltd. India ",
+                    "images": [
+                        {
+                            "url": "https://www.abcinsurance.com/content/dam/abc/india/assets/images/header/logo.png"
                         }
-                    },
-                    "cancellation_fee": {
-                        "percentage": "3%"
-                    },
-                    "external_ref": {
-                        "mimetype": "text/html",
-                        "url": "https://icicibank.com/loan/tnc.html"
-                    }
+                    ]
                 },
-                {
-                    "fulfillment_state": {
-                        "descriptor": {
-                            "name": "Loan disbursed"
-                        }
+                "id": "e5585415-bce5-46b5-aeba-9f6b83df5ffa"
+            },
+            "quote": {
+                "breakup": [
+                    {
+                        "price": {
+                            "value": "900"
+                        },
+                        "title": "Base Price"
                     },
-                    "cancellation_fee": {
-                        "percentage": "5%"
+                    {
+                        "price": {
+                            "value": "50"
+                        },
+                        "title": "Tax"
                     },
-                    "external_ref": {
-                        "mimetype": "text/html",
-                        "url": "https://icicibank.com/loan/tnc.html"
+                    {
+                        "price": {
+                            "value": "50"
+                        },
+                        "title": "Processing Fee"
                     }
+                ],
+                "price": {
+                    "currency": "INR",
+                    "value": "1000"
+                }
+            },
+            "docs": [
+                {
+                    "descriptor": {
+                        "code": "policy-doc",
+                        "name": "Insurance Policy Document",
+                        "short_desc": "Download your digitally signed policy document here",
+                        "long_desc": "Download you digitally signed policy document here. This document is password protected. To open this document, please type in your password in DDMMMYYYYXXXX format where DDMMMYYYY represents your date of birth, and XXXX represents the first four letters of your name"
+                    },
+                    "mime_type": "application/pdf",
+                    "url": "https://abcinsurance.com/policies/04389d8c-6a50-4664-9c08-4ee45fef44e8.pdf"
                 }
             ]
         }
