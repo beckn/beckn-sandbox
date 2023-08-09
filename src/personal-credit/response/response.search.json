@@ -6,7 +6,7 @@
                 "code": "IND"
             }
         },
-        "core_version": "1.1.0",
+        "version": "1.1.0",
         "action": "on_search",
         "bap_id": "credit-protocol.becknprotocol.io",
         "bap_uri": "https://credit-protocol-network.becknprotocol.io/",
@@ -28,10 +28,10 @@
                     "descriptor": {
                         "images": [
                             {
-                                "url": "https://www.icicibank.com/content/dam/icicibank/india/assets/images/header/logo.png"
+                                "url": "https://www.icicibank.com/content/dam/icicibank/india/assets/images/header/logo.png",
+                                "size_type": "sm"
                             }
                         ],
-                        "code": "ICICIBANK",
                         "name": "ICICI Bank",
                         "short_desc": "ICICI Bank Ltd",
                         "long_desc": "ICICI Bank Ltd, India."
@@ -40,7 +40,22 @@
                         {
                             "id": "101123",
                             "descriptor": {
-                                "name": "Personal loan"
+                                "code": "personal-loan",
+                                "name": "Personal Loan"
+                            }
+                        },
+                        {
+                            "id": "101124",
+                            "descriptor": {
+                                "code": "car-loan",
+                                "name": "Car Loan"
+                            }
+                        },
+                        {
+                            "id": "101125",
+                            "descriptor": {
+                                "code": "education-loan",
+                                "name": "Education Loan"
                             }
                         }
                     ],
@@ -48,32 +63,58 @@
                         {
                             "id": "66b7b9bad166-4a3f-ada6-ca063dc9d321",
                             "descriptor": {
+                                "code": "personal-loan",
                                 "name": "Personal Loan"
                             },
+                            "category_ids": ["101123"],
                             "tags": [
                                 {
                                     "descriptor": {
+                                        "code": "general-info",
                                         "name": "General Information"
                                     },
                                     "list": [
                                         {
                                             "descriptor": {
                                                 "name": "Interest Rate",
-                                                "short_desc": "Rate of Interest (p.a)"
-                                            },
-                                            "value": "12%"
+                                                "short_desc": "Loans starting from 12% (p.a)"
+                                            }
                                         }
                                     ],
                                     "display": true
                                 }
                             ],
-                            "matched": true
+                            "matched": true,
+                            "recommended": true,
+                            "xinput": {
+                                "head": {
+                                    "descriptor": {
+                                        "name": "Customer Information"
+                                    },
+                                    "index": {
+                                        "min": 0,
+                                        "cur": 0,
+                                        "max": 0
+                                    },
+                                    "headings": ["Personal Information"]
+                                },
+                                "form": {
+                                    "id": "d097c2f5-cb8d-42fe-900e-dfecdede16fb",
+                                    "mime_type": "text/html",
+                                    "url": "https://6vs8xnx5i7.icicibank.co.in/loans/xinput/formid/a23f2fdfbbb8ac402bf259d75",
+                                    "resubmit": false,
+                                    "multiple_sumbissions": false
+                                },
+                                "required": true
+                            }
                         },
                         {
                             "id": "c8e3968c-cd78-4e46-aa34-0d541e46bd73",
                             "descriptor": {
+                                "code": "car-loan",
                                 "name": "Car Loan"
                             },
+                            "category_ids": ["101124"],
                             "tags": [
                                 {
                                     "descriptor": {
@@ -83,21 +124,43 @@
                                         {
                                             "descriptor": {
                                                 "name": "Interest Rate",
-                                                "short_desc": "Rate of Interest (p.a)"
-                                            },
-                                            "value": "8.5%"
+                                                "short_desc": "Loans starting from 9% (p.a)"
+                                            }
                                         }
                                     ],
                                     "display": true
                                 }
                             ],
-                            "matched": false
+                            "matched": false,
+                            "xinput": {
+                                "head": {
+                                    "descriptor": {
+                                        "name": "Customer Information"
+                                    },
+                                    "index": {
+                                        "min": 0,
+                                        "cur": 0,
+                                        "max": 0
+                                    },
+                                    "headings": ["Personal Information"]
+                                },
+                                "form": {
+                                    "id": "d097c2f5-cb8d-42fe-900e-dfecdede16fb",
+                                    "mime_type": "text/html",
+                                    "url": "https://6vs8xnx5i7.icicibank.co.in/loans/xinput/formid/a23f2fdfbbb8ac402bfd54f",
+                                    "resubmit": false,
+                                    "multiple_sumbissions": false
+                                },
+                                "required": true
+                            }
                         },
                         {
                             "id": "80414936-a06d-49ae-9475-f99448c77014",
                             "descriptor": {
+                                "code": "education-loan",
                                 "name": "Education Loan"
                             },
+                            "category_ids": ["101125"],
                             "tags": [
                                 {
                                     "descriptor": {
@@ -107,15 +170,35 @@
                                         {
                                             "descriptor": {
                                                 "name": "Interest Rate",
-                                                "short_desc": "Rate of Interest (p.a)"
-                                            },
-                                            "value": "13%"
+                                                "short_desc": "Loans starting from 12% (p.a)"
+                                            }
                                         }
                                     ],
                                     "display": true
                                 }
                             ],
-                            "matched": false
+                            "matched": false,
+                            "xinput": {
+                                "head": {
+                                    "descriptor": {
+                                        "name": "Customer Information"
+                                    },
+                                    "index": {
+                                        "min": 0,
+                                        "cur": 0,
+                                        "max": 0
+                                    },
+                                    "headings": ["Personal Information"]
+                                },
+                                "form": {
+                                    "id": "d097c2f5-cb8d-42fe-900e-dfecdede16fb",
+                                    "mime_type": "text/html",
+                                    "url": "https://6vs8xnx5i7.icicibank.co.in/loans/xinput/formid/a23f2fdfbbb8ac402bf253fd",
+                                    "resubmit": false,
+                                    "multiple_sumbissions": false
+                                },
+                                "required": true
+                            }
                         }
                     ]
                 }
