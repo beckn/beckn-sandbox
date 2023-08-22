@@ -27,7 +27,7 @@
                     "parent_item_id": "Q291cnNlTGlzdDovbmQyX2NlYzIzX2NzMDI=",
                     "descriptor": {
                         "name": "Problem solving Aspects and Python Programming",
-                        "long_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                        "long_desc": "The course covers the basic of Python Programming in detail and the advanced concepts in a lighter way. The course would definitely help work in fields from web and game development to machine learning, AI, scientific computing and academic research.",
                         "images": [
                             {
                                 "url": "https://storage.googleapis.com/swayam-node2-production.appspot.com/assets/img/cec20_cs04/Course%20Image.png"
@@ -97,25 +97,19 @@
                                     "descriptor": {
                                         "name": "criterion1"
                                     },
-                                    "value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                                    "value": "A sufficient level of English language proficiency is essential to understand lectures"
                                 },
                                 {
                                     "descriptor": {
                                         "name": "criterion2"
                                     },
-                                    "value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                                    "value": "Basic computer skills, including familiarity with using an operating system, managing files, and navigating the internet."
                                 },
                                 {
                                     "descriptor": {
                                         "name": "criterion3"
                                     },
-                                    "value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-                                },
-                                {
-                                    "descriptor": {
-                                        "name": "criterion4"
-                                    },
-                                    "value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                                    "value": "The candidate should be passing 10+2 in mathematics and computer science from a recognised board."
                                 }
                             ],
                             "display": true
@@ -129,25 +123,25 @@
                                     "descriptor": {
                                         "name": "highlight1"
                                     },
-                                    "value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                                    "value": "Introduction to OOP principles and concepts. Creating classes and objects in Python. Understanding encapsulation, inheritance, and polymorphism."
                                 },
                                 {
                                     "descriptor": {
                                         "name": "highlight2"
                                     },
-                                    "value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                                    "value": "Exploring different problem-solving paradigms. Applying problem-solving techniques to real-world scenarios."
                                 },
                                 {
                                     "descriptor": {
                                         "name": "highlight3"
                                     },
-                                    "value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                                    "value": "File I/O operations for data input/output. Exception handling to gracefully manage errors. Using libraries and modules for enhanced functionality."
                                 },
                                 {
                                     "descriptor": {
                                         "name": "highlight4"
                                     },
-                                    "value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                                    "value": "Introduction to essential data structures like lists, arrays, dictionaries, and sets. Understanding when and how to use different data structures for efficient problem-solving."
                                 }
                             ],
                             "display": true
@@ -161,25 +155,19 @@
                                     "descriptor": {
                                         "name": "prerequisite1"
                                     },
-                                    "value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                                    "value": "Some familiarity with programming concepts is expected. This includes basic understanding of variables, loops, conditionals, and functions."
                                 },
                                 {
                                     "descriptor": {
                                         "name": "prerequisite2"
                                     },
-                                    "value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                                    "value": "Familiarity with using a code editor and running Python programs will be helpful. The course recommends specific code editors or tools."
                                 },
                                 {
                                     "descriptor": {
                                         "name": "prerequisite3"
                                     },
-                                    "value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-                                },
-                                {
-                                    "descriptor": {
-                                        "name": "prerequisite4"
-                                    },
-                                    "value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                                    "value": "Basic computer skills, including familiarity with using an operating system, managing files, and navigating the internet, are usually required."
                                 }
                             ],
                             "display": true

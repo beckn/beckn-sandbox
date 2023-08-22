@@ -47,11 +47,13 @@
                             "value": "0"
                         },
                         "id": "63f1ebc423df082856936510",
-                        "category_ids": ["Infrastructure-Management"],
+                        "category_ids": [
+                            "Infrastructure-Management"
+                        ],
                         "descriptor": {
                             "images": [
                                 {
-                                    "url": "https://loremflickr.com/640/480/abstract?random=fttu1nidzj"
+                                    "url": "https://flickr.com/640/480/abstract?asset=fttu1nidzj"
                                 }
                             ],
                             "code": "Class Room Management Level Tags Test 1",
@@ -59,7 +61,9 @@
                             "short_desc": "A level Tags Test 1 session on class room management for state schools and colleges.",
                             "long_desc": "A level Tags Test 1 session on class room management for state schools and colleges."
                         },
-                        "fulfillment_ids": ["3f8fb3a3-f018-40e6-9b96-8b7bbd5df965"],
+                        "fulfillment_ids": [
+                            "3f8fb3a3-f018-40e6-9b96-8b7bbd5df965"
+                        ],
                         "tags": [
                             {
                                 "display": true,
@@ -171,7 +175,9 @@
                 ],
                 "fulfillments": [
                     {
-                        "language": ["English"],
+                        "language": [
+                            "English"
+                        ],
                         "id": "3f8fb3a3-f018-40e6-9b96-8b7bbd5df965",
                         "time": {
                             "range": {

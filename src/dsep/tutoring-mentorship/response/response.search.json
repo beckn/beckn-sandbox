@@ -45,11 +45,13 @@
                                 "value": "0"
                             },
                             "id": "63f1ebc423df082856936510",
-                            "category_ids": ["Infrastructure-Management"],
+                            "category_ids": [
+                                "Infrastructure-Management"
+                            ],
                             "descriptor": {
                                 "images": [
                                     {
-                                        "url": "https://loremflickr.com/640/480/abstract?random=fttu1nidzj"
+                                        "url": "https://flickr.com/640/480/abstract?asset=fttu1nidzj"
                                     }
                                 ],
                                 "code": "Class Room Management Level Tags Test 1",
@@ -57,7 +59,9 @@
                                 "short_desc": "A level Tags Test 1 session on class room management for state schools and colleges.",
                                 "long_desc": "A level Tags Test 1 session on class room management for state schools and colleges."
                             },
-                            "fulfillment_ids": ["3f8fb3a3-f018-40e6-9b96-8b7bbd5df965"],
+                            "fulfillment_ids": [
+                                "3f8fb3a3-f018-40e6-9b96-8b7bbd5df965"
+                            ],
                             "tags": [
                                 {
                                     "display": true,
@@ -179,11 +183,13 @@
                                 "value": "0"
                             },
                             "id": "63f1ebdb23df082856936515",
-                            "category_ids": ["Infrastructure-Management"],
+                            "category_ids": [
+                                "Infrastructure-Management"
+                            ],
                             "descriptor": {
                                 "images": [
                                     {
-                                        "url": "https://loremflickr.com/640/480/abstract?random=cozijbxqte"
+                                        "url": "https://flickr.com/640/480/abstract?asset=cozijbxqte"
                                     }
                                 ],
                                 "code": "Class Room Management Level Tags Test 2",
@@ -191,7 +197,9 @@
                                 "short_desc": "A level Tags Test 2 session on class room management for state schools and colleges.",
                                 "long_desc": "A level Tags Test 2 session on class room management for state schools and colleges."
                             },
-                            "fulfillment_ids": ["90b1be26-2135-47b7-9c2c-fc8f16b8ddd5"],
+                            "fulfillment_ids": [
+                                "90b1be26-2135-47b7-9c2c-fc8f16b8ddd5"
+                            ],
                             "tags": [
                                 {
                                     "display": true,
@@ -313,11 +321,13 @@
                                 "value": "0"
                             },
                             "id": "63f1ebea23df08285693651a",
-                            "category_ids": ["Infrastructure-Management"],
+                            "category_ids": [
+                                "Infrastructure-Management"
+                            ],
                             "descriptor": {
                                 "images": [
                                     {
-                                        "url": "https://loremflickr.com/640/480/abstract?random=5jx7uw5tmn"
+                                        "url": "https://flickr.com/640/480/abstract?asset=5jx7uw5tmn"
                                     }
                                 ],
                                 "code": "Class Room Management Level Tags Test 3",
@@ -325,7 +335,9 @@
                                 "short_desc": "A level Tags Test 3 session on class room management for state schools and colleges.",
                                 "long_desc": "A level Tags Test 3 session on class room management for state schools and colleges."
                             },
-                            "fulfillment_ids": ["63af39b5-1cbf-4a34-a391-163af42a72bb"],
+                            "fulfillment_ids": [
+                                "63af39b5-1cbf-4a34-a391-163af42a72bb"
+                            ],
                             "tags": [
                                 {
                                     "display": true,
@@ -447,11 +459,13 @@
                                 "value": "0"
                             },
                             "id": "63f1ebf123df08285693651f",
-                            "category_ids": ["Infrastructure-Management"],
+                            "category_ids": [
+                                "Infrastructure-Management"
+                            ],
                             "descriptor": {
                                 "images": [
                                     {
-                                        "url": "https://loremflickr.com/640/480/abstract?random=j8zl7brg4d"
+                                        "url": "https://flickr.com/640/480/abstract?asset=j8zl7brg4d"
                                     }
                                 ],
                                 "code": "Class Room Management Level Tags Test 4",
@@ -459,7 +473,9 @@
                                 "short_desc": "A level Tags Test 4 session on class room management for state schools and colleges.",
                                 "long_desc": "A level Tags Test 4 session on class room management for state schools and colleges."
                             },
-                            "fulfillment_ids": ["55329940-f3af-4d1c-8a46-94921e2f6443"],
+                            "fulfillment_ids": [
+                                "55329940-f3af-4d1c-8a46-94921e2f6443"
+                            ],
                             "tags": [
                                 {
                                     "display": true,
@@ -581,11 +597,13 @@
                                 "value": "0"
                             },
                             "id": "63f1ebf823df082856936524",
-                            "category_ids": ["Infrastructure-Management"],
+                            "category_ids": [
+                                "Infrastructure-Management"
+                            ],
                             "descriptor": {
                                 "images": [
                                     {
-                                        "url": "https://loremflickr.com/640/480/abstract?random=ttus6jtuec"
+                                        "url": "https://flickr.com/640/480/abstract?asset=ttus6jtuec"
                                     }
                                 ],
                                 "code": "Class Room Management Level Tags Test 5",
@@ -593,7 +611,9 @@
                                 "short_desc": "A level Tags Test 5 session on class room management for state schools and colleges.",
                                 "long_desc": "A level Tags Test 5 session on class room management for state schools and colleges."
                             },
-                            "fulfillment_ids": ["1e0e527c-0877-4e9a-addc-222facbf7210"],
+                            "fulfillment_ids": [
+                                "1e0e527c-0877-4e9a-addc-222facbf7210"
+                            ],
                             "tags": [
                                 {
                                     "display": true,
@@ -715,11 +735,13 @@
                                 "value": "0"
                             },
                             "id": "63f1ec1e23df082856936529",
-                            "category_ids": ["Infrastructure-Management"],
+                            "category_ids": [
+                                "Infrastructure-Management"
+                            ],
                             "descriptor": {
                                 "images": [
                                     {
-                                        "url": "https://loremflickr.com/640/480/abstract?random=rx0aqrh044"
+                                        "url": "https://flickr.com/640/480/abstract?asset=rx0aqrh044"
                                     }
                                 ],
                                 "code": "Class Room Management Level Tags Test 6",
@@ -727,7 +749,9 @@
                                 "short_desc": "A level Tags Test 6 session on class room management for state schools and colleges.",
                                 "long_desc": "A level Tags Test 6 session on class room management for state schools and colleges."
                             },
-                            "fulfillment_ids": ["e45e438f-ff95-4ce5-a3f9-93037b5dbc30"],
+                            "fulfillment_ids": [
+                                "e45e438f-ff95-4ce5-a3f9-93037b5dbc30"
+                            ],
                             "tags": [
                                 {
                                     "display": true,
@@ -839,7 +863,9 @@
                     ],
                     "fulfillments": [
                         {
-                            "language": ["English"],
+                            "language": [
+                                "English"
+                            ],
                             "id": "3f8fb3a3-f018-40e6-9b96-8b7bbd5df965",
                             "time": {
                                 "range": {
@@ -890,7 +916,9 @@
                             "tracking": false
                         },
                         {
-                            "language": ["English"],
+                            "language": [
+                                "English"
+                            ],
                             "id": "90b1be26-2135-47b7-9c2c-fc8f16b8ddd5",
                             "time": {
                                 "range": {
@@ -941,7 +969,9 @@
                             "tracking": false
                         },
                         {
-                            "language": ["English"],
+                            "language": [
+                                "English"
+                            ],
                             "id": "63af39b5-1cbf-4a34-a391-163af42a72bb",
                             "time": {
                                 "range": {
@@ -992,7 +1022,9 @@
                             "tracking": false
                         },
                         {
-                            "language": ["English"],
+                            "language": [
+                                "English"
+                            ],
                             "id": "55329940-f3af-4d1c-8a46-94921e2f6443",
                             "time": {
                                 "range": {
@@ -1043,7 +1075,9 @@
                             "tracking": false
                         },
                         {
-                            "language": ["English"],
+                            "language": [
+                                "English"
+                            ],
                             "id": "1e0e527c-0877-4e9a-addc-222facbf7210",
                             "time": {
                                 "range": {
@@ -1094,7 +1128,9 @@
                             "tracking": false
                         },
                         {
-                            "language": ["English"],
+                            "language": [
+                                "English"
+                            ],
                             "id": "e45e438f-ff95-4ce5-a3f9-93037b5dbc30",
                             "time": {
                                 "range": {
@@ -1176,11 +1212,13 @@
                                 "value": "0"
                             },
                             "id": "63f3b4d023df082856936563",
-                            "category_ids": ["Infrastructure-Management"],
+                            "category_ids": [
+                                "Infrastructure-Management"
+                            ],
                             "descriptor": {
                                 "images": [
                                     {
-                                        "url": "https://loremflickr.com/640/480/abstract?random=nohfe1pvl9"
+                                        "url": "https://flickr.com/640/480/abstract?asset=nohfe1pvl9"
                                     }
                                 ],
                                 "code": "Second Provider Management Level Tags Test 1",
@@ -1188,7 +1226,9 @@
                                 "short_desc": "Second Provider Management Level Tags Test 1",
                                 "long_desc": "Second Provider Management Level Tags Test 1"
                             },
-                            "fulfillment_ids": ["91ad1056-4ad1-4a30-a5ee-ba38eb039dbe"],
+                            "fulfillment_ids": [
+                                "91ad1056-4ad1-4a30-a5ee-ba38eb039dbe"
+                            ],
                             "tags": [
                                 {
                                     "display": true,
@@ -1310,11 +1350,13 @@
                                 "value": "0"
                             },
                             "id": "63f3b4d723df082856936568",
-                            "category_ids": ["Infrastructure-Management"],
+                            "category_ids": [
+                                "Infrastructure-Management"
+                            ],
                             "descriptor": {
                                 "images": [
                                     {
-                                        "url": "https://loremflickr.com/640/480/abstract?random=ash44tmyxj"
+                                        "url": "https://flickr.com/640/480/abstract?asset=ash44tmyxj"
                                     }
                                 ],
                                 "code": "Second Provider Management Level Tags Test 2",
@@ -1322,7 +1364,9 @@
                                 "short_desc": "Second Provider Management Level Tags Test 2",
                                 "long_desc": "Second Provider Management Level Tags Test 2"
                             },
-                            "fulfillment_ids": ["aed2c622-2596-4cbc-a7da-b4879f7de98d"],
+                            "fulfillment_ids": [
+                                "aed2c622-2596-4cbc-a7da-b4879f7de98d"
+                            ],
                             "tags": [
                                 {
                                     "display": true,
@@ -1434,7 +1478,9 @@
                     ],
                     "fulfillments": [
                         {
-                            "language": ["English"],
+                            "language": [
+                                "English"
+                            ],
                             "id": "91ad1056-4ad1-4a30-a5ee-ba38eb039dbe",
                             "time": {
                                 "range": {
@@ -1485,7 +1531,9 @@
                             "tracking": false
                         },
                         {
-                            "language": ["English"],
+                            "language": [
+                                "English"
+                            ],
                             "id": "aed2c622-2596-4cbc-a7da-b4879f7de98d",
                             "time": {
                                 "range": {
