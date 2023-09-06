@@ -1,3 +1,3 @@
 export enum DentTypeEnum {
-    DENTEVCHARGIN = "dent:0.1.0",
+    DENTEVCHARGIN = "dent:ev-charging:0.1.0",
 }

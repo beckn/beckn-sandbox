@@ -10,10 +10,10 @@
     },
     "city": "std:080",
     "version": "1.1.0",
-    "bap_id": "example-bap.com",
-    "bap_uri": "https://api.example-bap.com/pilot/bap/energy/v1",
-    "bpp_id": "example-bpp.com",
-    "bpp_uri": "https://api.example-bpp.com/pilot/bpp/",
+    "bap_id": "ps-bap-network.becknprotocol.io",
+    "bap_url": "https://ps-bap-client.becknprotocol.io/",
+    "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+    "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
     "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
     "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
     "timestamp": "2023-07-16T04:41:16Z"
@@ -84,8 +84,8 @@
             {
               "time": {
                 "range": {
-                  "start": "10:00",
-                  "end": "10:30"
+                  "start": "2023-08-10T10:00:00Z",
+                  "end": "2023-08-10T10:30:00Z"
                 }
               }
             }
