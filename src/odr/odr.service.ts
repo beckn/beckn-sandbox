@@ -7,7 +7,6 @@ import * as SelectResponse from "./response/select.response.json";
 import * as ConfirmResponse from "./response/confirm.response.json";
 import * as RatingResponse from "./response/rating.response.json";
 import * as SupportResponse from "./response/support.response.json";
-import * as TrackResponse from "./response/track.response.json";
 
 @Injectable()
 export class ODRService implements ODRApiInterface {
@@ -38,8 +37,5 @@ export class ODRService implements ODRApiInterface {
     };
     update = (odrRequest: ODRClientDTO) => {
         return {};
-    };
-    track = (odrRequest: ODRClientDTO) => {
-        return TrackResponse;
     };
 }

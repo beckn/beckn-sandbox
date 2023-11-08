@@ -10,5 +10,4 @@ export interface ODRApiInterface {
     support: (odrRequest: ODRClientDTO) => any;
     rating: (odrRequest: ODRClientDTO) => any;
     update: (odrRequest: ODRClientDTO) => any;
-    track: (odrRequest: ODRClientDTO) => any;
 }

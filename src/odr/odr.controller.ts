@@ -51,8 +51,5 @@ export class ODRController {
         return this.odrService.status(odrRequest);
     }
 
-    @Post("/track")
-    track(@Body() odrRequest: ODRClientDTO) {
-        return this.odrService.track(odrRequest);
     }
 }
