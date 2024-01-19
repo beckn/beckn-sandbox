@@ -1413,16 +1413,16 @@
 	"variable": [
 		{
 			"key": "BASE_URL",
-			"value": "https://sandbox-bap-client.becknprotocol.io"
+			"value": "https://ps-bap-client.becknprotocol.io"
 		},
 		{
 			"key": "BAP_ID",
-			"value": "beckn-sandbox-bap.becknprotocol.io",
+			"value": "ps-bap-network.becknprotocol.io",
 			"type": "string"
 		},
 		{
 			"key": "BAP_URI",
-			"value": "https://sandbox-bap-network.becknprotocol.io",
+			"value": "https://ps-bap-network.becknprotocol.io",
 			"type": "string"
 		},
 		{
