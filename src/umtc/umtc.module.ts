@@ -1,9 +1,9 @@
 import { Module } from "@nestjs/common";
-
-import { UmtcApiService } from "./umtc-api.service";
-import { UmtcService } from "./umtc.service";
+import { UMTCService } from "./umtc.service";
+import { UMTCController } from "./umtc.controller";
 
 @Module({
-    providers: [UmtcService, UmtcApiService],
+    controllers: [UMTCController],
+    providers: [UMTCService],
 })
-export class UmtcModule {}
+export class UMTCModule {}

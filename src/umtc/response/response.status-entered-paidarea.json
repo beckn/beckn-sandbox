@@ -10,11 +10,11 @@
             }
         },
         "version": "1.1.0",
-        "action": "on_cancel",
+        "action": "on_status",
         "bap_id": "https://example-bap.com",
-        "bap_uri": "https://api.example-bap.com/beckn/",
-        "bpp_id": "https://transit-solutions.com",
-        "bpp_uri": "https://api.transit-solutions.com/beckn/",
+        "bap_uri": "https://mock_bap.com/beckn/",
+        "bpp_id": "https://kmrl-bpp.com",
+        "bpp_uri": "https://kmrl-bpp.com/beckn/",
         "transaction_id": "6f339232-2bc3-44d2-915c-30d2b053ce1d",
         "message_id": "fde8b8b6-c2e5-49f7-b254-720843d528bd",
         "timestamp": "2021-03-23T10:00:40.065Z"
@@ -33,23 +33,7 @@
                     "price": {
                         "currency": "55",
                         "value": "INR"
-                    },
-                    "tags": [
-                        {
-                            "descriptor": {
-                                "name": "Other Information"
-                            },
-                            "list": [
-                                {
-                                    "descriptor": {
-                                        "name": "Validity"
-                                    },
-                                    "value": "24 hours from the time of purchase",
-                                    "display": true
-                                }
-                            ]
-                        }
-                    ]
+                    }
                 }
             ],
             "provider": {
@@ -64,7 +48,7 @@
                     "id": "3",
                     "state": {
                         "descriptor": {
-                            "name": "Ticket Cancelled"
+                            "name": "Entered paid area"
                         }
                     },
                     "stops": [
@@ -78,9 +62,6 @@
                             },
                             "time": {
                                 "timestamp": "2021-10-15T00:32:19.000Z"
-                            },
-                            "instructions": {
-                                "name": "Show this ticket at the QR code scanner at the entry gate. If the QR code scanner is not present, show this at the ticket counter to get your token"
                             }
                         },
                         {
@@ -124,13 +105,6 @@
                     ]
                 }
             ],
-            "cancellation_terms": [
-                {
-                    "external_ref": {
-                        "url": "https://dmrc.com/fare_products/sjt/cancellation_terms.html"
-                    }
-                }
-            ],
             "billing": {
                 "name": "John Doe",
                 "email": "john.doe@example.com"
@@ -166,13 +140,12 @@
             },
             "payments": [
                 {
-                    "type": "POST-FULFILLMENT",
-                    "status": "NOT-PAID",
+                    "status": "PAID",
+                    "url": "https://pay.razorpay.com?amt=60.5&cur=INR&ref=24566345563",
                     "params": {
-                        "amount": "10",
+                        "amount": "60.5",
                         "currency": "INR",
-                        "bank_account_number": "32756678999",
-                        "bank_code": "SBIN0000575"
+                        "transaction_id": "24566345563"
                     },
                     "time": {
                         "range": {

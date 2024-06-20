@@ -1,9 +1,9 @@
 import { Module } from "@nestjs/common";
-
-import { OndcApiService } from "./ondc-api.service";
-import { OndcService } from "./ondc.service";
+import { ONDCService } from "./ondc.service";
+import { ONDCController } from "./ondc.controller";
 
 @Module({
-    providers: [OndcService, OndcApiService],
+    controllers: [ONDCController],
+    providers: [ONDCService],
 })
-export class OndcModule {}
+export class ONDCModule {}

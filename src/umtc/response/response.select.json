@@ -1,78 +1,120 @@
 {
     "context": {
-        "domain": "mobility:publictransport:0.8.0",
-        "core_version": "0.9.4",
+        "domain": "mobility:publictransport",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "version": "1.1.0",
         "action": "on_select",
-        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
-        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io",
-        "country": "IND",
-        "city": "std:080",
-        "bap_id": "beckn-sandbox-bap.becknprotocol.io",
-        "bap_uri": "https://sandbox-bap-network.becknprotocol.io",
-        "transaction_id": "7afe44fd-d947-4a0a-81bc-d286784df2c1",
-        "message_id": "ed03186e-b2e6-4854-a7bb-7bf9d0185cc2",
-        "ttl": "PT10M",
-        "timestamp": "2023-05-24T12:00:14.082Z"
+        "bap_id": "https://example-bap.com",
+        "bap_uri": "https://mock_bap.com/beckn/",
+        "bpp_id": "https://transit-solutions.com",
+        "bpp_uri": "https://api.transit-solutions.com/beckn/",
+        "transaction_id": "6f339232-2bc3-44d2-915c-30d2b053ce1d",
+        "message_id": "fde8b8b6-c2e5-49f7-b254-720843d528bd",
+        "timestamp": "2021-03-23T10:00:40.065Z"
     },
     "message": {
         "order": {
-            "id": "22e090fc-b8b1-4437-9126-ff7a71c7845c",
+            "id": "123413",
             "items": [
                 {
-                    "id": "1",
+                    "id": "3",
                     "descriptor": {
                         "name": "Single Journey Ticket",
-                        "images": ["https://dtc.delhi.gov.in/icons/sjt.ico"]
+                        "images": ["https://delhimetrorail.com/icons/sjt.ico"]
                     },
-                    "fulfillment_id": "1",
+                    "fulfillment_ids": ["3"],
                     "price": {
-                        "currency": "INR",
-                        "value": "55"
+                        "currency": "55",
+                        "value": "INR"
                     },
-                    "tags": {
-                        "groups/0/list/0/descriptor/name": "Validity",
-                        "groups/0/list/0/value": "24 hours from the time of purchase"
-                    }
+                    "tags": [
+                        {
+                            "descriptor": null,
+                            "name": "Other Information",
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "Validity"
+                                    },
+                                    "value": "24 hours from the time of purchase",
+                                    "display": true
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "provider": {
                 "id": "1",
                 "descriptor": {
-                    "name": "Delhi Transport Corporation",
-                    "images": ["https://dtc.delhi.gov.in/logos/logo.ico"]
+                    "name": "Delhi Metro Rail Limited",
+                    "images": ["https://delhimetrorail.com/logos/logo.ico"]
                 }
             },
-            "fulfillment": {
-                "id": "1",
-                "start": {
-                    "location": {
-                        "descriptor": {
-                            "name": "Dwarka Sector 10"
+            "fulfillments": [
+                {
+                    "id": "3",
+                    "stops": [
+                        {
+                            "type": "start",
+                            "location": {
+                                "descriptor": {
+                                    "name": "Dwarka Sector 21"
+                                },
+                                "gps": "9.05,12.06"
+                            },
+                            "time": {
+                                "timestamp": "2021-10-15T00:32:19.000Z"
+                            }
                         },
-                        "gps": "28.5811261,77.0548206"
-                    }
-                },
-                "end": {
-                    "location": {
-                        "descriptor": {
-                            "name": "Patel Chowk"
-                        },
-                        "gps": "28.6230972,77.2099917"
-                    }
-                },
-                "vehicle": {
-                    "category": "BUS"
-                },
-                "tags": {
-                    "groups/0/list/0/descriptor/name": "Transfers",
-                    "groups/0/list/0/value": "0",
-                    "groups/0/list/1/descriptor/name": "Duration",
-                    "groups/0/list/1/value": "60 min",
-                    "groups/0/list/2/descriptor/name": "Route Number",
-                    "groups/0/list/2/value": "680"
-                },
-                "tracking": false
-            },
+                        {
+                            "type": "end",
+                            "location": {
+                                "descriptor": {
+                                    "name": "Shivaji Stadium"
+                                },
+                                "gps": "9.07,12.07"
+                            },
+                            "time": {
+                                "timestamp": "2021-10-15T00:43:21.000Z"
+                            }
+                        }
+                    ],
+                    "vehicle": {
+                        "category": "METRO"
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "name": "Other Information"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "Transfers"
+                                    },
+                                    "value": "1",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Duration"
+                                    },
+                                    "value": "30 min",
+                                    "display": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
             "quote": {
                 "price": {
                     "value": "60.5",

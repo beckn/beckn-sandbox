@@ -10,7 +10,7 @@
             }
         },
         "version": "1.1.0",
-        "action": "on_cancel",
+        "action": "on_confirm",
         "bap_id": "https://example-bap.com",
         "bap_uri": "https://api.example-bap.com/beckn/",
         "bpp_id": "https://transit-solutions.com",
@@ -64,7 +64,7 @@
                     "id": "3",
                     "state": {
                         "descriptor": {
-                            "name": "Ticket Cancelled"
+                            "name": "Ticket issued"
                         }
                     },
                     "stops": [
@@ -169,8 +169,9 @@
                     "type": "POST-FULFILLMENT",
                     "status": "NOT-PAID",
                     "params": {
-                        "amount": "10",
+                        "amount": "60.5",
                         "currency": "INR",
+                        "transaction_id": "24566345563",
                         "bank_account_number": "32756678999",
                         "bank_code": "SBIN0000575"
                     },

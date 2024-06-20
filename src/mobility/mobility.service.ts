@@ -1,6 +1,6 @@
 import { DomainNotFoundException } from "src/common/exception/domain-notfound.exception";
 import { OndcApiService } from "src/ondc/ondc-api.service";
-import { UmtcApiService } from "src/umtc/umtc-api.service";
+import { UmtcApiService } from "src/umtc/umtc-api.interface";
 
 import { Injectable } from "@nestjs/common";
 

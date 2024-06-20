@@ -1,18 +1,21 @@
 {
     "context": {
         "country": "IND",
+        "bpp_uri": "https://api.example-bpp.com/dobpp/beckn/7f7896dd-787e-4a0b-8675-e9e6fe93bb8f",
         "domain": "mobility:ondemand",
         "timestamp": "2023-03-23T04:48:53Z",
         "bap_id": "example-bap.com",
+        "bpp_id": "example-bpp.com",
+        "transaction_id": "b580c989-f84d-4abe-af28-2c818aafce3b",
         "message_id": "8926b747-0362-4fcc-b795-0994a6287700",
-        "transaction_id": "870782be-6757-43f1-945c-8eeaf9536259",
         "city": "std:080",
         "core_version": "0.9.4",
-        "action": "on_select",
+        "action": "on_cancel",
         "bap_uri": "https://api.example-bap.com/pilot/bap/cab/v1"
     },
     "message": {
         "order": {
+            "id": "7751bd26-3fdc-47ca-9b64-e998dc5abe68",
             "provider": {
                 "id": "e8542642-0f4a-454c-9a9f-f46110c367a3",
                 "descriptor": {
@@ -73,35 +76,22 @@
                 }
             ],
             "quote": {
-                "value": "76",
-                "currency": "INR",
-                "breakup": [
-                    {
-                        "title": "Base Fare",
-                        "price": {
-                            "value": "30",
-                            "currency": "INR"
-                        }
-                    },
-                    {
-                        "title": "Per km fare",
-                        "price": {
-                            "value": "56",
-                            "currency": "INR"
-                        }
-                    }
-                ],
-                "ttl": "P200S"
+                "value": "0",
+                "currency": "INR"
             },
             "fulfillment": {
                 "id": "fulf_5cf064d5-4c0a-42d3-b73d-5f19a6f7468e",
                 "state": {
                     "descriptor": {
-                        "name": "Found drivers",
-                        "code": "AGENTS_FOUND"
+                        "code": "RIDE_CANCELLED",
+                        "name": "Oops! The driver had to cancel"
                     }
                 },
                 "start": {
+                    "authorization": {
+                        "type": "OTP",
+                        "token": "234234"
+                    },
                     "location": {
                         "gps": "13.008935, 77.6444085",
                         "address": {
@@ -135,13 +125,40 @@
                 },
                 "agent": {
                     "name": "RAGHAVENDRA J",
+                    "phone": "+91-98978675645",
                     "rateable": true,
                     "rating": "5"
                 },
                 "vehicle": {
-                    "category": "AUTO_RICKSHAW"
+                    "category": "AUTO_RICKSHAW",
+                    "registration": "KA01JG1231"
+                },
+                "customer": {
+                    "person": {
+                        "name": "John Doe",
+                        "phone": "+91-9897867564",
+                        "tags": {
+                            "groups/1/descriptor/name": "Localization",
+                            "groups/1/descriptor/code": "localization",
+                            "groups/1/display": "false",
+                            "groups/1/list/1/descriptor/code": "lang",
+                            "groups/1/list/1/descriptor/name": "Language",
+                            "groups/1/list/1/value": "en"
+                        }
+                    }
                 }
-            }
+            },
+            "payments": [
+                {
+                    "id": "7f7896dd-787e-4a0b-8675-e9e6fe93bb8f",
+                    "type": "POST-FULFILLMENT",
+                    "params": {
+                        "amount": "0",
+                        "currency": "INR",
+                        "transaction_status": "CANCELLED"
+                    }
+                }
+            ]
         }
     }
 }
