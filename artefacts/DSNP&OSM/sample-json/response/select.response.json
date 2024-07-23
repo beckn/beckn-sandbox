@@ -1,0 +1,120 @@
+{
+    "context": {
+        "domain": "localretail:shopping",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "action": "on_select",
+        "version": "1.1.0",
+        "bap_id": "dsnp-bap-id",
+        "bap_uri": "https://55a6-124-123-32-28.ngrok-free.app",
+        "bpp_id": "dsnp-bpp-id",
+        "bpp_uri": "https://4e21-124-123-32-28.ngrok-free.app",
+        "message_id": "6104c0a3-d1d1-4ded-aaa4-76e4caf727ce",
+        "transaction_id": "8100d125-76a7-4588-88be-81b97657cd09",
+        "timestamp": "2023-11-06T09:41:09.708Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "af304e37-2a64-4d7d-b61c-8cbb79b48d9f",
+                "descriptor": {
+                    "name": "WorldHikes",
+                    "images": [{ "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4CQBASVPFbCXIytAUZF7c00_dS-2bSmF1huQXWmnCg&s" }],
+                    "short_desc": "WorldHikes is dedicated to serving outdoor enthusiasts with top-quality trekking gear for their adventures around the globe. From premium sunglasses and ergonomic backpacks to efficient camping stoves and reliable headlamps, we ensure that every hiker is equipped with the best tools for their journey. Join us in exploring the world's most breathtaking trails!"
+                },
+                "locations": [
+                    {
+                        "id": "1",
+                        "gps": "12.936938,77.695088"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "2e0c2b39-84d2-4b58-af8b-8b6d7b0c3f97",
+                    "descriptor": {
+                        "images": [{ "url": "https://m.media-amazon.com/images/I/61kQ4hs3LpL._AC_UY1100_.jpg" }],
+                        "name": "Adventure Sunglasses",
+                        "short_desc": "Experience the outdoors in style with our Adventure Sunglasses. These high-quality sunglasses provide UV protection and are designed for maximum comfort during your treks and hikes.",
+                        "long_desc": "<p>Upgrade your outdoor adventures with our Adventure Sunglasses. Whether you're trekking through rugged terrain or relaxing at the campsite, these sunglasses offer superior UV protection and glare reduction. Featuring durable frames and polarized lenses, they provide clarity and comfort in any environment.</p>"
+                    },
+                    "matched": true,
+                    "quantity": {
+                        "selected": {
+                            "count": 2
+                        }
+                    },
+                    "price": {
+                        "listed_value": "999.0",
+                        "currency": "INR",
+                        "value": "999.0"
+                    },
+                    "recommended": true,
+                    "location_ids": ["1"],
+                    "category_ids": ["c1"],
+                    "fulfillment_ids": ["1"],
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "name": "search-tags"
+                            },
+                            "list": [
+                                {
+                                    "value": "sunglasses"
+                                },
+                                {
+                                    "value": "adventure"
+                                },
+                                {
+                                    "value": "UV protection"
+                                },
+                                {
+                                    "value": "hiking"
+                                },
+                                {
+                                    "value": "trekking"
+                                },
+                                {
+                                    "value": "outdoor gear"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "2000.0"
+                },
+                "breakup": [
+                    {
+                        "title": "base-price",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1998.0"
+                        }
+                    },
+                    {
+                        "title": "taxes",
+                        "price": {
+                            "currency": "INR",
+                            "value": "2.0"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

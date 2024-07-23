@@ -1,0 +1,154 @@
+{
+  "context": {
+    "domain": "financial-services:mutual-funds:0.2.0",
+    "location": {
+      "country": {
+        "code": "IND"
+      }
+    },
+    "version": "1.1.0",
+    "action": "on_init",
+    "bap_id": "ps-bap-network.becknprotocol.io",
+    "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+    "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+    "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+    "message_id": "bb579fb8-cb82-4824-be12-fcbc405b6608",
+    "ttl": "PT30M",
+    "timestamp": "2023-05-25T05:23:03.443Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "1",
+        "descriptor": {
+          "images": [
+            {
+              "url": "https://www.hdfcfunds.com/content/dam/abc/india/assets/images/header/logo.png",
+              "size_type": "sm"
+            }
+          ],
+          "name": "HDFC Midcap Opportunities Fund",
+          "short_desc": "HDFC Midcap Opportunities Fund"
+        }
+      },
+      "items": [
+        {
+          "id": "MFLC001",
+          "descriptor": {
+            "name": "ABC Large Cap Mutual Fund"
+          },
+          "xinput": {
+            "head": {
+              "descriptor": {
+                "name": "Account Information"
+              },
+              "index": {
+                "min": 0,
+                "cur": 1,
+                "max": 1
+              },
+              "headings": [
+                "Account Information",
+                "Agreement"
+              ]
+            },
+            "form": {
+              "mime_type": "text/html",
+              "url": "https://6vs8xnx5i7.abcmf.co.in/mf-agreement/xinput/formid/a23f2fdfbbb8ac402bfd54f",
+              "id": "1c46b168-83ae-46ad-ac8a-d3c05870252c",
+              "resubmit": false,
+              "multiple_sumbissions": false
+            },
+            "required": true
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "customer": {
+            "id": "pan:ABCDE9999Z",
+            "person": {
+              "name": "Alice"
+            },
+            "contact": {
+              "phone": "+91-9999199991",
+              "email": "alice@example.com"
+            }
+          },
+          "state": {
+            "descriptor": {
+              "name": "Mutual Fund Order Initialized"
+            }
+          },
+          "stops": [
+            {
+              "authorization": {
+                "type": "OTP"
+              }
+            }
+          ]
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "100000"
+        },
+        "breakup": [
+          {
+            "descriptor": {
+              "name": "Unit price"
+            },
+            "price": {
+              "value": "80",
+              "currency": "INR"
+            },
+            "quantity": {
+              "allocated": {
+                "measure": {
+                  "value": "1250",
+                  "unit": "units"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "billing": {
+        "name": "Charles D'Souza",
+        "email": "charles@equitygrow.in"
+      },
+      "payments": [
+        {
+          "type": "PRE-ORDER",
+          "url": "https://payment.abcmutalfunds.in",
+          "params": {
+            "amount": "5000",
+            "currency": "INR"
+          },
+          "status": "NOT-PAID",
+          "time": {
+            "range": {
+              "start": "2023-06-01T00:00:00.00Z",
+              "end": "2023-06-30T23:59:59.00Z"
+            }
+          }
+        }
+      ],
+      "cancellation_terms": [
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "name": "Terms"
+            }
+          },
+          "external_ref": {
+            "mimetype": "text/html",
+            "url": "https://abcmutalfunds.com/mf/tnc.html"
+          }
+        }
+      ]
+    }
+  }
+}

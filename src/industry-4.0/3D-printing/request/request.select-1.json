@@ -1,0 +1,44 @@
+{
+    "context": {
+        "domain": "supply-chain-services:3d-printing",
+        "location": {
+            "country": {
+                "code": "DE"
+            }
+        },
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+        "message_id": "13abc9ad-3d5e-4f68-83cb-d85f96b81cd5",
+        "action": "select",
+        "timestamp": "2023-05-25T05:23:03.443Z",
+        "version": "1.1.0",
+        "bap_uri": "https://supply-chain-protocol-network.becknprotocol.io/",
+        "bap_id": "supply-chain-protocol.becknprotocol.io",
+        "ttl": "PT10M",
+        "bpp_id": "bpp.supply-chain.makerspace.io",
+        "bpp_uri": "https://bpp.supply-chain.makerspace.io"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "1"
+            },
+            "items": [
+                {
+                    "id": "66b7b9bad166-4a3f-ada6-ca063dc9d321"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "f1"
+                }
+            ],
+            "tags": [
+                {
+                    "descriptor": {
+                        "name": "select-1"
+                    }
+                }
+            ]
+        }
+    }
+}

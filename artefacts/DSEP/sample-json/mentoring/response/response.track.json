@@ -1,0 +1,22 @@
+{
+    "context": {
+        "domain": "dsep:mentoring",
+        "action": "on_track",
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "timestamp": "2023-02-22T12:21:30.354Z",
+        "ttl": "PT10M",
+        "message_id": "2b749cba-1219-4878-a5c6-ad0c6488fe5d",
+        "transaction_id": "bdb5ba09-2241-4f00-b434-73466cd06228"
+    },
+    "message": {
+        "tracking": {
+            "id": "66666ahhf9u385",
+            "url": "http://www.tracking-url-for-mentoring-test.com",
+            "status": "active"
+        }
+    }
+}

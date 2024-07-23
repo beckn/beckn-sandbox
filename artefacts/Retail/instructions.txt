@@ -1,0 +1,1 @@
+The transaction ID obtained from a on_search response must be applied to all subsequent requests throughout the entire process.

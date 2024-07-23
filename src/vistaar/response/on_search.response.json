@@ -1,0 +1,110 @@
+{
+    "context": {
+        "domain": "knowledge-advisory:agrinet:vistaar",
+        "action": "on_search",
+        "location": {
+            "country": {
+                "name": "India",
+                "code": "IND"
+            },
+            "city": {
+                "name": "Balangir"
+            }
+        },
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_url": "https://ps-bap-client.becknprotocol.io",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io",
+        "transaction_id": "7b3d0c62-7c1b-4c6b-b768-14f81b6c3c90",
+        "message_id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+        "timestamp": "2024-07-02T09:15:30Z"
+    },
+    "message": {
+        "catalog": {
+            "descriptor": {
+                "name": "Cotton Aphid"
+            },
+            "providers": [
+                {
+                    "id": "19a02a67-d2f0-4ea7-b7e1-b2cf4fa57f56",
+                    "descriptor": {
+                        "name": "Agri Acad",
+                        "short_desc": "Agri Academic aggregator",
+                        "images": [
+                            {
+                                "url": "https://agri_acad.example.org/logo.png"
+                            }
+                        ]
+                    },
+                    "items": [
+                        {
+                            "id": "9875",
+                            "descriptor": {
+                                "name": "Cotton aphid: Aphis gossypii (Aphididae: Hemiptera)",
+                                "short_desc": "TNAU Agritech portal. Aphid management",
+                                "long_desc": "Avoid late sowing. Treat seeds with Beauveria bassiana @ 10 g/kg. Apply nitrogenous fertilizers judiciously. Grow cowpea as intercrop or on the bunds to increase the natural enemy build up. Spray any one of the following insecticides when pest population reaches ETL: Imidacloprid 17.8% SL 40 – 50 ml/acre or Azadirachtin 0.03% EC 1000 ml/acre or Buprofezin 25%SC 400 ml/acre or Diafenthiuron 50%WP 240 g/acre or Thiacloprid 21.7%SC 40-50 ml/acre or Flonicamid 50% WG 60 g/acre or Thiamethoxam 25% WG 40 g/acre"
+                            }
+                        },
+                        {
+                            "id": "4321",
+                            "descriptor": {
+                                "name": "Cotton aphid: Aphis gossypii",
+                                "short_desc": "Cotton aphid and management",
+                                "long_desc": "",
+                                "media": [
+                                    {
+                                        "mimetype": "application/pdf",
+                                        "url": "https://agritech.tnau.ac.in/itk/pdf/itk_cotton.pdf"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "8977",
+                            "descriptor": {
+                                "name": "Aphids Pest Management in Cotton Farming - Hindi Video",
+                                "short_desc": "Control the Aphids in cotton farming by following the information provided in the video. ",
+                                "long_desc": "",
+                                "media": [
+                                    {
+                                        "mimetype": "video/mp4",
+                                        "url": "https://www.youtube.com/watch?v=bupCtQNfecg"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "5e899a32-72f3-48e1-9156-5b1302c1f32a",
+                    "descriptor": {
+                        "name": "Farming videos",
+                        "short_desc": "Farming video repository",
+                        "images": [
+                            {
+                                "url": "https:/farm_video.example.org/logo.png"
+                            }
+                        ]
+                    },
+                    "items": [
+                        {
+                            "id": "53453",
+                            "descriptor": {
+                                "name": "Aphid, Thrips control in cotton",
+                                "short_desc": "Aphid control in cotton",
+                                "long_desc": "",
+                                "media": [
+                                    {
+                                        "mimetype": "video/mp4",
+                                        "url": "https://www.youtube.com/watch?v=SBs68VHPXUs"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

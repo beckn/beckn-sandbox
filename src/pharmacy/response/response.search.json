@@ -1,0 +1,255 @@
+{
+    "context": {
+        "domain": "dhp:pharmacy:0.1.0",
+        "action": "on_search",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_url": "https://ps-bap-client.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "timestamp": "2023-07-16T04:41:16Z"
+    },
+    "message": {
+        "catalog": {
+            "descriptor": {
+                "name": "Available Pharmacy Stores"
+            },
+            "providers": [
+                {
+                    "id": "e92e7a6e-1f20-4a8d-b343-956e0d45a48c",
+                    "descriptor": {
+                        "name": "QuickPharma",
+                        "short_desc": "QuickPharma Pvt Ltd",
+                        "images": [
+                            {
+                                "url": "https://QuickPharma.in/images/logo.png"
+                            }
+                        ]
+                    },
+                    "categories": [
+                        {
+                            "id": "cat-01",
+                            "descriptor": {
+                                "code": "pharmacy",
+                                "name": "Pharmacy"
+                            }
+                        }
+                    ],
+                    "locations": [
+                        {
+                            "id": "phr-loc-01",
+                            "gps": "12.9164682,77.6089985"
+                        },
+                        {
+                            "id": "phr-loc-02",
+                            "gps": "12.91671,77.6092983"
+                        }
+                    ],
+                    "fulfillments": [
+                        {
+                            "id": "ful-01",
+                            "type": "IN-STORE-PICKUP",
+                            "stops": [
+                                {
+                                    "type": "start",
+                                    "time": {
+                                        "timestamp": "2023-09-15T08:00:00Z"
+                                    }
+                                },
+                                {
+                                    "type": "end",
+                                    "time": {
+                                        "timestamp": "2023-09-15T18:30:00Z"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ful-02",
+                            "type": "HOME-DELIVERY",
+                            "stops": [
+                                {
+                                    "type": "start",
+                                    "time": {
+                                        "timestamp": "2023-09-15T08:00:00Z"
+                                    }
+                                },
+                                {
+                                    "type": "end",
+                                    "time": {
+                                        "timestamp": "2023-09-15T18:30:00Z"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "fb0999b7-7755-46d6-a2ed-b286b7c98436",
+                            "descriptor": {
+                                "code": "benadryl",
+                                "name": "Benadryl cough syrup"
+                            },
+                            "category_ids": [
+                                "cat-01"
+                            ],
+                            "fulfillment_ids": [
+                                "ful-02",
+                                "ful-01"
+                            ],
+                            "location_ids": [
+                                "phr-loc-01"
+                            ],
+                            "price": {
+                                "value": "100",
+                                "currency": "INR"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "measure": {
+                                        "value": "1000",
+                                        "unit": "units"
+                                    }
+                                },
+                                "maximum": {
+                                    "measure": {
+                                        "value": "5",
+                                        "unit": "units"
+                                    }
+                                }
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "symptoms",
+                                        "name": "Works against these symptoms"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "symptom-list"
+                                            },
+                                            "value": "cough, code, nausea, headache, phelgm"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "1cef39d8-72d0-46f7-99ca-3f18f4bda8e3",
+                            "descriptor": {
+                                "code": "hycodan",
+                                "name": "Hycodan"
+                            },
+                            "category_ids": [
+                                "cat-01"
+                            ],
+                            "fulfillment_ids": [
+                                "ful-02",
+                                "ful-01"
+                            ],
+                            "location_ids": [
+                                "phr-loc-01"
+                            ],
+                            "price": {
+                                "value": "150",
+                                "currency": "INR"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "measure": {
+                                        "value": "1000",
+                                        "unit": "units"
+                                    }
+                                },
+                                "maximum": {
+                                    "measure": {
+                                        "value": "5",
+                                        "unit": "units"
+                                    }
+                                }
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "symptoms",
+                                        "name": "Works against these symptoms"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "symptom-list"
+                                            },
+                                            "value": "cough, code, nausea, headache, phelgm"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5cbc6e9d-28f4-42c7-b81e-41a336ac96ea",
+                            "descriptor": {
+                                "code": "mucinex-dm",
+                                "name": "Mucinex DM"
+                            },
+                            "category_ids": [
+                                "cat-01"
+                            ],
+                            "fulfillment_ids": [
+                                "ful-02",
+                                "ful-01"
+                            ],
+                            "location_ids": [
+                                "phr-loc-01"
+                            ],
+                            "price": {
+                                "value": "180",
+                                "currency": "INR"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "measure": {
+                                        "value": "1000",
+                                        "unit": "units"
+                                    }
+                                },
+                                "maximum": {
+                                    "measure": {
+                                        "value": "5",
+                                        "unit": "units"
+                                    }
+                                }
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "symptoms",
+                                        "name": "Works against these symptoms"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "symptom-list"
+                                            },
+                                            "value": "cough, code, nausea, headache, phelgm"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

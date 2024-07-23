@@ -1,0 +1,89 @@
+{
+    "context": {
+        "domain": "logistics",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:0806"
+            }
+        },
+        "action": "init",
+        "version": "1.1.0",
+        "bap_id": "logistics_bap",
+        "bap_uri": "https://logistics_bap.com",
+        "bpp_id": "logistics_bpp",
+        "bpp_uri": "https://logistics_bpp.com",
+        "transaction_id": "aa77b78e-66b0-47a5-9560-527a36cf0d9f",
+        "message_id": "9d498536-4dba-4c69-a47e-bed245623ecc",
+        "timestamp": "2024-01-15T16:00:00.000Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "P1"
+            },
+            "items": [
+                {
+                    "id": "I1",
+                    "quantity": {
+                        "selected": {
+                            "count": "5",
+                            "measure": {
+                                "unit": "KG"
+                            }
+                        }
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Road-Shipping",
+                    "stops": [
+                        {
+                            "type": "Pickup",
+                            "location": {
+                                "gps": "14.785638,76.454553",
+                                "area_code": "320042"
+                            },
+                            "time": {
+                                "timestamp": "2024-01-15T16:00:00.000Z"
+                            },
+                            "customer": {
+                                "person": {
+                                    "name": "Paul Sterling"
+                                },
+                                "contact": {
+                                    "phone": "+913333333333"
+                                }
+                            }
+                        },
+                        {
+                            "type": "Drop",
+                            "location": {
+                                "gps": "14.433424,77.928379",
+                                "area_code": "320042"
+                            },
+                            "customer": {
+                                "person": {
+                                    "name": "Anand Ahuja"
+                                },
+                                "contact": {
+                                    "phone": "+914444444444"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "billing": {
+                "name": "Paul Sterling",
+                "phone": "+913333333333",
+                "email": "sample@gmail.com"
+            }
+        }
+    }
+}

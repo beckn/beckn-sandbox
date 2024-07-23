@@ -1,0 +1,184 @@
+{
+    "context": {
+        "domain": "dhp:diagnostics:0.1.0",
+        "action": "on_cancel",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_url": "https://ps-bap-client.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "timestamp": "2023-07-16T04:41:16Z"
+    },
+    "message": {
+        "order": {
+            "id": "be69bb43-8286-48b4-801f-a8c5b41ad450",
+            "provider": {
+                "id": "289edce4-d002-4962-b311-4c025e22b4f6",
+                "descriptor": {
+                    "name": "GioLabs Pvt Ltd",
+                    "short_desc": "X-rays, tests and more",
+                    "long_desc": "Advanced diagnostics & precise testing at XYZ Pathology Lab. Fast, accurate results for informed healthcare decisions.",
+                    "images": [
+                        {
+                            "url": "https://giolabs.in/images/logo.png"
+                        }
+                    ],
+                    "media": [
+                        {
+                            "mimetype": "application/pdf",
+                            "url": "https://www.aiims.com/honours/237402938409485039850935"
+                        },
+                        {
+                            "mimetype": "application/pdf",
+                            "url": "https://www.aiims.com/honours/2374029384094850394240935"
+                        }
+                    ]
+                },
+                "rating": "4.5"
+            },
+            "items": [
+                {
+                    "id": "lab-test-01",
+                    "descriptor": {
+                        "code": "ecg",
+                        "name": "Electrocardiogram test"
+                    },
+                    "price": {
+                        "value": "3000",
+                        "currency": "INR"
+                    },
+                    "category_ids": ["cat-01"],
+                    "fulfillment_ids": ["ful-01", "ful-02"]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "ful-01",
+                    "type": "walk-in",
+                    "stops": [
+                        {
+                            "type": "end",
+                            "time": {
+                                "range": {
+                                    "start": "0000-00-00T10:00:00Z",
+                                    "end": "0000-00-00T18:00:00Z"
+                                },
+                                "days": "1,2,3,4,5,6,7",
+                                "schedule": {
+                                    "holidays": ["2024-12-10T00:00:00.000Z", "2024-12-11T00:00:00.000Z", "2024-12-12T00:00:00.000Z"]
+                                }
+                            },
+                            "location": {
+                                "gps": "12.9716890, 77.5946890",
+                                "address": "Akashya nagar B17/14",
+                                "state": {
+                                    "name": "Madhya Pradesh"
+                                },
+                                "city": {
+                                    "name": "Bhopal"
+                                },
+                                "area_code": "462001"
+                            }
+                        }
+                    ],
+                    "customer": {
+                        "person": {
+                            "name": "Rajesh Kumar",
+                            "age": "26",
+                            "gender": "M",
+                            "dob": "1995-09-11"
+                        },
+                        "contact": {
+                            "phone": "+91-9999999999",
+                            "email": "rajesh.kumar@example.com"
+                        }
+                    },
+                    "agent": {
+                        "person": {
+                            "id": "237402938409485039850935",
+                            "name": "Mr. Shivam Arora",
+                            "gender": "male"
+                        },
+                        "contact": {
+                            "phone": "+91-7897898765",
+                            "email": "shivam-labsamplecollector@gmail.com"
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "appointment-cancelled",
+                            "name": "Your appointment has been cancelled"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "value": "3000",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "title": "ECG Procedure",
+                        "price": {
+                            "currency": "INR",
+                            "value": "3000"
+                        }
+                    },
+                    {
+                        "title": "taxes",
+                        "price": {
+                            "currency": "INR",
+                            "value": "30"
+                        }
+                    }
+                ]
+            },
+            "billing": {
+                "name": "Rajesh Kumar",
+                "address": "Villa 5, Green Valley, Malleshwaram, 560012",
+                "email": "rajesh.kumar@example.com",
+                "phone": "+91-9999999999"
+            },
+            "payments": [
+                {
+                    "type": "PRE-FULFILLMENT",
+                    "url": "payto://ban/98273982749428?amount=INR:3030&ifsc=SBIN0000575&message=payment",
+                    "collected_by": "BPP",
+                    "status": "PAID",
+                    "params": {
+                        "transaction_id": "ABCD2414143231",
+                        "amount": "3030",
+                        "currency": "INR"
+                    }
+                }
+            ],
+            "cancellation_terms": [
+                {
+                    "fulfillment_state": {
+                        "descriptor": {
+                            "code": "in-progress"
+                        }
+                    },
+                    "cancellation_fee": {
+                        "percentage": "30%"
+                    },
+                    "external_ref": {
+                        "mimetype": "text/html",
+                        "url": "https://giolabs.in/charge/tnc.html"
+                    }
+                }
+            ]
+        }
+    }
+}

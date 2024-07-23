@@ -1,0 +1,29 @@
+{
+    "context": {
+        "domain": "online-dispute-resolution:0.1.0",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "action": "on_track",
+        "version": "1.1.0",
+        "bap_id": "farm-fresh-bap-id",
+        "bap_uri": "https://55a6-124-123-32-28.ngrok-free.app",
+        "bpp_id": "farm-fresh-bpp-subId",
+        "bpp_uri": "https://4e21-124-123-32-28.ngrok-free.app",
+        "message_id": "fd585827-7607-4ce8-b257-9597b0ed0f52",
+        "transaction_id": "8100d125-76a7-4588-88be-81b97657cd09",
+        "timestamp": "2023-11-06T10:14:10.295Z",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "tracking": {
+            "url": "https://abc/tracking/201f6fa2-a2f7-42e7-a2e5-8947398747",
+            "status": "active"
+        }
+    }
+}

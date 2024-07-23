@@ -1,0 +1,48 @@
+{
+    "context": {
+        "domain": "logistics",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:0806"
+            }
+        },
+        "action": "search",
+        "version": "1.1.0",
+        "bap_id": "logistics_bap",
+        "bap_uri": "https://logistics_bap.com",
+        "transaction_id": "aa77b78e-66b0-47a5-9560-527a36cf0d9f",
+        "message_id": "7a47a08d-69e0-4a14-9216-a95bfde08965",
+        "timestamp": "2024-01-15T16:00:00.000Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "intent": {
+            "category": {
+                "descriptor": {
+                    "name": "Fast delivery"
+                }
+            },
+            "fulfillment": {
+                "stops": [
+                    {
+                        "type": "Pickup",
+                        "location": {
+                            "gps": "14.785638,76.454553",
+                            "area_code": "320042"
+                        }
+                    },
+                    {
+                        "type": "Drop",
+                        "location": {
+                            "gps": "14.433424,77.928379",
+                            "area_code": "540045"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

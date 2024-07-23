@@ -1,0 +1,21 @@
+{
+    "context": {
+      "domain": "retail:0.9.4",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_rating",
+      "core_version": "0.9.4",
+      "bap_id": "farm-fresh-bap-id",
+      "bap_uri": "https://55a6-124-123-32-28.ngrok-free.app",
+      "bpp_id": "farm-fresh-bpp-subId",
+      "bpp_uri": "https://4e21-124-123-32-28.ngrok-free.app",
+      "message_id": "b0c5b14f-a7db-4329-b7e2-42a5f6486085",
+      "transaction_id": "8100d125-76a7-4588-88be-81b97657cd09",
+      "timestamp": "2023-11-06T10:14:10.295Z",
+      "ttl": "PT10M"
+    },
+    "message": {
+        "feedback_ack": true,
+        "rating_ack": true
+    }
+  }

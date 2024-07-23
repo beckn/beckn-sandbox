@@ -1,0 +1,42 @@
+{
+    "context": {
+        "domain": "dhp:pharmacy:0.1.0",
+        "action": "on_support",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_url": "https://ps-bap-client.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "timestamp": "2023-07-16T04:41:16Z"
+    },
+    "message": {
+        "support": {
+            "ref_id": "853c7593-f4bf-4557-8832-118a591787ba",
+            "order_id": "853c7593-f4bf-4557-8832-118a591787ba",
+            "callback_phone": "+91-8858150053",
+            "email": "support@ekstep.com",
+            "phone": "+91-965676879",
+            "url": "https://chat-url-for-support.com",
+            "docs": [
+                {
+                    "descriptor": {
+                        "name": "FAQs",
+                        "short_desc": "Frequently asked questions and common issues"
+                    },
+                    "url": "https://link-to-the-document.com",
+                    "mime_type": "application/pdf"
+                }
+            ]
+        }
+    }
+}

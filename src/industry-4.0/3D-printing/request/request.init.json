@@ -1,0 +1,172 @@
+{
+    "context": {
+      "domain": "supply-chain-services:3d-printing",
+      "location": {
+        "country": {
+          "code": "DE"
+        }
+      },
+      "action": "init",
+      "version": "1.1.0",
+      "bap_uri": "https://supply-chain-protocol-network.becknprotocol.io/",
+      "bap_id": "supply-chain-protocol.becknprotocol.io",
+      "bpp_id": "bpp.supply-chain.makerspace.io",
+      "bpp_uri": "https://bpp.supply-chain.makerspace.io",
+      "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
+      "message_id": "27f9d99a-5ec6-11ee-8c99-0242ac120002",
+      "timestamp": "2023-05-25T05:23:03.443Z",
+      "ttl": "P30M"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "1"
+        },
+        "items": [
+          {
+            "id": "66b7b9bad166-4a3f-ada6-ca063dc9d321",
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "material-info",
+                  "name": "Material Information"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "name": "product-material-type"
+                    },
+                    "value": "PVC-Plastic"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "technology-info",
+                  "name": "Technology Information"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "name": "printing-technology-type"
+                    },
+                    "value": "FDM"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "specialisation-info",
+                  "name": "Specialisation Information"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "name": "specialisation-type"
+                    },
+                    "value": "rapid-prototyping"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "scale-info",
+                  "name": "Scale Information"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "name": "scale-type"
+                    },
+                    "value": "industrial"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "printer-info",
+                  "name": "Printer Information"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "name": "Resolution"
+                    },
+                    "value": "gte>20%"
+                  },
+                  {
+                    "descriptor": {
+                      "name": "success-rate"
+                    },
+                    "value": "gte>95%"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "color-info",
+                  "name": "Color Info"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "name": "color"
+                    },
+                    "value": "Red"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "fulfillments": [
+          {
+            "id": "f1",
+            "customer": {
+              "contact": {
+                "email": "fox.judie@abc.org",
+                "phone": "+91-9999999999"
+              },
+              "person": {
+                "name": "Judie Fox"
+              }
+            },
+            "stops": [
+              {
+                "type": "end",
+                "location": {
+                  "gps": "1.3806217468119772, 103.74636438437074",
+                  "address": "My House #, My building",
+                  "city": {
+                    "name": "Jurong East"
+                  },
+                  "country": {
+                    "code": "SGP"
+                  },
+                  "area_code":"680230",
+                  "state":{
+                    "name": "bayern"
+                  }
+                },
+                "contact": {
+                  "phone": "9886098860"
+                }
+              }
+            ]
+          }
+        ],
+        "billing": {
+          "name":"Industry buyer",
+          "address": "B005 aspire heights, Jurong East, SGP, 680230",
+          "state": {
+            "name": "Jurong East"
+          },
+          "city": {
+            "name": "Jurong East"
+          },
+          "email":"nobody@nomail.com",
+          "phone":"9886098860"
+        }
+      }
+    }
+  }

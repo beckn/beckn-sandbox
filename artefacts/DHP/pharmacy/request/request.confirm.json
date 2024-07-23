@@ -1,0 +1,114 @@
+{
+    "context": {
+        "domain": "dhp:pharmacy:0.1.0",
+        "action": "confirm",
+        "location": {
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "city": "std:080",
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "timestamp": "2023-07-16T04:41:16Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "e92e7a6e-1f20-4a8d-b343-956e0d45a48c"
+            },
+            "items": [
+                {
+                    "id": "fb0999b7-7755-46d6-a2ed-b286b7c98436",
+                    "quantity": {
+                        "selected": {
+                            "measure": {
+                                "value": "2",
+                                "unit": "units"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "1cef39d8-72d0-46f7-99ca-3f18f4bda8e3",
+                    "quantity": {
+                        "selected": {
+                            "measure": {
+                                "value": "3",
+                                "unit": "units"
+                            }
+                        }
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "ful-02",
+                    "customer": {
+                        "contact": {
+                            "email": "fox.judie@abc.org",
+                            "phone": "+91-9999999999"
+                        },
+                        "person": {
+                            "name": "Judie Fox"
+                        }
+                    },
+                    "stops": [
+                        {
+                            "location": {
+                                "gps": "1.3806217468119772, 103.74636438437074",
+                                "address": "My House #, My building",
+                                "city": {
+                                    "name": "Jurong East"
+                                },
+                                "country": {
+                                    "code": "SGP"
+                                },
+                                "area_code": "680230",
+                                "state": {
+                                    "name": "bayern"
+                                }
+                            },
+                            "contact": {
+                                "phone": "9886098860"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "billing": {
+                "name": "Alice Smith",
+                "address": "Apt 303, Maple Towers, Richmond Road, 560001",
+                "state": {
+                    "name": "Jurong East"
+                },
+                "city": {
+                    "name": "Jurong East"
+                },
+                "email": "alice.smith@example.com",
+                "phone": "9886098860"
+            },
+            "payments": [
+                {
+                    "collected_by": "BPP",
+                    "params": {
+                        "amount": "700",
+                        "currency": "INR",
+                        "bank_account_number": "1234002341",
+                        "bank_code": "INB0004321",
+                        "bank_account_name": "Strapi BPP Limited"
+                    },
+                    "status": "PAID",
+                    "type": "PRE-ORDER",
+                    "transaction_id": "a35b56cf-e5cf-41f1-9b5d-fa99d8d5ac8c"
+                }
+            ]
+        }
+    }
+}

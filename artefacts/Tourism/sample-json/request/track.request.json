@@ -1,0 +1,26 @@
+{
+    "context": {
+        "domain": "tourism",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "action": "cancel",
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io",
+        "bpp_id": "sandbox-bpp-network.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io",
+        "message_id": "{{$randomUUID}}",
+        "transaction_id": "8100d125-76a7-4588-88be-81b97657cd09",
+        "timestamp": "2023-11-06T09:41:09.708Z",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "order_id": "b989c9a9-f603-4d44-b38d-26fd72286b38"
+    }
+}

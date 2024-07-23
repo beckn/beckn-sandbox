@@ -1,0 +1,127 @@
+{
+  "context": {
+    "domain": "financial-services:mutual-funds:0.2.0",
+    "location": {
+      "country": {
+        "code": "IND"
+      }
+    },
+    "version": "1.1.0",
+    "action": "on_status",
+    "bap_id": "ps-bap-network.becknprotocol.io",
+    "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+    "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+    "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+    "message_id": "bb579fb8-cb82-4824-be12-fcbc405b6608",
+    "ttl": "PT30M",
+    "timestamp": "2023-05-25T05:23:03.443Z"
+  },
+  "message": {
+    "order": {
+      "id": "66B7AEDF45",
+      "status": "ACTIVE",
+      "provider": {
+        "id": "1",
+        "descriptor": {
+          "images": [
+            {
+              "url": "https://www.hdfcfunds.com/content/dam/abc/india/assets/images/header/logo.png",
+              "size_type": "sm"
+            }
+          ],
+          "name": "HDFC Midcap Opportunities Fund",
+          "short_desc": "HDFC Midcap Opportunities Fund"
+        }
+      },
+      "items": [
+        {
+          "id": "MFLCLS001",
+          "descriptor": {
+            "name": "ABC Large Cap Mutual Fund Lumpsum"
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "customer": {
+            "id": "pan:ABCDE9999Z",
+            "person": {
+              "name": "Alice"
+            },
+            "contact": {
+              "phone": "+91-9999199991",
+              "email": "alice@example.com"
+            }
+          },
+          "state": {
+            "descriptor": {
+              "name": "Units being allocated"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "5000"
+        },
+        "tags": [
+          {
+            "descriptor": {
+              "name": "NAV Details"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "name": "Unit price"
+                },
+                "value": "120"
+              },
+              {
+                "descriptor": {
+                  "name": "Units allocated"
+                },
+                "value": "41.50"
+              }
+            ]
+          }
+        ]
+      },
+      "billing": {
+        "name": "Charles D'Souza",
+        "email": "charles@equitygrow.in"
+      },
+      "payments": [
+        {
+          "type": "PRE-ORDER",
+          "url": "https://payment.abcmutalfunds.in",
+          "params": {
+            "amount": "5000",
+            "currency": "INR"
+          },
+          "status": "PAID",
+          "time": {
+            "range": {
+              "start": "2023-06-01T00:00:00.00Z",
+              "end": "2023-06-30T23:59:59.00Z"
+            }
+          }
+        }
+      ],
+      "cancellation_terms": [
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "name": "Terms"
+            }
+          },
+          "external_ref": {
+            "mimetype": "text/html",
+            "url": "https://abcmutalfunds.com/mf/tnc.html"
+          }
+        }
+      ]
+    }
+  }
+}

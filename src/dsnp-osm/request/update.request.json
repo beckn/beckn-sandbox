@@ -1,0 +1,38 @@
+{
+    "context": {
+        "domain": "localretail:shopping",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "action": "update",
+        "version": "1.1.0",
+        "bap_id": "dsnp-bap-id",
+        "bap_uri": "https://55a6-124-123-32-28.ngrok-free.app",
+        "bpp_id": "dsnp-bpp-id",
+        "bpp_uri": "https://4e21-124-123-32-28.ngrok-free.app",
+        "message_id": "090adec2-696d-47c9-8452-797a91e7bebc",
+        "transaction_id": "8100d125-76a7-4588-88be-81b97657cd09",
+        "timestamp": "2023-11-06T10:14:10.295Z",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "order": {
+            "id": "b989c9a9-f603-4d44-b38d-26fd72286b38",
+            "fulfillments": [
+                {
+                    "customer": {
+                        "contact": {
+                            "phone": "+91-8056475647"
+                        }
+                    }
+                }
+            ]
+        },
+        "update_target": "order.fulfillments[0].customer.contact.phone"
+    }
+}

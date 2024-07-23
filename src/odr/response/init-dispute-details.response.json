@@ -1,0 +1,172 @@
+{
+    "context": {
+        "domain": "online-dispute-resolution:0.1.0",
+        "location": {
+            "country": {
+                "code": "IND"
+            }
+        },
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+        "message_id": "$bb579fb8-cb82-4824-be12-fcbc405b6608",
+        "action": "on_init",
+        "timestamp": "2023-05-25T05:23:03.443Z",
+        "version": "1.1.0",
+        "bap_uri": "https://odr-network-bap.becknprotocol.io/",
+        "bap_id": "odr-bap.becknprotocol.io",
+        "bpp_id": "alpha-odr-bpp.becknprotocol.io",
+        "bpp_uri": "https://alpha-odr-network-bpp.becknprotocol.io",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "order": {
+            "id": "fcbc405b6608",
+            "provider": {
+                "id": "ODR001",
+                "descriptor": {
+                    "images": [
+                        {
+                            "url": "https://www.alpha.com/content/dam/alpha/india/assets/images/header/logo.png",
+                            "size_type": "xs"
+                        }
+                    ],
+                    "name": "Alpha",
+                    "short_desc": "Alpha Pvt Ltd., India.",
+                    "long_desc": "Alpha Pvt Ltd., India. provides online dispute resolution services. Out platform facilitates easy access to high quality service providers which helps avoid hassles of court, saving time and money and relationships.",
+                    "additional_desc": {
+                        "url": "https://www.alpha.com/content/aboutus"
+                    }
+                }
+            },
+            "categories": [
+                {
+                    "id": "ODRCAT001",
+                    "descriptor": {
+                        "code": "civil-dispute",
+                        "name": "Civil Dispute"
+                    }
+                }
+            ],
+            "items": [
+                {
+                    "id": "ALPHA-ARB-01",
+                    "descriptor": {
+                        "code": "arbitration-service",
+                        "name": "Arbitration Services"
+                    },
+                    "category_ids": ["ODRCAT001"],
+                    "xinput": {
+                        "head": {
+                            "descriptor": {
+                                "name": "Dispute Details"
+                            },
+                            "index": {
+                                "min": 0,
+                                "cur": 2,
+                                "max": 2
+                            },
+                            "headings": ["Respondent Details", "Consent Form", "Dispute Details"]
+                        },
+                        "form": {
+                            "mime_type": "text/html",
+                            "url": "https://6vs8xnx5i7.alpha.co.in/agreement/xinput/formid/a23f2fdfbbb8ac402bfd54f"
+                        },
+                        "required": true
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "12500"
+                },
+                "breakup": [
+                    {
+                        "title": "Base fee",
+                        "price": {
+                            "value": "7000",
+                            "currency": "INR"
+                        }
+                    },
+                    {
+                        "title": "Agent fees",
+                        "price": {
+                            "value": "5000",
+                            "currency": "INR"
+                        }
+                    },
+                    {
+                        "title": "Fee per hearing",
+                        "price": {
+                            "value": "500",
+                            "currency": "INR"
+                        }
+                    }
+                ]
+            },
+            "billing": {
+                "name": "John Doe",
+                "email": "john.doe@example.com",
+                "address": "21A, ABC Appartments, HSR Layout, Bengaluru",
+                "city": { "name": "Bengaluru" }
+            },
+            "fulfillments": [
+                {
+                    "customer": {
+                        "person": {
+                            "name": "John Doe"
+                        },
+                        "contact": {
+                            "phone": "+91-9999999999",
+                            "email": "john.doe@example.com"
+                        }
+                    },
+                    "agent": {
+                        "person": {
+                            "id": "fsjks743DGS",
+                            "name": "Mr Adam Smith"
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "arbitration-initiated",
+                            "name": "Arbitration for dispute order initialized"
+                        }
+                    }
+                }
+            ],
+            "payments": [
+                {
+                    "type": "PRE-ORDER",
+                    "url": "https://payment.alphaodr.in",
+                    "params": {
+                        "amount": "12000",
+                        "currency": "INR"
+                    },
+                    "status": "NOT-PAID",
+                    "time": {
+                        "range": {
+                            "start": "2023-06-01T00:00:00.000Z",
+                            "end": "2023-06-30T23:59:59.000Z"
+                        }
+                    }
+                }
+            ],
+            "cancellation_terms": [
+                {
+                    "fulfillment_state": {
+                        "descriptor": {
+                            "code": "dispute-hearing-in-progress"
+                        }
+                    },
+                    "cancellation_fee": {
+                        "percentage": "30%"
+                    },
+                    "external_ref": {
+                        "mimetype": "text/html",
+                        "url": "https://alpha.in/charge/tnc.html"
+                    }
+                }
+            ]
+        }
+    }
+}

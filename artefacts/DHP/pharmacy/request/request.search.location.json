@@ -1,0 +1,34 @@
+{
+    "context": {
+        "domain": "dhp:pharmacy:0.1.0",
+        "action": "search",
+        "location": {
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "city": "std:080",
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "timestamp": "2023-07-16T04:41:16Z"
+    },
+    "message": {
+        "intent": {
+            "category": {
+                "id": "pharmacy"
+            },
+            "location": {
+                "gps": "12.423423,77.325647",
+                "radius": {
+                    "type": "CONSTANT",
+                    "value": "5",
+                    "unit": "km"
+                }
+            }
+        }
+    }
+}

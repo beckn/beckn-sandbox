@@ -1,0 +1,44 @@
+{
+  "context": {
+    "domain": "retail:1.1.0",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:080"
+      }
+    },
+    "action": "search",
+    "version": "1.1.0",
+    "bap_id": "farm-fresh-bap-id",
+    "bap_uri": "https://55a6-124-123-32-28.ngrok-free.app",
+    "transaction_id": "8100d125-76a7-4588-88be-81b97657cd09",
+    "message_id": "6104c0a3-d1d1-4ded-aaa4-76e4caf727ce",
+    "timestamp": "2023-11-06T09:41:09.673Z"
+  },
+  "message": {
+    "intent": {
+      "category": {
+        "descriptor": {
+          "code": "electronics"
+        }
+      },
+      "item": {
+        "descriptor": {
+          "name": "earphone"
+        }
+      },
+      "fulfillment": {
+        "type": "Delivery",
+        "stops": [
+          {
+            "location": {
+              "gps": "28.4594965,77.0266383"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

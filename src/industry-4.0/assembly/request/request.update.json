@@ -1,0 +1,35 @@
+{
+    "context": {
+        "domain": "supply-chain-services:assembly",
+        "location": {
+            "country": {
+                "code": "DE"
+            }
+        },
+        "action": "update",
+        "version": "1.1.0",
+        "bap_uri": "https://supply-chain-protocol-network.becknprotocol.io/",
+        "bap_id": "supply-chain-protocol.becknprotocol.io",
+        "bpp_id": "bpp.supply-chain.makerspace.io",
+        "bpp_uri": "https://bpp.supply-chain.makerspace.io",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
+        "message_id": "96bba52b5-b45f-47ab-9775-a69a32fdba13",
+        "timestamp": "2023-05-25T05:23:04.443Z",
+        "ttl": "P30M"
+    },
+    "message": {
+        "order": {
+            "id": "b989c9a9-f603-4d44-b38d-26fd72286b38",
+            "fulfillments": [
+                {
+                    "customer": {
+                        "contact": {
+                            "phone": "+91-8056475647"
+                        }
+                    }
+                }
+            ]
+        },
+        "updated_target": "order.fulfillments[0].customer.contact.phone"
+    }
+}

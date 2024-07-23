@@ -1,0 +1,34 @@
+{
+    "context": {
+        "domain": "nic2004:85110",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "action": "update",
+        "core_version": "1.1.0",
+        "bap_id": "https://example-bap.com/",
+        "bap_uri": "https://example-bap.com/dhp.io",
+        "bpp_id": "https://bloodbank-service-provider.com",
+        "bpp_uri": "https://bloodbank-service-provider.com/beckn/",
+        "transaction_id": "c1a2n3u4p5d6-12345",
+        "message_id": "update-fulfillment-bloodbank-1",
+        "timestamp": "2023-09-09T16:00:00.052Z"
+    },
+    "message": {
+        "update_target": "order.billing",
+        "order": {
+            "id": "9ff3e9f5-31f7-454e-bbed-e37e8c014404",
+            "billing": {
+                "name": "John Doe",
+                "address": "Flat 102, Serene Springs, JP Nagar, 560078",
+                "email": "john.doe@example.com",
+                "phone": "+91-8888888888"
+            }
+        }
+    }
+}

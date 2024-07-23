@@ -1,0 +1,235 @@
+{
+    "context": {
+        "domain": "uei:charging",
+        "action": "on_search",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "bap_id": "example-bap-id",
+        "bap_uri": "https://example-bap-url.com",
+        "bpp_id": "example-bpp-id",
+        "bpp_uri": "https://example-bpp-url.com",
+        "transaction_id": "e0a38442-69b7-4698-aa94-a1b6b5d244c2",
+        "message_id": "6ace310b-6440-4421-a2ed-b484c7548bd5",
+        "timestamp": "2023-02-18T17:00:40.065Z",
+        "version": "1.0.0",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "catalog": {
+            "descriptor": {
+                "name": "Pulse Energy BPP"
+            },
+            "providers": [
+                {
+                    "id": "id of the CPO",
+                    "descriptor": {
+                        "name": "CPO name",
+                        "images": [
+                            {
+                                "url": "logo of the CPO"
+                            }
+                        ]
+                    },
+                    "locations": [
+                        {
+                            "id": "id of the Charging Station",
+                            "map_url": "Google Maps url of the location of CS",
+                            "gps": "GPS Coords of the CS",
+                            "address": "Address of the CS",
+                            "city": {
+                                "name": "Bangalore",
+                                "code": "std:080"
+                            },
+                            "district": "",
+                            "state": {
+                                "name": "Karnataka",
+                                "code": ""
+                            },
+                            "country": {
+                                "name": "India",
+                                "code": "IND"
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "id of the Charging Station",
+                            "category_ids": [
+                                "charging-station"
+                            ],
+                            "location_ids": [
+                                "id of the CS"
+                            ],
+                            "descriptor": {
+                                "name": "Name of the CS",
+                                "images": [
+                                    {
+                                        "url": "image 1 of CS"
+                                    },
+                                    {
+                                        "url": "image 2 of CS"
+                                    }
+                                ]
+                            },
+                            "tags": [
+                                {
+                                    "display": true,
+                                    "descriptor": {
+                                        "name": "Attributes",
+                                        "code": "attributes"
+                                    },
+                                    "list": [
+                                        {
+                                            "display": true,
+                                            "value": "30kms",
+                                            "descriptor": {
+                                                "name": "Distance",
+                                                "code": "distance"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "id of the Charge Point",
+                            "parent_item_id": "id of the Charging Station (Location) this CP belongs to",
+                            "category_ids": [
+                                "charge-point"
+                            ],
+                            "descriptor": {
+                                "name": "Type 2",
+                                "code": "Human readable unique code of the Charge Point",
+                                "images": [
+                                    {
+                                        "url": "image of the connector's icon"
+                                    }
+                                ]
+                            },
+                            "tags": [
+                                {
+                                    "display": true,
+                                    "descriptor": {
+                                        "name": "Price",
+                                        "code": "price"
+                                    },
+                                    "list": [
+                                        {
+                                            "display": true,
+                                            "value": "₹15-20/kWh"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "display": true,
+                                    "descriptor": {
+                                        "name": "Available Charging Options",
+                                        "code": "available-charging-options"
+                                    },
+                                    "list": [
+                                        {
+                                            "display": true,
+                                            "value": "80",
+                                            "descriptor": {
+                                                "name": "SoC",
+                                                "code": "soc"
+                                            }
+                                        },
+                                        {
+                                            "display": true,
+                                            "value": "5",
+                                            "descriptor": {
+                                                "name": "Units",
+                                                "code": "units"
+                                            }
+                                        },
+                                        {
+                                            "display": true,
+                                            "value": "100",
+                                            "descriptor": {
+                                                "name": "Amount",
+                                                "code": "amount"
+                                            }
+                                        },
+                                        {
+                                            "display": true,
+                                            "value": "30",
+                                            "descriptor": {
+                                                "name": "Time",
+                                                "code": "time"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "id of the Charge Point Connector",
+                            "parent_item_id": "id of the Charge Point this CPC belongs to",
+                            "category_ids": [
+                                "connector"
+                            ],
+                            "descriptor": {
+                                "name": "Type 2",
+                                "code": "Type2",
+                                "images": [
+                                    {
+                                        "url": "image of the connector's icon"
+                                    }
+                                ]
+                            },
+                            "tags": [
+                                {
+                                    "display": true,
+                                    "descriptor": {
+                                        "name": "Power Rating",
+                                        "code": "power-rating"
+                                    },
+                                    "list": [
+                                        {
+                                            "display": true,
+                                            "value": "15kW"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "display": true,
+                                    "descriptor": {
+                                        "name": "Connector Status",
+                                        "code": "connector-status"
+                                    },
+                                    "list": [
+                                        {
+                                            "display": true,
+                                            "value": "Available",
+                                            "descriptor": {
+                                                "name": "Status",
+                                                "code": "status"
+                                            }
+                                        },
+                                        {
+                                            "display": true,
+                                            "value": "NoError",
+                                            "descriptor": {
+                                                "name": "Error",
+                                                "code": "error"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,319 @@
+{
+    "info": {
+        "_postman_id": "fa14c238-1be8-48d2-8ef8-81f6b92bce66",
+        "name": "DSNP/OSM Sandbox",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "26726166"
+    },
+    "item": [
+        {
+            "name": "Search-By-Category",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"localretail:shopping\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"search\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-11-06T09:41:09.673Z\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"category\": {\n                \"descriptor\": {\n                    \"code\": \"electronics\"\n                }\n            }\n        }\n    }\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/search",
+                    "host": ["{{base_url}}"],
+                    "path": ["search"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Search_By-Location",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"localretail:shopping\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"search\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-11-06T09:41:09.673Z\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"fulfillment\": {\n                \"type\": \"Delivery\",\n                \"stops\": [\n                    {\n                        \"location\": {\n                            \"gps\": \"28.4594965,77.0266383\"\n                        }\n                    }\n                ]\n            }\n        }\n    }\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/search",
+                    "host": ["{{base_url}}"],
+                    "path": ["search"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Search-By-Name",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"localretail:shopping\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"search\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-11-06T09:41:09.673Z\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"item\": {\n                \"descriptor\": {\n                    \"name\": \"earphone\"\n                }\n            }\n        }\n    }\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/search",
+                    "host": ["{{base_url}}"],
+                    "path": ["search"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Select",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"localretail:shopping\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"select\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T09:41:09.708Z\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"af304e37-2a64-4d7d-b61c-8cbb79b48d9f\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"2e0c2b39-84d2-4b58-af8b-8b6d7b0c3f97\",\n                    \"quantity\": {\n                        \"selected\": {\n                            \"count\": 2\n                        }\n                    }\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"1\"\n                }\n            ]\n        }\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/select",
+                    "host": ["{{base_url}}"],
+                    "path": ["select"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Init",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"localretail:shopping\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"init\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T09:41:09.708Z\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"af304e37-2a64-4d7d-b61c-8cbb79b48d9f\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"2e0c2b39-84d2-4b58-af8b-8b6d7b0c3f97\",\n                    \"quantity\": {\n                        \"selected\": {\n                            \"count\": 2\n                        }\n                    }\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"type\": \"Delivery\",\n                    \"stops\": [\n                        {\n                            \"location\": {\n                                \"gps\": \"13.2008459,77.708736\",\n                                \"address\": \"151-e, janpath road,New Delhi, India\",\n                                \"city\": {\n                                    \"name\": \"New Delhi\"\n                                },\n                                \"state\": {\n                                    \"name\": \"Delhi\"\n                                },\n                                \"country\": {\n                                    \"code\": \"IND\"\n                                },\n                                \"area_code\": \"110001\"\n                            },\n                            \"contact\": {\n                                \"phone\": \"6251423251\",\n                                \"email\": \"santosh.k@gmail.com\"\n                            }\n                        }\n                    ],\n                    \"customer\": {\n                        \"person\": {\n                            \"name\": \"Santosh Kumar\"\n                        },\n                        \"contact\": {\n                            \"phone\": \"6251423251\"\n                        }\n                    }\n                }\n            ],\n            \"billing\": {\n                \"name\": \"Santosh Kumar\",\n                \"phone\": \"6251423251\",\n                \"email\": \"santosh.k@gmail.com\",\n                \"address\": \"151-e, janpath road,New Delhi, India\",\n                \"city\": {\n                    \"name\": \"New Delhi\"\n                },\n                \"state\": {\n                    \"name\": \"Delhi\"\n                }\n            }\n        }\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/init",
+                    "host": ["{{base_url}}"],
+                    "path": ["init"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Confirm",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"localretail:shopping\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"confirm\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T09:41:09.708Z\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"af304e37-2a64-4d7d-b61c-8cbb79b48d9f\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"2e0c2b39-84d2-4b58-af8b-8b6d7b0c3f97\",\n                    \"quantity\": {\n                        \"selected\": {\n                            \"count\": 2\n                        }\n                    }\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"type\": \"Delivery\",\n                    \"stops\": [\n                        {\n                            \"location\": {\n                                \"gps\": \"13.2008459,77.708736\",\n                                \"address\": \"151-e, janpath road,New Delhi, India\",\n                                \"city\": {\n                                    \"name\": \"New Delhi\"\n                                },\n                                \"state\": {\n                                    \"name\": \"Delhi\"\n                                },\n                                \"country\": {\n                                    \"code\": \"IND\"\n                                },\n                                \"area_code\": \"110001\"\n                            },\n                            \"contact\": {\n                                \"phone\": \"6251423251\",\n                                \"email\": \"santosh.k@gmail.com\"\n                            }\n                        }\n                    ],\n                    \"customer\": {\n                        \"person\": {\n                            \"name\": \"Santosh Kumar\"\n                        },\n                        \"contact\": {\n                            \"phone\": \"6251423251\"\n                        }\n                    }\n                }\n            ],\n            \"billing\": {\n                \"name\": \"Santosh Kumar\",\n                \"phone\": \"6251423251\",\n                \"email\": \"santosh.k@gmail.com\",\n                \"address\": \"151-e, janpath road,New Delhi, India\",\n                \"city\": {\n                    \"name\": \"New Delhi\"\n                },\n                \"state\": {\n                    \"name\": \"Delhi\"\n                }\n            },\n            \"payments\": [\n                {\n                    \"status\": \"PAID\",\n                    \"type\": \"PRE-FULFILLMENT\",\n                    \"params\": {\n                        \"transaction_id\": \"raz816863816313\",\n                        \"amount\": \"2000\",\n                        \"currency\": \"INR\",\n                        \"bank_code\": \"INB0004321\",\n                        \"bank_account_number\": \"1234002341\"\n                    }\n                }\n            ]\n        }\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/confirm",
+                    "host": ["{{base_url}}"],
+                    "path": ["confirm"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Status",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"localretail:shopping\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"status\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T09:41:09.708Z\"\n    },\n    \"message\": {\n        \"order_id\": \"b989c9a9-f603-4d44-b38d-26fd72286b38\"\n    }\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/status",
+                    "host": ["{{base_url}}"],
+                    "path": ["status"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Rating",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"localretail:shopping\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"rating\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T09:41:09.708Z\"\n    },\n    \"message\": {\n        \"ratings\": [\n            {\n                \"id\": \"b989c9a9-f603-4d44-b38d-26fd72286b38\",\n                \"rating_category\": \"Order\",\n                \"value\": \"8\"\n            }\n        ]\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/rating",
+                    "host": ["{{base_url}}"],
+                    "path": ["rating"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Track",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"localretail:shopping\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"track\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T10:14:10.295Z\",\n        \"ttl\": \"PT10M\"\n    },\n    \"message\": {\n        \"order_id\": \"b989c9a9-f603-4d44-b38d-26fd72286b38\"\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/track",
+                    "host": ["{{base_url}}"],
+                    "path": ["track"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Update",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"localretail:shopping\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"update\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T10:14:10.295Z\",\n        \"ttl\": \"PT10M\"\n    },\n    \"message\": {\n        \"order\": {\n            \"id\": \"b989c9a9-f603-4d44-b38d-26fd72286b38\",\n            \"fulfillments\": [\n                {\n                    \"customer\": {\n                        \"contact\": {\n                            \"phone\": \"+91-8056475647\"\n                        }\n                    }\n                }\n            ]\n        },\n        \"update_target\": \"order.fulfillments[0].customer.contact.phone\"\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/update",
+                    "host": ["{{base_url}}"],
+                    "path": ["update"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Support",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"localretail:shopping\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"support\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T10:14:10.295Z\",\n        \"ttl\": \"PT10M\"\n    },\n    \"message\": {\n        \"support\": {\n            \"ref_id\": \"894789-43954\",\n            \"phone\": \"+91 4444444444\",\n            \"email\": \"me@gmail.com\"\n        }\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/support",
+                    "host": ["{{base_url}}"],
+                    "path": ["support"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Cancel",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"localretail:shopping\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"cancel\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T09:41:09.708Z\"\n    },\n    \"message\": {\n        \"order_id\": \"b989c9a9-f603-4d44-b38d-26fd72286b38\",\n        \"cancellation_reason_id\": \"4\",\n        \"descriptor\": {\n            \"short_desc\": \"Order delayed\"\n        }\n    }\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/cancel",
+                    "host": ["{{base_url}}"],
+                    "path": ["cancel"]
+                }
+            },
+            "response": []
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "type": "text/javascript",
+                "packages": {},
+                "exec": [""]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "type": "text/javascript",
+                "packages": {},
+                "exec": [""]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "key": "base_url",
+            "value": "https://ps-bap-client.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bap_id",
+            "value": "ps-bap-network.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bap_uri",
+            "value": "https://ps-bap-network.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bpp_id",
+            "value": "sandbox-bpp-network.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bpp_uri",
+            "value": "https://sandbox-bpp-network.becknprotocol.io",
+            "type": "string"
+        }
+    ]
+}

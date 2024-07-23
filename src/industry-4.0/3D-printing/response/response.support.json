@@ -1,0 +1,27 @@
+{
+    "context": {
+        "domain": "supply-chain-services:3d-printing",
+        "location": {
+            "country": {
+                "code": "DE"
+            }
+        },
+        "action": "on_support",
+        "version": "1.1.0",
+        "bap_uri": "https://supply-chain-protocol-network.becknprotocol.io/",
+        "bap_id": "supply-chain-protocol.becknprotocol.io",
+        "bpp_id": "bpp.supply-chain.makerspace.io",
+        "bpp_uri": "https://bpp.supply-chain.makerspace.io",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
+        "message_id": "2561bd3e-46fe-497b-bdea-b3e5b2645042",
+        "timestamp": "2023-05-25T05:23:04.443Z",
+        "ttl": "P30M"
+    },
+    "message": {
+        "support": {
+            "ref_id": "d4975df5-b18c-4772-80ad-368669856d52",
+            "phone": "+91 9988776543",
+            "email": "abcd.makerspace@support.com"
+        }
+    }
+}

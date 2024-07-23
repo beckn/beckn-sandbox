@@ -1,0 +1,24 @@
+{
+    "context": {
+        "domain": "mobility:publictransport:0.8.0",
+        "core_version": "0.9.4",
+        "action": "on_track",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io",
+        "country": "IND",
+        "city": "std:080",
+        "bap_id": "beckn-sandbox-bap.becknprotocol.io",
+        "bap_uri": "https://sandbox-bap-network.becknprotocol.io",
+        "transaction_id": "7afe44fd-d947-4a0a-81bc-d286784df2c1",
+        "message_id": "8c2382ff-30f1-48a6-b550-95bd277c3e50",
+        "ttl": "PT10M",
+        "timestamp": "2023-05-24T12:20:05.796Z"
+    },
+    "message": {
+        "tracking": {
+            "content_type": "application/json",
+            "url": "https://sandbox-bpp-network.becknprotocol.io/track?reg=DL10C0190",
+            "status": "active"
+        }
+    }
+}

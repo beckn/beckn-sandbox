@@ -1,0 +1,30 @@
+{
+    "context": {
+        "domain": "knowledge-advisory:agrinet:vistaar",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "name": "Balangir"
+            }
+        },
+        "action": "on_support",
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_url": "https://ps-bap-client.becknprotocol.io",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io",
+        "message_id": "d8b23543-24b4-48eb-ae8a-4a5db68f8d09",
+        "transaction_id": "fa2c9c8b-ba24-4d2b-bd9c-3e03d7f6b193",
+        "timestamp": "2024-07-02T09:18:30Z",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "support": {
+            "ref_id": "9e188d26-0b1b-4920-a586-6006b0bcf768",
+            "phone": "18001801551",
+            "url": "https://agritech.tnau.ac.in/agriculture/agri_faqs.html"
+        }
+    }
+}

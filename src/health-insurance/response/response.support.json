@@ -1,0 +1,28 @@
+{
+    "context": {
+        "action": "on_support",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "domain": "financial-services:health-insurance:0.2.0",
+        "location": {
+            "country": {
+                "code": "IND"
+            }
+        },
+        "message_id": "6c7121e2-e137-473f-ba96-809b62019f43",
+        "timestamp": "2023-07-24T05:43:08.910Z",
+        "transaction_id": "c04a04ee-d892-400f-bbe6-479a43b4448a",
+        "ttl": "PT24H",
+        "core_version": "1.1.0"
+    },
+    "message": {
+        "support": {
+            "order_id": "66b7b9bad166-4a3f-ada6-ca063dc9d321",
+            "phone": "1800 1080",
+            "email": "customer.care@insurance.com",
+            "url": "https://www.insurance.com/helpdesk"
+        }
+    }
+}

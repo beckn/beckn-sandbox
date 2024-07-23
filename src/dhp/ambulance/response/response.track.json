@@ -1,0 +1,35 @@
+{
+    "context": {
+        "domain": "dhp:ambulance:0.1.0",
+        "action": "on_track",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-client.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "timestamp": "2023-07-16T04:41:16Z"
+    },
+    "message": {
+        "tracking": {
+            "id": "3210fedcba98",
+            "url": "https://ambulanceservice-provider.com/track/3210fedcba98",
+            "status": "active",
+            "location": {
+                "descriptor": {
+                    "name": "Last location of the emergency mmbulance"
+                },
+                "gps": "12.971598, 77.594566"
+            }
+        }
+    }
+}

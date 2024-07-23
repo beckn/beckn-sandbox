@@ -1,0 +1,172 @@
+{
+    "context": {
+        "domain": "dhp:ambulance:0.1.0",
+        "action": "on_cancel",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-client.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "timestamp": "2023-07-16T04:41:16Z"
+    },
+    "message": {
+        "order": {
+            "id": "3210fedcba98",
+            "status": "CANCELLED",
+            "provider": {
+                "id": "4ab0cbbc-f246-4199-96c9-28a776d46c60",
+                "descriptor": {
+                    "name": "Alpha Ambulance Services",
+                    "short_desc": "Alpha Ambulance Services Pvt Ltd",
+                    "images": [
+                        {
+                            "url": "https://alphaambulanceservices.in/images/logo.png"
+                        }
+                    ]
+                }
+            },
+            "items": [
+                {
+                    "id": "35230bc4-b966-43ae-bc01-79593ed49217",
+                    "descriptor": {
+                        "code": "advanced-life-support",
+                        "name": "Advanced Life Support"
+                    },
+                    "price": {
+                        "value": "45000",
+                        "currency": "INR"
+                    },
+                    "add_ons": [
+                        {
+                            "id": "f31ca7cd-b1f1-4b46-b6b8-7c6432e32261",
+                            "descriptor": {
+                                "code": "oxygen-suuport",
+                                "name": "Basic Oxygen Support"
+                            },
+                            "price": {
+                                "value": "10000",
+                                "currency": "INR"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "fulfillment": [
+                {
+                    "id": "ab-ful-01",
+                    "type": "EMERGENCY",
+                    "customer": {
+                        "person": {
+                            "id": "patient-123",
+                            "name": "Mr John Smith",
+                            "creds": [
+                                {
+                                    "url": "john.smith@example.com"
+                                }
+                            ]
+                        }
+                    },
+                    "agent": {
+                        "person": {
+                            "id": "f31ca7cd",
+                            "name": "Mr Antony Gonsalves"
+                        }
+                    },
+                    "stops": [
+                        {
+                            "type": "START",
+                            "time": {
+                                "label": "scheduled-time",
+                                "timestamp": "2023-09-15T08:00:00Z"
+                            },
+                            "location": {
+                                "gps": "12.423423,77.325647"
+                            }
+                        },
+                        {
+                            "type": "END",
+                            "time": {
+                                "label": "estimated-time",
+                                "timestamp": "2023-09-15T07:50:00Z"
+                            },
+                            "location": {
+                                "gps": "12.423483,77.325697"
+                            }
+                        }
+                    ],
+                    "state": {
+                        "descriptor": {
+                            "code": "order-cancelled",
+                            "name": "Ambulance booking has been cancelled"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "value": "55000",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "title": "advanced-life-support",
+                        "price": {
+                            "currency": "INR",
+                            "value": "45000"
+                        }
+                    },
+                    {
+                        "title": "oxygen-support-add-on",
+                        "price": {
+                            "currency": "INR",
+                            "value": "10000"
+                        }
+                    }
+                ]
+            },
+            "billing": {
+                "name": "John Doe",
+                "address": "Door 12, Salarpuria Greenage, Street No 7, Hosur Road, 560068",
+                "email": "john.doe@example.com",
+                "phone": "+91-9999999999"
+            },
+            "payments": [
+                {
+                    "type": "PRE-FULFILLMENT",
+                    "status": "PAID",
+                    "params": {
+                        "amount": "55000",
+                        "currency": "INR",
+                        "transaction_id": "bb579fb8-cb82-4824-be12-fcbc405b6608"
+                    }
+                }
+            ],
+            "cancellation_terms": [
+                {
+                    "fulfillment_state": {
+                        "descriptor": {
+                            "code": "in-progress"
+                        }
+                    },
+                    "cancellation_fee": {
+                        "percentage": "30%"
+                    },
+                    "external_ref": {
+                        "mimetype": "text/html",
+                        "url": "https://alphaambulances.in/charge/tnc.html"
+                    }
+                }
+            ]
+        }
+    }
+}

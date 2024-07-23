@@ -1,0 +1,125 @@
+{
+    "context": {
+        "domain": "uei:charging",
+        "action": "select",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "bap_id": "example-bap-id",
+        "bap_uri": "https://example-bap-url.com",
+        "bpp_id": "example-bpp-id",
+        "bpp_uri": "https://example-bpp-url.com",
+        "transaction_id": "e0a38442-69b7-4698-aa94-a1b6b5d244c2",
+        "message_id": "6ace310b-6440-4421-a2ed-b484c7548bd5",
+        "timestamp": "2023-02-18T17:00:40.065Z",
+        "version": "1.0.0",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "id of the CPO"
+            },
+            "items": [
+                {
+                    "id": "id of the Charging Station",
+                    "descriptor": {
+                        "code": "charging-station"
+                    }
+                },
+                {
+                    "id": "id of the Charge Point",
+                    "descriptor": {
+                        "code": "charge-point"
+                    }
+                },
+                {
+                    "id": "id of the charge point connector",
+                    "descriptor": {
+                        "code": "connector"
+                    }
+                }
+            ],
+            "tags": [
+                {
+                    "display": true,
+                    "descriptor": {
+                        "name": "Selected Charging Option",
+                        "code": "selected-charging-option"
+                    },
+                    "list": [
+                        {
+                            "display": true,
+                            "value": "100",
+                            "descriptor": {
+                                "name": "Amount",
+                                "code": "amount"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "display": true,
+                    "descriptor": {
+                        "name": "Selected Payment Method",
+                        "code": "selected-payment-method"
+                    },
+                    "list": [
+                        {
+                            "display": true,
+                            "value": "Paytm PG",
+                            "descriptor": {
+                                "name": "Method",
+                                "code": "method"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "display": false,
+                    "descriptor": {
+                        "name": "User Info",
+                        "code": "user-info"
+                    },
+                    "list": [
+                        {
+                            "value": "19.2483,39.348944",
+                            "descriptor": {
+                                "name": "Coordinates",
+                                "code": "coordinates"
+                            }
+                        },
+                        {
+                            "value": "jbcJKB269vdsjkhbeji",
+                            "descriptor": {
+                                "name": "User Id",
+                                "code": "user-id"
+                            }
+                        },
+                        {
+                            "value": "+91987654321",
+                            "descriptor": {
+                                "name": "Phone",
+                                "code": "phone"
+                            }
+                        },
+                        {
+                            "value": "hey@gmail.com",
+                            "descriptor": {
+                                "name": "Email",
+                                "code": "email"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

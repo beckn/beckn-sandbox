@@ -1,0 +1,78 @@
+{
+    "context": {
+        "domain": "dhp:ambulance:0.1.0",
+        "location": {
+            "country": {
+                "code": "IND"
+            }
+        },
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+        "message_id": "$bb579fb8-cb82-4824-be12-fcbc405b6608",
+        "action": "init",
+        "timestamp": "2023-05-25T05:23:03.443Z",
+        "version": "1.1.0",
+        "bap_uri": "https://dhp-network-bap.becknprotocol.io/",
+        "bap_id": "dhp-bap.becknprotocol.io",
+        "bpp_uri": "https://dhp-network-bpp.becknprotocol.io/",
+        "bpp_id": "dhp-bpp.becknprotocol.io",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "4ab0cbbc-f246-4199-96c9-28a776d46c60"
+            },
+            "items": [
+                {
+                    "id": "35230bc4-b966-43ae-bc01-79593ed49217",
+                    "add_ons": [
+                        {
+                            "id": "f31ca7cd-b1f1-4b46-b6b8-7c6432e32261"
+                        }
+                    ]
+                }
+            ],
+            "fulfillment": [
+                {
+                    "id": "ab-ful-01",
+                    "type": "EMERGENCY",
+                    "customer": {
+                        "person": {
+                            "id": "patient-123",
+                            "name": "Mr John Smith",
+                            "creds": [
+                                {
+                                    "url": "john.smith@example.com"
+                                }
+                            ]
+                        }
+                    },
+                    "stops": [
+                        {
+                            "type": "START",
+                            "time": {
+                                "label": "scheduled-time",
+                                "timestamp": "2023-09-15T08:00:00Z"
+                            },
+                            "location": {
+                                "gps": "12.423423,77.325647"
+                            }
+                        },
+                        {
+                            "type": "END",
+                            "location": {
+                                "gps": "12.423483,77.325697"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "billing": {
+                "name": "John Doe",
+                "address": "Door 12, Salarpuria Greenage, Street No 7, Hosur Road, 560068",
+                "email": "john.doe@example.com",
+                "phone": "+91-9999999999"
+            }
+        }
+    }
+}

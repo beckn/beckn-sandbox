@@ -1,0 +1,89 @@
+{
+    "context": {
+        "domain": "online-dispute-resolution:0.1.0",
+        "location": {
+            "country": {
+                "code": "IND"
+            }
+        },
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+        "message_id": "$bb579fb8-cb82-4824-be12-fcbc405b6608",
+        "action": "on_select",
+        "timestamp": "2023-05-25T05:23:03.443Z",
+        "version": "1.1.0",
+        "bap_uri": "https://odr-network-bap.becknprotocol.io/",
+        "bap_id": "odr-bap.becknprotocol.io",
+        "bpp_id": "alpha-odr-bpp.becknprotocol.io",
+        "bpp_uri": "https://alpha-odr-network-bpp.becknprotocol.io",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "ODR001",
+                "descriptor": {
+                    "images": [
+                        {
+                            "url": "https://www.alpha.com/content/dam/alpha/india/assets/images/header/logo.png",
+                            "size_type": "xs"
+                        }
+                    ],
+                    "name": "Alpha",
+                    "short_desc": "Alpha Pvt Ltd., India.",
+                    "long_desc": "Alpha Pvt Ltd., India. provides online dispute resolution services. Out platform facilitates easy access to high quality service providers which helps avoid hassles of court, saving time and money and relationships.",
+                    "additional_desc": {
+                        "url": "https://www.alpha.com/content/aboutus"
+                    }
+                },
+                "categories": [
+                    {
+                        "id": "ODRCAT001",
+                        "descriptor": {
+                            "code": "civil-dispute",
+                            "name": "Civil Dispute"
+                        }
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "ALPHA-ARB-01",
+                    "descriptor": {
+                        "code": "arbitration-service",
+                        "name": "Arbitration Services",
+                        "short_desc": "Seamless resolution for disputes. Our expert arbitration services ensure fairness and harmony in legal matters, fostering peaceful settlements.",
+                        "long_desc": "<html><body><p>HarmonyArbitrators specializes in comprehensive arbitration services for civil, family, employment, commercial, and financial disputes.</p><p>Our seasoned arbitrators prioritize efficiency, ensuring fair and impartial resolutions. With a commitment to transparency and client satisfaction, we navigate complexities with professionalism, adhering to ethical standards. Trust HarmonyArbitrators for streamlined processes, timely outcomes, and tailored solutions. We strive not only to resolve disputes but also to leave parties with a sense of harmony and justice. Experience dedicated and effective dispute resolution with HarmonyArbitrators.</p></body></html>",
+                        "images": [
+                            {
+                                "url": "https://imgs.search.brave.com/HJwyZoG5OILiz5APZC6fTdryfIWTfYBw7azIWCFNOag/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdDIu/ZGVwb3NpdHBob3Rv/cy5jb20vMTcwMTY1/MS83MTkxL2kvNjAw/L2RlcG9zaXRwaG90/b3NfNzE5MTUxOTEt/c3RvY2stcGhvdG8t/YXJiaXRyYXRpb24t/Y29uY2VwdC5qcGc"
+                            }
+                        ]
+                    },
+                    "category_ids": ["ODRCAT001"]
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "2500"
+                },
+                "breakup": [
+                    {
+                        "title": "Base fee",
+                        "price": {
+                            "value": "2000",
+                            "currency": "INR"
+                        }
+                    },
+                    {
+                        "title": "Fee per hearing",
+                        "price": {
+                            "value": "500",
+                            "currency": "INR"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

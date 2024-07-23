@@ -1,0 +1,34 @@
+{
+    "context": {
+        "domain": "dhp:diagnostics:0.1.0",
+        "action": "update",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "timestamp": "2023-07-16T04:41:16Z"
+    },
+    "message": {
+        "update_target": "order.billing",
+        "order": {
+            "id": "be69bb43-8286-48b4-801f-a8c5b41ad450",
+            "billing": {
+                "name": "Rajesh Kumar",
+                "address": "Villa 5, Green Valley, Malleshwaram, 560012",
+                "email": "rajesh.kumar@example.com",
+                "phone": "+91-9999999999"
+            }
+        }
+    }
+}

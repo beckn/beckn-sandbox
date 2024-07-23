@@ -1,0 +1,29 @@
+{
+    "context": {
+        "domain": "logistics",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:0806"
+            }
+        },
+        "action": "on_track",
+        "version": "1.1.0",
+        "bap_id": "logistics_bap",
+        "bap_uri": "https://logistics_bap.com",
+        "bpp_id": "logistics_bpp",
+        "bpp_uri": "https://logistics_bpp.com",
+        "transaction_id": "aa77b78e-66b0-47a5-9560-527a36cf0d9f",
+        "message_id": "9d498536-4dba-4c69-a47e-bed245623ecc",
+        "timestamp": "2024-01-15T16:00:00.000Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "tracking": {
+            "url": "https://sample/tracking/url",
+            "status": "active"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "context": {
+        "domain": "local-retail",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "action": "on_rating",
+        "version": "1.1.0",
+        "bap_id": "tourism-bap",
+        "bap_uri": "https://tourism-bap.url",
+        "bpp_id": "tourism-bpp",
+        "bpp_uri": "https://tourism-bpp.url",
+        "message_id": "6104c0a3-d1d1-4ded-aaa4-76e4caf727ce",
+        "transaction_id": "8100d125-76a7-4588-88be-81b97657cd09",
+        "timestamp": "2023-11-06T09:41:09.708Z",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "feedback_form": {
+            "form": {
+                "url": "https://inds-network-bpp.becknprotocol.io/feedback/portal"
+            }
+        }
+    }
+}

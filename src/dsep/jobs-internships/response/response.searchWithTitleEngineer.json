@@ -1,0 +1,531 @@
+{
+    "context": {
+        "domain": "dsep:jobs",
+        "location": {
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "action": "on_search",
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c60008",
+        "message_id": "a914f6c2-0c27-4b00-8818-1a1dc5c844b8",
+        "timestamp": "2023-08-02T11:14:25.6720178+00:00",
+        "ttl": "P1M"
+    },
+    "message": {
+        "catalog": {
+            "descriptor": {
+                "name": "Affindi Jobs"
+            },
+            "payments": [],
+            "providers": [
+                {
+                    "id": "1",
+                    "descriptor": {
+                        "name": "Affinidi"
+                    },
+                    "locations": [
+                        {
+                            "id": "1",
+                            "city": {
+                                "name": "Bangalore"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "city": {
+                                "name": "Bangalore"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "city": {
+                                "name": "Bangalore"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "city": {
+                                "name": "Bangalore"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "5f6e21de6f7ed6b7a3259091194384ccbf290218e4c95d24a5ee8b59538fadf2",
+                            "descriptor": {
+                                "name": "Fullstack Engineer",
+                                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                            },
+                            "location_ids": [
+                                "1"
+                            ]
+                        },
+                        {
+                            "id": "B29ACB6CD4AB1D02A210F15AC070205F",
+                            "descriptor": {
+                                "name": "Agile Project Manager",
+                                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                            },
+                            "location_ids": [
+                                "2"
+                            ]
+                        },
+                        {
+                            "id": "FCB4FB0798490F195E703AD75E0B775C",
+                            "descriptor": {
+                                "name": "Scrum Master",
+                                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                            },
+                            "location_ids": [
+                                "4"
+                            ]
+                        },
+                        {
+                            "id": "e8eff1c9e63d87f41010c0e2ee7381ee3e06aaccfbc036fc2701e2f4e6461261",
+                            "descriptor": {
+                                "name": "Rojgar Engineer",
+                                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                            },
+                            "location_ids": [
+                                "5"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1",
+                    "descriptor": {
+                        "name": "Affinidi"
+                    },
+                    "locations": [
+                        {
+                            "id": "1",
+                            "city": {
+                                "name": "Bangalore"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "city": {
+                                "name": "Bangalore"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "city": {
+                                "name": "Bangalore"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "city": {
+                                "name": "Bangalore"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "5f6e21de6f7ed6b7a3259091194384ccbf290218e4c95d24a5ee8b59538fadf2",
+                            "descriptor": {
+                                "name": "Fullstack Engineer",
+                                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                            },
+                            "location_ids": [
+                                "1"
+                            ]
+                        },
+                        {
+                            "id": "D7F8606A370DA9966DF15E62A81C374B",
+                            "descriptor": {
+                                "name": "Database Engineer",
+                                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                            },
+                            "location_ids": [
+                                "2"
+                            ]
+                        },
+                        {
+                            "id": "0253719F295521CED39EC9C2F3C8DCDE",
+                            "descriptor": {
+                                "name": "Fullstack Engineer",
+                                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                            },
+                            "location_ids": [
+                                "4"
+                            ]
+                        },
+                        {
+                            "id": "e8eff1c9e63d87f41010c0e2ee7381ee3e06aaccfbc036fc2701e2f4e6461261",
+                            "descriptor": {
+                                "name": "Rojgar Engineer",
+                                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                            },
+                            "location_ids": [
+                                "5"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "descriptor": {
+                        "name": "cognizant technology solutions"
+                    },
+                    "locations": [
+                        {
+                            "id": "3",
+                            "city": {
+                                "name": " kolkata"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        },
+                        {
+                            "id": "6",
+                            "city": {
+                                "name": " kolkata<br><br> ID created for your job!"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "6c3338c2574f092809d312c8b79ca9f8aea19794b6ffa356af952fdc9f1b21dd",
+                            "descriptor": {
+                                "name": "ui engineer",
+                                "long_desc": "ui engineer job by cognizant technology solutions on Rojgaar"
+                            },
+                            "location_ids": [
+                                "3"
+                            ]
+                        },
+                        {
+                            "id": "6868ca2ab59d0f4b73b062a12fcfbb0fe36a3f92e4f566e1842afccf63fb9b22",
+                            "descriptor": {
+                                "name": "ui engineer",
+                                "long_desc": "ui engineer job by cognizant technology solutions on Rojgaar"
+                            },
+                            "location_ids": [
+                                "6"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1",
+                    "descriptor": {
+                        "name": "Affinidi"
+                    },
+                    "locations": [
+                        {
+                            "id": "1",
+                            "city": {
+                                "name": "Bangalore"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "city": {
+                                "name": "Bangalore"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "city": {
+                                "name": "Bangalore"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "city": {
+                                "name": "Bangalore"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "5f6e21de6f7ed6b7a3259091194384ccbf290218e4c95d24a5ee8b59538fadf2",
+                            "descriptor": {
+                                "name": "Fullstack Engineer",
+                                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                            },
+                            "location_ids": [
+                                "1"
+                            ]
+                        },
+                        {
+                            "id": "D7F8606A370DA9966DF15E62A81C374B",
+                            "descriptor": {
+                                "name": "Database Engineer",
+                                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                            },
+                            "location_ids": [
+                                "2"
+                            ]
+                        },
+                        {
+                            "id": "0253719F295521CED39EC9C2F3C8DCDE",
+                            "descriptor": {
+                                "name": "Fullstack Engineer",
+                                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                            },
+                            "location_ids": [
+                                "4"
+                            ]
+                        },
+                        {
+                            "id": "e8eff1c9e63d87f41010c0e2ee7381ee3e06aaccfbc036fc2701e2f4e6461261",
+                            "descriptor": {
+                                "name": "Rojgar Engineer",
+                                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                            },
+                            "location_ids": [
+                                "5"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1",
+                    "descriptor": {
+                        "name": "Affinidi"
+                    },
+                    "locations": [
+                        {
+                            "id": "1",
+                            "city": {
+                                "name": "Bangalore"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "city": {
+                                "name": "Bangalore"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "city": {
+                                "name": "Bangalore"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "city": {
+                                "name": "Bangalore"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "5f6e21de6f7ed6b7a3259091194384ccbf290218e4c95d24a5ee8b59538fadf2",
+                            "descriptor": {
+                                "name": "Fullstack Engineer",
+                                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                            },
+                            "location_ids": [
+                                "1"
+                            ]
+                        },
+                        {
+                            "id": "D7F8606A370DA9966DF15E62A81C374B",
+                            "descriptor": {
+                                "name": "Database Engineer",
+                                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                            },
+                            "location_ids": [
+                                "2"
+                            ]
+                        },
+                        {
+                            "id": "0253719F295521CED39EC9C2F3C8DCDE",
+                            "descriptor": {
+                                "name": "Fullstack Engineer",
+                                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                            },
+                            "location_ids": [
+                                "4"
+                            ]
+                        },
+                        {
+                            "id": "e8eff1c9e63d87f41010c0e2ee7381ee3e06aaccfbc036fc2701e2f4e6461261",
+                            "descriptor": {
+                                "name": "Rojgar Engineer",
+                                "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                            },
+                            "location_ids": [
+                                "5"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "descriptor": {
+                        "name": "cognizant technology solutions"
+                    },
+                    "locations": [
+                        {
+                            "id": "3",
+                            "city": {
+                                "name": " kolkata"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        },
+                        {
+                            "id": "6",
+                            "city": {
+                                "name": " kolkata<br><br> ID created for your job!"
+                            },
+                            "state": {
+                                "name": ""
+                            },
+                            "country": {
+                                "name": ""
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "6c3338c2574f092809d312c8b79ca9f8aea19794b6ffa356af952fdc9f1b21dd",
+                            "descriptor": {
+                                "name": "ui engineer",
+                                "long_desc": "ui engineer job by cognizant technology solutions on Rojgaar"
+                            },
+                            "location_ids": [
+                                "3"
+                            ]
+                        },
+                        {
+                            "id": "6868ca2ab59d0f4b73b062a12fcfbb0fe36a3f92e4f566e1842afccf63fb9b22",
+                            "descriptor": {
+                                "name": "ui engineer",
+                                "long_desc": "ui engineer job by cognizant technology solutions on Rojgaar"
+                            },
+                            "location_ids": [
+                                "6"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

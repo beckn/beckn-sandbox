@@ -1,0 +1,119 @@
+{
+    "context": {
+        "domain": "dsep:student-connect",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "action": "on_init",
+        "timestamp": "2023-08-02T09:16:11.982Z",
+        "ttl": "PT10M",
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-022723112309",
+        "message_id": "10c3db77-0c57-4bf8-b9af-169ee5b2d42a"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "289edce4-d002-4962-b311-4c025e22b4f6",
+                "descriptor": {
+                    "name": "MuLearn Talent pool app",
+                    "short_desc": "MuLearn Talent pool App Pvt Ltd",
+                    "images": [
+                        {
+                            "url": "https://mulearn.in/images/logo.png"
+                        }
+                    ]
+                }
+            },
+            "items": [
+                {
+                    "id": "1224",
+                    "descriptor": {
+                        "name": "Mayank Bansal",
+                        "short_desc": "Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ",
+                        "long_desc": "Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.",
+                        "media": [
+                            {
+                                "mimetype": "application/pdf",
+                                "url": "https://www.resume-link.com"
+                            },
+                            {
+                                "mimetype": "application/pdf",
+                                "url": "https://www.certificate-link.com/1"
+                            },
+                            {
+                                "mimetype": "application/pdf",
+                                "url": "https://www.certificate-link.com/2"
+                            }
+                        ],
+                        "images": [
+                            {
+                                "url": "https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4"
+                            }
+                        ]
+                    },
+                    "category_ids": [
+                        "cat-02"
+                    ],
+                    "fulfillment_ids": [
+                        "ful-01",
+                        "ful-02"
+                    ]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "ful-01",
+                    "type": "virtual-meet",
+                    "customer": {
+                        "person": {
+                            "name": "Amkur Singh",
+                            "gender": "Male"
+                        },
+                        "contact": {
+                            "phone": "+91-9663088848",
+                            "email": "ankur.singh@fide.com"
+                        }
+                    },
+                    "stops": [
+                        {
+                            "location": {
+                                "state": {
+                                    "name": "Uttar Pradesh"
+                                },
+                                "city": {
+                                    "name": "Kanpur"
+                                }
+                            },
+                            "time": {
+                                "label": "Scheduled Time",
+                                "range": {
+                                    "start": "2023-12-04 14:00",
+                                    "end": "2023-12-04 14:30"
+                                }
+                            },
+                            "instructions": {
+                                "short_desc": "Hello, I am available for the above given slots, please book a meeting for the above time."
+                            },
+                            "contact": {
+                                "phone": "+91-8858150032",
+                                "email": "iammayankbansal@gmail.com"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

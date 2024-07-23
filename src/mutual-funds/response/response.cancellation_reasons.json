@@ -1,0 +1,42 @@
+{
+  "context": {
+    "domain": "financial-services:mutual-funds:0.2.0",
+    "location": {
+      "country": {
+        "code": "IND"
+      }
+    },
+    "version": "1.1.0",
+    "action": "on_cancel",
+    "bap_id": "ps-bap-network.becknprotocol.io",
+    "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+    "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+    "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+    "message_id": "bb579fb8-cb82-4824-be12-fcbc405b6608",
+    "ttl": "PT30M",
+    "timestamp": "2023-05-25T05:23:03.443Z"
+  },
+  "message": {
+    "cancellation_reasons": [
+      {
+        "id": "1",
+        "descriptor": {
+          "name": "Insufficient funds"
+        }
+      },
+      {
+        "id": "2",
+        "descriptor": {
+          "name": "Need emergency funds"
+        }
+      },
+      {
+        "id": "1",
+        "descriptor": {
+          "name": "Invest into another fund"
+        }
+      }
+    ]
+  }
+}

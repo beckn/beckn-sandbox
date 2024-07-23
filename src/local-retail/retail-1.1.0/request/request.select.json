@@ -1,0 +1,51 @@
+{
+  "context": {
+    "domain": "retail:1.1.0",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:080"
+      }
+    },
+    "action": "select",
+    "version": "1.1.0",
+    "bap_id": "farm-fresh-bap-id",
+    "bap_uri": "https://55a6-124-123-32-28.ngrok-free.app",
+    "bpp_id": "farm-fresh-bpp-subId",
+    "bpp_uri": "https://4e21-124-123-32-28.ngrok-free.app",
+    "message_id": "6d098f3a-4873-4b2e-935e-e4d6be92eb01",
+    "transaction_id": "8100d125-76a7-4588-88be-81b97657cd09",
+    "timestamp": "2023-11-06T09:44:47.217Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "./retail.kirana/ind.blr/33@tourism-bpp-infra2.becknprotocol.io.provider"
+      },
+      "items": [
+        {
+          "id": "./retail.kirana/ind.blr/247@tourism-bpp-infra2.becknprotocol.io.item",
+          "quantity": {
+            "selected": {
+              "count": 2
+            }
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "f1",
+          "stops": [
+            {
+              "location": {
+                "gps": "13.2008459,77.708736"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

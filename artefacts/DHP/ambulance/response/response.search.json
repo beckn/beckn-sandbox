@@ -1,0 +1,230 @@
+{
+    "context": {
+        "domain": "dhp:ambulance:0.1.0",
+        "action": "on_search",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-client.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "timestamp": "2023-07-16T04:41:16Z"
+    },
+    "message": {
+        "catalog": {
+            "descriptor": {
+                "name": "Available Ambulance Services"
+            },
+            "providers": [
+                {
+                    "id": "4ab0cbbc-f246-4199-96c9-28a776d46c60",
+                    "descriptor": {
+                        "name": "Alpha Ambulance Services",
+                        "short_desc": "Alpha Ambulance Services Pvt Ltd",
+                        "images": [
+                            {
+                                "url": "https://alphaambulanceservices.in/images/logo.png"
+                            }
+                        ]
+                    },
+                    "categories": [
+                        {
+                            "id": "amb-service-01",
+                            "descriptor": {
+                                "code": "basic-ambulance",
+                                "name": "Basic Ambulance Service"
+                            }
+                        },
+                        {
+                            "id": "amb-service-02",
+                            "descriptor": {
+                                "code": "advance-ambulance",
+                                "name": "Advance Ambulance Services"
+                            }
+                        },
+                        {
+                            "id": "amb-service-03",
+                            "descriptor": {
+                                "code": "air-ambulance",
+                                "name": "Air Ambulance Services"
+                            }
+                        },
+                        {
+                            "id": "amb-service-04",
+                            "descriptor": {
+                                "code": "mortuary-ambulance",
+                                "name": "Mortuary Ambulance Services"
+                            }
+                        }
+                    ],
+                    "locations": [
+                        {
+                            "id": "amb-loc-01",
+                            "gps": "12.9164682,77.6089985"
+                        },
+                        {
+                            "id": "amb-loc-02",
+                            "gps": "12.91671,77.6092983"
+                        },
+                        {
+                            "id": "amb-loc-03",
+                            "gps": "12.9165733,77.6152167"
+                        }
+                    ],
+                    "fulfillments": [
+                        {
+                            "id": "ab-ful-01",
+                            "type": "EMERGENCY",
+                            "vehicle": {
+                                "category": "pediatric"
+                            },
+                            "stops": [
+                                {
+                                    "type": "start",
+                                    "time": {
+                                        "timestamp": "2023-09-15T08:00:00Z"
+                                    }
+                                },
+                                {
+                                    "type": "end",
+                                    "time": {
+                                        "timestamp": "2023-09-15T08:30:00Z"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ab-ful-02",
+                            "type": "NON-EMERGENCY",
+                            "vehicle": {
+                                "category": "icu"
+                            },
+                            "stops": [
+                                {
+                                    "type": "start",
+                                    "time": {
+                                        "timestamp": "2023-09-15T09:00:00Z"
+                                    }
+                                },
+                                {
+                                    "type": "end",
+                                    "time": {
+                                        "timestamp": "2023-09-15T09:30:00Z"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "855e60b4-05f8-4e71-86be-c7facae7d61d",
+                            "descriptor": {
+                                "code": "neonatal-life-support",
+                                "name": "Neonatal Life Supoprt"
+                            },
+                            "price": {
+                                "value": "12000",
+                                "currency": "INR"
+                            },
+                            "add_ons": [
+                                {
+                                    "id": "f31ca7cd-b1f1-4b46-b6b8-7c6432e32261",
+                                    "descriptor": {
+                                        "code": "oxygen-suuport",
+                                        "name": "Basic Oxygen Support"
+                                    },
+                                    "price": {
+                                        "value": "10000",
+                                        "currency": "INR"
+                                    }
+                                }
+                            ],
+                            "category_ids": [
+                                "amb-service-01"
+                            ],
+                            "location_ids": [
+                                "amb-loc-01"
+                            ],
+                            "fulfillment_ids": [
+                                "ab-ful-02"
+                            ]
+                        },
+                        {
+                            "id": "35230bc4-b966-43ae-bc01-79593ed49217",
+                            "descriptor": {
+                                "code": "advanced-life-support",
+                                "name": "Advanced Life Support"
+                            },
+                            "price": {
+                                "value": "45000",
+                                "currency": "INR"
+                            },
+                            "add_ons": [
+                                {
+                                    "id": "f31ca7cd-b1f1-4b46-b6b8-7c6432e32261",
+                                    "descriptor": {
+                                        "code": "oxygen-suuport",
+                                        "name": "Basic Oxygen Support"
+                                    },
+                                    "price": {
+                                        "value": "10000",
+                                        "currency": "INR"
+                                    }
+                                },
+                                {
+                                    "id": "02667b93-4224-49e7-9a64-e4e4b88dba48",
+                                    "descriptor": {
+                                        "code": "cpr-suuport",
+                                        "name": "CPR Support"
+                                    },
+                                    "price": {
+                                        "value": "10000",
+                                        "currency": "INR"
+                                    }
+                                }
+                            ],
+                            "category_ids": [
+                                "amb-service-02"
+                            ],
+                            "location_ids": [
+                                "amb-loc-01"
+                            ],
+                            "fulfillment_ids": [
+                                "ab-ful-01"
+                            ]
+                        },
+                        {
+                            "id": "2e48d6c1-8151-43ae-bdb0-9584a731aa49",
+                            "descriptor": {
+                                "code": "mortuary-ambulance",
+                                "name": "Mortuary Ambulance Services"
+                            },
+                            "price": {
+                                "value": "15000",
+                                "currency": "INR"
+                            },
+                            "category_ids": [
+                                "amb-service-04"
+                            ],
+                            "location_ids": [
+                                "amb-loc-01"
+                            ],
+                            "fulfillment_ids": [
+                                "ab-ful-01"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

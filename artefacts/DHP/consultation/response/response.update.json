@@ -1,0 +1,172 @@
+{
+    "context": {
+        "domain": "dhp:consultation:0.1.0",
+        "action": "on_update",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_url": "https://ps-bap-client.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "timestamp": "2023-07-16T04:41:16Z"
+    },
+    "message": {
+        "order": {
+            "id": "759b905c-5a30-4d18-a6af-0decbac9282f",
+            "provider": {
+                "id": "289edce4-d002-4962-b311-4c025e22b4f6",
+                "descriptor": {
+                    "name": "my hospital",
+                    "short_desc": "my hospital Pvt Ltd",
+                    "images": [
+                        {
+                            "url": "https://myhospital.in/images/logo.png"
+                        }
+                    ]
+                }
+            },
+            "items": [
+                {
+                    "id": "cons-01",
+                    "descriptor": {
+                        "code": "consultation",
+                        "name": "Orthopedaedic Surgeon",
+                        "short_desc": "Orthopaedic Surgeon",
+                        "long_desc": "Skilled orthopaedic surgeon specializing in diagnosing & treating musculoskeletal conditions using advanced surgical techniques & compassionate care"
+                    },
+                    "price": {
+                        "value": "300",
+                        "currency": "INR"
+                    },
+                    "category_ids": ["cat-02"],
+                    "fulfillment_ids": ["ful-01"],
+                    "time": {
+                        "duration": "PT30M"
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "ful-01",
+                    "type": "OPD",
+                    "customer": {
+                        "person": {
+                            "name": "Jane Doe",
+                            "age": "13",
+                            "gender": "female",
+                            "dob": "1995-09-11"
+                        },
+                        "contact": {
+                            "phone": "+91-9663088848",
+                            "email": "jane.doe@example.com"
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "patient-details-updated",
+                            "name": "Patient Detail is Updated"
+                        }
+                    },
+                    "agent": {
+                        "person": {
+                            "id": "237402938409485039850935",
+                            "name": "Dr Asthana",
+                            "gender": "male"
+                        }
+                    },
+                    "stops": [
+                        {
+                            "location": {
+                                "gps": "12.9716890, 77.5946890",
+                                "address": "Akashya nagar B17/14",
+                                "state": {
+                                    "name": "Madhya Pradesh"
+                                },
+                                "city": {
+                                    "name": "Bhopal"
+                                },
+                                "area_code": "462001"
+                            },
+                            "time": {
+                                "label": "Booking Slots",
+                                "range": {
+                                    "start": "2023-11-04T10:00:00.000Z",
+                                    "end": "2023-11-04T10:30:00.000Z"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "billing": {
+                "name": "Rajesh Kumar",
+                "address": "Villa 5, Green Valley, Malleshwaram, 560012",
+                "state": {
+                    "name": "Madhya Pradesh"
+                },
+                "city": {
+                    "name": "Bhopal"
+                },
+                "email": "rajesh.kumar@example.com",
+                "phone": "+91-9999999999"
+            },
+            "quote": {
+                "price": {
+                    "value": "350",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "title": "General Physician Consultation",
+                        "price": {
+                            "currency": "INR",
+                            "value": "300"
+                        }
+                    },
+                    {
+                        "title": "Slot surcharge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "50"
+                        }
+                    }
+                ]
+            },
+            "payments": [
+                {
+                    "collected_by": "BPP",
+                    "params": {
+                        "amount": "350",
+                        "currency": "INR",
+                        "transaction_id": "a35b56cf-e5cf-41f1-9b5d-fa99d8d5ac8c",
+                        "bank_account_number": "1234002341",
+                        "bank_code": "INB0004321",
+                        "bank_account_name": "Strapi BPP Limited"
+                    },
+                    "status": "PAID",
+                    "type": "PRE-ORDER"
+                }
+            ],
+            "cancellation_terms": [
+                {
+                    "reason_required": true,
+                    "cancellation_fee": {
+                        "amount": {
+                            "currency": "EUR",
+                            "value": "100"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,246 @@
+{
+    "context": {
+        "action": "on_cancel",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "domain": "financial-services:health-insurance:0.2.0",
+        "location": {
+            "country": {
+                "code": "IND"
+            }
+        },
+        "message_id": "ff042cdc-c5f5-4cbb-9509-52d6fba1b405",
+        "timestamp": "2023-07-24T05:43:43.182Z",
+        "transaction_id": "c04a04ee-d892-400f-bbe6-479a43b4448a",
+        "ttl": "PT24H",
+        "core_version": "1.1.0"
+    },
+    "message": {
+        "order": {
+            "fulfillments": [
+                {
+                    "customer": {
+                        "contact": {
+                            "email": "joe.adam@abc.org",
+                            "phone": "+91-9999999999"
+                        },
+                        "person": {
+                            "dob": "1990-01-21",
+                            "gender": "male",
+                            "name": "Joe Adam",
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "PERSON_ADDITIONAL_DETAILS"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "name": "Politically exposed person"
+                                            },
+                                            "value": "false"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "name": "GSTIN"
+                                            },
+                                            "value": "20JDVIEHVJDSN"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "id": "FULFILMENT_ID",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "name": "Process Workflow"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "Manual evaluation flag"
+                                    },
+                                    "value": "false"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "add_ons": [
+                        {
+                            "id": "NO_CLAIM_BONUS"
+                        }
+                    ],
+                    "category_ids": ["CAT_INDIVIDUAL_INSURANCE"],
+                    "descriptor": {
+                        "code": "BASE",
+                        "name": "ABC Individaul Health Insurance Policy",
+                        "short_desc": "ABC Individaul Health Insurance Class A with custom addon"
+                    },
+                    "fulfillment_ids": ["FULFILMENT_ID"],
+                    "id": "36db0d40-c7ca-47db-82d8-6cdadf671c3c",
+                    "price": {
+                        "value": "1000"
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "ASSOCIATED_ADDON_ID"
+                            },
+                            "list": [
+                                {
+                                    "value": "NO_CLAIM_BONUS"
+                                },
+                                {
+                                    "value": "DAYCARE_COVER"
+                                },
+                                {
+                                    "value": "DAILY_CASH_ALLOWANCE"
+                                },
+                                {
+                                    "value": "DOMICILIARY_EXPENSES"
+                                },
+                                {
+                                    "value": "HEALTH_CHECK_UPS"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "name": "Policy Inclusive Offers"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "Coverage amount"
+                                    },
+                                    "value": "10000000"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Co-payment"
+                                    },
+                                    "value": "true"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Room rent cap"
+                                    },
+                                    "value": "25000"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Restoration benefit"
+                                    },
+                                    "value": "false"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Claim settlement ratio"
+                                    },
+                                    "value": "0.8"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Pre-hospitalization coverage days"
+                                    },
+                                    "value": "2"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Post-hospitalization coverage days"
+                                    },
+                                    "value": "5"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Maternity coverage"
+                                    },
+                                    "value": "true"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Initial waiting period"
+                                    },
+                                    "value": "false"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Cashless hospitals"
+                                    },
+                                    "value": "50"
+                                }
+                            ]
+                        }
+                    ],
+                    "time": {
+                        "duration": "P1Y",
+                        "label": "TENURE"
+                    }
+                }
+            ],
+            "id": "04389d8c-6a50-4664-9c08-4ee45fef44e8",
+            "payments": [
+                {
+                    "collected_by": "BPP",
+                    "params": {
+                        "amount": "1000",
+                        "bank_account_number": "1800002341",
+                        "bank_code": "SBIN0001234",
+                        "currency": "INR"
+                    },
+                    "status": "PAID",
+                    "type": "PRE-ORDER",
+                    "transaction_id": "85742a36-6636-4dcf-ae56-c47d3387d1d0"
+                }
+            ],
+            "provider": {
+                "descriptor": {
+                    "long_desc": "ABC Insurance Ltd. Deals in multiple Insurance Services like Health, Motor, Marine etc",
+                    "name": "ABC Insurance Ltd.",
+                    "short_desc": "ABC Insurance Ltd. India ",
+                    "images": [
+                        {
+                            "url": "https://www.abcinsurance.com/content/dam/abc/india/assets/images/header/logo.png"
+                        }
+                    ]
+                },
+                "id": "e5585415-bce5-46b5-aeba-9f6b83df5ffa"
+            },
+            "quote": {
+                "breakup": [
+                    {
+                        "price": {
+                            "value": "900"
+                        },
+                        "title": "Base Price"
+                    },
+                    {
+                        "price": {
+                            "value": "50"
+                        },
+                        "title": "Tax"
+                    },
+                    {
+                        "price": {
+                            "value": "50"
+                        },
+                        "title": "Processing Fee"
+                    }
+                ],
+                "price": {
+                    "currency": "INR",
+                    "value": "1000"
+                },
+                "status": "CANCELED"
+            }
+        }
+    }
+}

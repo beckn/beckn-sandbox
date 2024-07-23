@@ -1,0 +1,92 @@
+{
+    "context": {
+        "domain": "uei:charging",
+        "action": "search",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "bap_id": "example-bap-id",
+        "bap_uri": "https://example-bap-url.com",
+        "transaction_id": "edea17fa-b5c4-48c9-86dd-1b80dda67d37",
+        "message_id": "4618752a-c502-4503-bd75-635622ea8aff",
+        "timestamp": "2023-02-18T17:00:40.065Z",
+        "version": "1.0.0",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "intent": {
+            "descriptor": {
+                "name": "The search term. Eg: HSR Layout"
+            },
+            "tags": [
+                {
+                    "display": false,
+                    "descriptor": {
+                        "name": "User Info",
+                        "code": "user-info"
+                    },
+                    "list": [
+                        {
+                            "value": "19.2483,39.348944",
+                            "descriptor": {
+                                "name": "Coordinates",
+                                "code": "coordinates"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "descriptor": {
+                        "name": "Connector Types",
+                        "code": "connector-types"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "name": "DC-001",
+                                "code": "DC-001"
+                            },
+                            "value": "DC-001"
+                        },
+                        {
+                            "descriptor": {
+                                "name": "Type 2",
+                                "code": "Type2"
+                            },
+                            "value": "Type2"
+                        }
+                    ]
+                },
+                {
+                    "descriptor": {
+                        "name": "Brands",
+                        "code": "brands"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "name": "CPO 1 Name",
+                                "code": "cpo-1-code"
+                            },
+                            "value": "CPO 1 Name"
+                        },
+                        {
+                            "descriptor": {
+                                "name": "CPO 2 Name",
+                                "code": "cpo-2-code"
+                            },
+                            "value": "CPO 2 Name"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,250 @@
+{
+    "context": {
+        "domain": "dhp:consultation:0.1.0",
+        "action": "on_search",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_url": "https://ps-bap-client.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "timestamp": "2023-07-16T04:41:16Z"
+    },
+    "message": {
+        "catalog": {
+            "descriptor": {
+                "name": "Diagnostic services"
+            },
+            "providers": [
+                {
+                    "id": "289edce4-d002-4962-b311-4c025e22b4f6",
+                    "descriptor": {
+                        "name": "my hospital",
+                        "short_desc": "my hospital Pvt Ltd",
+                        "images": [
+                            {
+                                "url": "https://myhospital.in/images/logo.png"
+                            }
+                        ]
+                    },
+                    "categories": [
+                        {
+                            "id": "cat-01",
+                            "descriptor": {
+                                "code": "cardiology",
+                                "name": "Cardiology"
+                            }
+                        },
+                        {
+                            "id": "cat-02",
+                            "descriptor": {
+                                "code": "orthopaedic",
+                                "name": "Orthopaedic"
+                            }
+                        },
+                        {
+                            "id": "cat-03",
+                            "descriptor": {
+                                "code": "ent",
+                                "name": "ENT"
+                            }
+                        }
+                    ],
+                    "fulfillments": [
+                        {
+                            "id": "ful-01",
+                            "type": "OPD",
+                            "agent": {
+                                "person": {
+                                    "id": "237402938409485039850935",
+                                    "name": "Dr Asthana",
+                                    "gender": "male",
+                                    "creds": [
+                                        {
+                                            "id": "237402938409485039850935",
+                                            "type": "VerifiableCredential",
+                                            "url": "https://www.aiims.com/honours/237402938409485039850935"
+                                        }
+                                    ],
+                                    "languages": [
+                                        {
+                                            "code": "hindi",
+                                            "name": "Hindi"
+                                        },
+                                        {
+                                            "code": "english",
+                                            "name": "English"
+                                        },
+                                        {
+                                            "code": "kannada",
+                                            "name": "Kannada"
+                                        }
+                                    ],
+                                    "skills": [
+                                        {
+                                            "code": "mbbs",
+                                            "name": "MBBS"
+                                        },
+                                        {
+                                            "code": "md",
+                                            "name": "MD"
+                                        }
+                                    ],
+                                    "tags": [
+                                        {
+                                            "display": true,
+                                            "descriptor": {
+                                                "code": "about",
+                                                "name": "About the Doctor"
+                                            },
+                                            "list": [
+                                                {
+                                                    "value": "With over 10 years of experience in Orthopaedics"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "rating": "4.5"
+                            },
+                            "stops": [
+                                {
+                                    "location": {
+                                        "gps": "12.423423, 77.325647",
+                                        "address": "Akashya nagar B17/14",
+                                        "state": {
+                                            "name": "Madhya Pradesh"
+                                        },
+                                        "city": {
+                                            "name": "Bhopal"
+                                        },
+                                        "area_code": "462001"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ful-02",
+                            "type": "OPD",
+                            "agent": {
+                                "person": {
+                                    "id": "237402938409485039850935",
+                                    "name": "Dr Bhargava",
+                                    "gender": "female",
+                                    "creds": [
+                                        {
+                                            "id": "237402938409485039850935",
+                                            "type": "VerifiableCredential",
+                                            "url": "https://www.aiims.com/honours/237402938409485039850935"
+                                        }
+                                    ],
+                                    "languages": [
+                                        {
+                                            "code": "hindi",
+                                            "name": "Hindi"
+                                        },
+                                        {
+                                            "code": "english",
+                                            "name": "English"
+                                        },
+                                        {
+                                            "code": "kannada",
+                                            "name": "Kannada"
+                                        }
+                                    ],
+                                    "skills": [
+                                        {
+                                            "code": "mbbs",
+                                            "name": "MBBS"
+                                        },
+                                        {
+                                            "code": "md",
+                                            "name": "MD"
+                                        }
+                                    ],
+                                    "tags": [
+                                        {
+                                            "display": true,
+                                            "descriptor": {
+                                                "code": "about",
+                                                "name": "About the Doctor"
+                                            },
+                                            "list": [
+                                                {
+                                                    "value": "With over 10 years of experience in Orthopaedics"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "rating": "5"
+                            },
+                            "stops": [
+                                {
+                                    "location": {
+                                        "gps": "12.423423, 77.325647",
+                                        "address": "Akashya nagar B17/14",
+                                        "state": {
+                                            "name": "Madhya Pradesh"
+                                        },
+                                        "city": {
+                                            "name": "Bhopal"
+                                        },
+                                        "area_code": "462001"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "cons-01",
+                            "descriptor": {
+                                "code": "consultation",
+                                "name": "Orthopedaedic Surgeon",
+                                "short_desc": "Orthopaedic Surgeon",
+                                "long_desc": "Skilled orthopaedic surgeon specializing in diagnosing & treating musculoskeletal conditions using advanced surgical techniques & compassionate care"
+                            },
+                            "price": {
+                                "value": "300",
+                                "currency": "INR"
+                            },
+                            "category_ids": ["cat-02"],
+                            "fulfillment_ids": ["ful-01"],
+                            "time": {
+                                "duration": "PT30M"
+                            }
+                        },
+                        {
+                            "id": "cons-02",
+                            "descriptor": {
+                                "code": "consultation",
+                                "name": "Orthopaedic Surgeon",
+                                "short_desc": "Orthopaedic Surgeon",
+                                "long_desc": "Skilled orthopaedic surgeon specializing in diagnosing & treating musculoskeletal conditions using advanced surgical techniques & compassionate care"
+                            },
+                            "price": {
+                                "value": "400",
+                                "currency": "INR"
+                            },
+                            "category_ids": ["cat-02"],
+                            "fulfillment_ids": ["ful-02"],
+                            "time": {
+                                "duration": "PT30M"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

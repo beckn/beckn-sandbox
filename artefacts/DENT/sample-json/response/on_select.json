@@ -1,0 +1,251 @@
+{
+    "context": {
+        "domain": "uei:charging",
+        "action": "on_select",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "bap_id": "example-bap-id",
+        "bap_uri": "https://example-bap-url.com",
+        "bpp_id": "example-bpp-id",
+        "bpp_uri": "https://example-bpp-url.com",
+        "transaction_id": "e0a38442-69b7-4698-aa94-a1b6b5d244c2",
+        "message_id": "6ace310b-6440-4421-a2ed-b484c7548bd5",
+        "timestamp": "2023-02-18T17:00:40.065Z",
+        "version": "1.0.0",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "id of the CPO",
+                "descriptor": {
+                    "name": "CPO name",
+                    "images": [
+                        {
+                            "url": "logo of the CPO"
+                        }
+                    ]
+                }
+            },
+            "items": [
+                {
+                    "id": "id of the Charging Station",
+                    "category_ids": [
+                        "charging-station"
+                    ],
+                    "descriptor": {
+                        "name": "Name of the CS",
+                        "images": [
+                            {
+                                "url": "image 1 of CS"
+                            },
+                            {
+                                "url": "image 2 of CS"
+                            }
+                        ]
+                    },
+                    "tags": [
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "name": "Attributes",
+                                "code": "attributes"
+                            },
+                            "list": [
+                                {
+                                    "display": true,
+                                    "value": "30kms",
+                                    "descriptor": {
+                                        "name": "Distance",
+                                        "code": "distance"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "id of the Charge Point",
+                    "parent_item_id": "id of the Charging Station (Location) this CP belongs to",
+                    "category_ids": [
+                        "charge-point"
+                    ],
+                    "descriptor": {
+                        "name": "Name of the Charge Point",
+                        "code": "Human readable unique code of the Charge Point",
+                        "images": [
+                            {
+                                "url": "image 1 of CP"
+                            }
+                        ]
+                    },
+                    "tags": [
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "name": "Available Charging Options",
+                                "code": "available-charging-options"
+                            },
+                            "list": [
+                                {
+                                    "display": true,
+                                    "value": "80",
+                                    "descriptor": {
+                                        "name": "SoC",
+                                        "code": "soc"
+                                    }
+                                },
+                                {
+                                    "display": true,
+                                    "value": "5",
+                                    "descriptor": {
+                                        "name": "Units",
+                                        "code": "units"
+                                    }
+                                },
+                                {
+                                    "display": true,
+                                    "value": "100",
+                                    "descriptor": {
+                                        "name": "Amount",
+                                        "code": "amount"
+                                    }
+                                },
+                                {
+                                    "display": true,
+                                    "value": "30",
+                                    "descriptor": {
+                                        "name": "Time",
+                                        "code": "time"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "id of the Charge Point Connector",
+                    "parent_item_id": "id of the Charge Point this CPC belongs to",
+                    "category_ids": [
+                        "connector"
+                    ],
+                    "descriptor": {
+                        "name": "Type 2",
+                        "code": "Type2",
+                        "images": [
+                            {
+                                "url": "image of the connector's icon"
+                            }
+                        ]
+                    },
+                    "tags": [
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "name": "Connector Status",
+                                "code": "connector-status"
+                            },
+                            "list": [
+                                {
+                                    "display": true,
+                                    "value": "Available",
+                                    "descriptor": {
+                                        "name": "Status",
+                                        "code": "status"
+                                    }
+                                },
+                                {
+                                    "display": true,
+                                    "value": "NoError",
+                                    "descriptor": {
+                                        "name": "Error",
+                                        "code": "error"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tags": [
+                {
+                    "display": true,
+                    "descriptor": {
+                        "name": "Selected Charging Option",
+                        "code": "selected-charging-option"
+                    },
+                    "list": [
+                        {
+                            "display": true,
+                            "value": "100",
+                            "descriptor": {
+                                "name": "Amount",
+                                "code": "amount"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "123.25",
+                    "estimated_value": "123.25"
+                },
+                "breakup": [
+                    {
+                        "title": "Estimated Charging Cost",
+                        "price": {
+                            "currency": "INR",
+                            "value": "100"
+                        }
+                    },
+                    {
+                        "title": "GST",
+                        "price": {
+                            "currency": "INR",
+                            "value": "18"
+                        }
+                    },
+                    {
+                        "title": "Service Fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "5.25"
+                        }
+                    },
+                    {
+                        "title": "Total",
+                        "price": {
+                            "currency": "INR",
+                            "value": "123.25"
+                        }
+                    }
+                ]
+            },
+            "refund_terms": [
+                {
+                    "refund_eligible": true,
+                    "refund_within": {
+                        "days": "1"
+                    },
+                    "refund_amount": {
+                        "currency": "INR",
+                        "minimum_value": "0",
+                        "maximum_value": "123.25"
+                    }
+                }
+            ],
+            "created_at": "2023-02-18T17:00:40.065Z",
+            "updated_at": "2023-02-18T17:00:40.065Z"
+        }
+    }
+}

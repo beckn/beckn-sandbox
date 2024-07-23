@@ -1,0 +1,42 @@
+{
+    "context": {
+        "domain": "knowledge-advisory:agrinet:vistaar",
+        "action": "search",
+        "location": {
+            "country": {
+                "name": "India",
+                "code": "IND"
+            },
+            "city": {
+                "name": "Balangir"
+            }
+        },
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-client.becknprotocol.io",
+        "transaction_id": "d28ec57e-8c8f-4db0-a5aa-73d6563942e1",
+        "message_id": "6c8b36e8-7886-4cc8-b3a6-8a3d464fcd6c",
+        "timestamp": "2024-07-02T09:15:30Z"
+    },
+    "message": {
+        "intent": {
+            "item": {
+                "descriptor": {
+                    "name": "cotton aphid"
+                },
+                "tags": [
+                    {
+                        "descriptor": {
+                            "name": "languages"
+                        },
+                        "list": [
+                            {
+                                "value": "Odia"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

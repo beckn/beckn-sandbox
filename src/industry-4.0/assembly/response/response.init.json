@@ -1,0 +1,186 @@
+{
+    "context": {
+        "domain": "supply-chain-services:assembly",
+        "location": {
+            "country": {
+                "code": "DE"
+            }
+        },
+        "action": "on_init",
+        "version": "1.1.0",
+        "bap_uri": "https://supply-chain-protocol-network.becknprotocol.io/",
+        "bap_id": "supply-chain-protocol.becknprotocol.io",
+        "bpp_id": "bpp.supply-chain.makerspace.io",
+        "bpp_uri": "https://bpp.supply-chain.makerspace.io",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
+        "message_id": "27f9d99a-5ec6-11ee-8c99-0242ac120002",
+        "timestamp": "2023-05-25T05:23:03.443Z",
+        "ttl": "P30M"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "descriptor": {
+                    "name": "Makerspace",
+                    "short_desc": "Makerspace",
+                    "long_desc": "Makerspace, Hof",
+                    "images": [
+                        {
+                            "url": "makerspace_logo.png",
+                            "size_type": "sm"
+                        }
+                    ]
+                },
+                "id": "1"
+            },
+            "items": [
+                {
+                    "id": "66b7b9bad166-4a3f-ada6-ca063dc9d321",
+                    "descriptor": {
+                        "images": [
+                            {
+                                "url": "https://makerspace/assembly/intermittent.img",
+                                "size_type": "sm"
+                            }
+                        ],
+                        "name": "Intermittent assembly type"
+                    },
+                    "category_ids": [
+                        "p2c3"
+                    ],
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "product-info",
+                                "name": "Product Information"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "product-type"
+                                    },
+                                    "value": "electronics"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "assembly-info",
+                                "name": "Assembly Information"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "assembly-method"
+                                    },
+                                    "value": "automated"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "scale-info",
+                                "name": "Scale Information"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "scale-type"
+                                    },
+                                    "value": "industrial"
+                                }
+                            ]
+                        }
+                    ],
+                    "price": {
+                        "currency": "EUR",
+                        "value": "starting from 200 EUR"
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "f1",
+                    "customer": {
+                        "contact": {
+                            "email": "fox.judie@abc.org",
+                            "phone": "+91-9999999999"
+                        },
+                        "person": {
+                            "name": "Judie Fox"
+                        }
+                    },
+                    "stops": [
+                        {
+                            "type": "end",
+                            "location": {
+                                "gps": "1.3806217468119772, 103.74636438437074",
+                                "address": "My House #, My building",
+                                "city": {
+                                    "name": "Jurong East"
+                                },
+                                "country": {
+                                    "code": "SGP"
+                                },
+                                "area_code": "680230",
+                                "state": {
+                                    "name": "bayern"
+                                }
+                            },
+                            "contact": {
+                                "phone": "9886098860"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "billing": {
+                "name": "Industry buyer",
+                "address": "B005 aspire heights, Jurong East, SGP, 680230",
+                "state": {
+                    "name": "Jurong East"
+                },
+                "city": {
+                    "name": "Jurong East"
+                },
+                "email": "nobody@nomail.com",
+                "phone": "9886098860"
+            },
+            "payments": [
+                {
+                    "collected_by": "BPP",
+                    "params": {
+                        "amount": "250",
+                        "currency": "EUR",
+                        "bank_code": "INB0004321",
+                        "bank_account_number": "1234002341"
+                    },
+                    "status": "NOT-PAID",
+                    "type": "PRE-ORDER"
+                }
+            ],
+            "quote": {
+                "breakup": [
+                    {
+                        "price": {
+                            "currency": "EUR",
+                            "value": "200"
+                        },
+                        "title": "Base Price"
+                    },
+                    {
+                        "price": {
+                            "currency": "EUR",
+                            "value": "50"
+                        },
+                        "title": "Tax"
+                    }
+                ],
+                "price": {
+                    "currency": "EUR",
+                    "value": "250"
+                }
+            }
+        }
+    }
+}

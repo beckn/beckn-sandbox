@@ -1,0 +1,123 @@
+{
+    "context": {
+        "domain": "dhp:bloodbank:0.1.0",
+        "action": "on_init",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-client.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "timestamp": "2023-07-16T04:41:16Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "23847572-53a0-49f2-9159-6b89b0168f49",
+                "descriptor": {
+                    "name": "Red Cross",
+                    "short_desc": "Red Cross blood bank",
+                    "images": [
+                        {
+                            "url": "https://redcross.in/images/logo.png"
+                        }
+                    ]
+                }
+            },
+            "items": [
+                {
+                    "id": "f47e5d7c-1e9f-414f-a9e2-9359d4434d73",
+                    "descriptor": {
+                        "code": "O+ve",
+                        "name": "O +ve blood"
+                    },
+                    "quantity": {
+                        "selected": {
+                            "measure": {
+                                "value": "2",
+                                "unit": "units"
+                            }
+                        }
+                    }
+                }
+            ],
+            "fulfillment": [
+                {
+                    "id": "bb-ful1",
+                    "type": "BLOOD-BANK-SERVICE",
+                    "customer": {
+                        "person": {
+                            "id": "donor-123",
+                            "name": "Jane Doe",
+                            "creds": [
+                                {
+                                    "url": "donor@example.com"
+                                }
+                            ]
+                        }
+                    },
+                    "stops": [
+                        {
+                            "type": "start",
+                            "time": {
+                                "timestamp": "2023-09-15T08:00:00Z"
+                            }
+                        },
+                        {
+                            "type": "end",
+                            "time": {
+                                "timestamp": "2023-09-15T18:00:00Z"
+                            }
+                        }
+                    ],
+                    "state": {
+                        "descriptor": {
+                            "code": "order-initiated",
+                            "name": "Order has been initiated"
+                        }
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Jane Doe",
+                "address": "Flat 102, Serene Springs, JP Nagar, 560078",
+                "email": "jane.doe@example.com",
+                "phone": "+91-8888888888"
+            },
+            "quote": {
+                "price": {
+                    "value": "0",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "title": "2 units of O +ve blood",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ]
+            },
+            "payments": [
+                {
+                    "type": "PRE-FULFILLMENT",
+                    "status": "PAID",
+                    "params": {
+                        "amount": "0",
+                        "currency": "INR"
+                    }
+                }
+            ]
+        }
+    }
+}

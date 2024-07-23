@@ -1,0 +1,32 @@
+{
+    "context": {
+        "domain": "uei:charging",
+        "action": "on_track",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "bap_id": "example-bap-id",
+        "bap_uri": "https://example-bap-url.com",
+        "bpp_id": "example-bpp-id",
+        "bpp_uri": "https://example-bpp-url.com",
+        "transaction_id": "e0a38442-69b7-4698-aa94-a1b6b5d244c2",
+        "message_id": "6ace310b-6440-4421-a2ed-b484c7548bd5",
+        "timestamp": "2023-02-18T17:00:40.065Z",
+        "version": "1.0.0",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "tracking": {
+            "id": "38473fhjd7sriyr8",
+            "url": "https://xyz/tracking/201f6fa2-a2f7-42e7-a2e5-8947398747",
+            "status": "active"
+        }
+    }
+}

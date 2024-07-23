@@ -1,0 +1,123 @@
+{
+    "context": {
+        "domain": "mobility:publictransport:0.8.0",
+        "core_version": "0.9.4",
+        "action": "on_init",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io",
+        "country": "IND",
+        "city": "std:080",
+        "bap_id": "beckn-sandbox-bap.becknprotocol.io",
+        "bap_uri": "https://sandbox-bap-network.becknprotocol.io",
+        "transaction_id": "7afe44fd-d947-4a0a-81bc-d286784df2c1",
+        "message_id": "72c6b5fa-be39-4049-9e13-a0ab8b3519c0",
+        "ttl": "PT10M",
+        "timestamp": "2023-05-24T12:06:55.833Z"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "1",
+                    "descriptor": {
+                        "name": "Single Journey Ticket",
+                        "images": ["https://dtc.delhi.gov.in/icons/sjt.ico"]
+                    },
+                    "fulfillment_id": "1",
+                    "price": {
+                        "currency": "INR",
+                        "value": "55"
+                    },
+                    "tags": {
+                        "groups/0/list/0/descriptor/name": "Validity",
+                        "groups/0/list/0/value": "24 hours from the time of purchase"
+                    }
+                }
+            ],
+            "provider": {
+                "id": "1",
+                "descriptor": {
+                    "name": "Delhi Transport Corporation",
+                    "images": ["https://dtc.delhi.gov.in/logos/logo.ico"]
+                }
+            },
+            "fulfillment": {
+                "id": "1",
+                "start": {
+                    "location": {
+                        "descriptor": {
+                            "name": "Dwarka Sector 10"
+                        },
+                        "gps": "28.5811261,77.0548206"
+                    }
+                },
+                "end": {
+                    "location": {
+                        "descriptor": {
+                            "name": "Patel Chowk"
+                        },
+                        "gps": "28.6230972,77.2099917"
+                    }
+                },
+                "vehicle": {
+                    "category": "BUS"
+                },
+                "tags": {
+                    "groups/0/list/0/descriptor/name": "Transfers",
+                    "groups/0/list/0/value": "0",
+                    "groups/0/list/1/descriptor/name": "Duration",
+                    "groups/0/list/1/value": "60 min",
+                    "groups/0/list/2/descriptor/name": "Route Number",
+                    "groups/0/list/2/value": "680"
+                },
+                "tracking": false
+            },
+            "documents": [
+                {
+                    "label": "Cancellation Terms",
+                    "url": "https://dtc.delhi.gov.in/fare_products/sjt/cancellation_terms.html"
+                }
+            ],
+            "billing": {
+                "name": "Hemant Sharma",
+                "email": "hemant.sharma@gmail.com",
+                "phone": "+91-9896569363"
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "60.5"
+                },
+                "breakup": [
+                    {
+                        "title": "Single Journey Ticket X 1",
+                        "price": {
+                            "currency": "INR",
+                            "value": "55"
+                        }
+                    },
+                    {
+                        "title": "CGST @ 5%",
+                        "price": {
+                            "currency": "INR",
+                            "value": "2.75"
+                        }
+                    },
+                    {
+                        "title": "SGST @ 5%",
+                        "price": {
+                            "currency": "INR",
+                            "value": "2.75"
+                        }
+                    }
+                ]
+            },
+            "payment": {
+                "type": "ON-ORDER",
+                "uri": "https://pay.razorpay.com?amt=60.5&cur=INR&ref=24566345563",
+                "tl_method": "http/get",
+                "status": "NOT-PAID"
+            }
+        }
+    }
+}

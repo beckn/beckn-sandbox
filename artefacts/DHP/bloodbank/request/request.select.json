@@ -1,0 +1,40 @@
+{
+    "context": {
+        "domain": "dhp:bloodbank:0.1.0",
+        "location": {
+            "country": {
+                "code": "IND"
+            }
+        },
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+        "message_id": "$bb579fb8-cb82-4824-be12-fcbc405b6608",
+        "action": "select",
+        "timestamp": "2023-05-25T05:23:03.443Z",
+        "version": "1.1.0",
+        "bap_uri": "https://dhp-network-bap.becknprotocol.io/",
+        "bap_id": "dhp-bap.becknprotocol.io",
+        "bpp_uri": "https://dhp-network-bpp.becknprotocol.io/",
+        "bpp_id": "dhp-bpp.becknprotocol.io",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "23847572-53a0-49f2-9159-6b89b0168f49"
+            },
+            "items": [
+                {
+                    "id": "f47e5d7c-1e9f-414f-a9e2-9359d4434d73",
+                    "quantity": {
+                        "selected": {
+                            "measure": {
+                                "value": "2",
+                                "unit": "units"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

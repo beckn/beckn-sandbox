@@ -1,0 +1,78 @@
+{
+    "context": {
+        "domain": "tourism",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "action": "confirm",
+        "version": "1.1.0",
+        "bap_id": "tourism-bap",
+        "bap_uri": "https://tourism-bap.url",
+        "bpp_id": "tourism-bpp",
+        "bpp_uri": "https://tourism-bpp.url",
+        "message_id": "6104c0a3-d1d1-4ded-aaa4-76e4caf727ce",
+        "transaction_id": "8100d125-76a7-4588-88be-81b97657cd09",
+        "timestamp": "2023-11-06T09:41:09.708Z",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "provider48@becknprotocol.io.provider"
+            },
+            "items": [
+                {
+                    "id": "items1.becknprotocol.io.item",
+                    "quantity": {
+                        "selected": {
+                            "count": 2
+                        }
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "f1",
+                    "customer": {
+                        "person": {
+                            "name": "Shubham Thakur"
+                        },
+                        "contact": {
+                            "phone": "919122343344"
+                        }
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Shubham Thakur",
+                "phone": "9191223433",
+                "email": "thakur.s@gmail.com",
+                "address": "123, Terminal 1, Kempegowda Int'l Airport Rd, A - Block, Gangamuthanahalli, Karnataka 560300, India",
+                "city": {
+                    "name": "Gangamuthanahalli"
+                },
+                "state": {
+                    "name": "Karnataka"
+                }
+            },
+            "payments": [
+                {
+                    "status": "PAID",
+                    "type": "PRE-FULFILLMENT",
+                    "transaction_id": "tid0101",
+                    "params": {
+                        "amount": "1500",
+                        "currency": "INR",
+                        "bank_code": "INB0004321",
+                        "bank_account_number": "1234002341"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,227 @@
+{
+    "context": {
+        "domain": "mobility:publictransport:0.8.0",
+        "core_version": "0.9.4",
+        "action": "on_search",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io",
+        "country": "IND",
+        "city": "std:080",
+        "bap_id": "beckn-sandbox-bap.becknprotocol.io",
+        "bap_uri": "https://sandbox-bap-network.becknprotocol.io",
+        "transaction_id": "7afe44fd-d947-4a0a-81bc-d286784df2c1",
+        "message_id": "b0dec6a5-f563-41b3-b298-ef5464fda652",
+        "ttl": "PT10M",
+        "timestamp": "2023-05-24T11:38:59.174Z"
+    },
+    "message": {
+        "catalog": {
+            "bpp/descriptor": {
+                "name": "Transit Solutions",
+                "images": ["https://transitsolutions.in/logos/logo.ico"]
+            },
+            "bpp/providers": [
+                {
+                    "id": "1",
+                    "descriptor": {
+                        "name": "Delhi Transport Corporation",
+                        "images": ["https://dtc.delhi.gov.in/logos/logo.ico"]
+                    },
+                    "items": [
+                        {
+                            "id": "1",
+                            "descriptor": {
+                                "name": "Single Journey Ticket",
+                                "images": ["https://dtc.delhi.gov.in/icons/sjt.ico"]
+                            },
+                            "fulfillment_id": "1",
+                            "price": {
+                                "currency": "INR",
+                                "value": "55"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "descriptor": {
+                                "name": "Single Journey Ticket",
+                                "images": ["https://dtc.delhi.gov.in/icons/sjt.ico"]
+                            },
+                            "fulfillment_id": "2",
+                            "price": {
+                                "currency": "INR",
+                                "value": "65"
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "descriptor": {
+                                "name": "Single Journey Ticket",
+                                "images": ["https://dtc.delhi.gov.in/icons/sjt.ico"]
+                            },
+                            "fulfillment_id": "3",
+                            "price": {
+                                "currency": "INR",
+                                "value": "55"
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "descriptor": {
+                                "name": "Return Journey Ticket",
+                                "images": ["https://dtc.delhi.gov.in/icons/rjt.ico"]
+                            },
+                            "fulfillment_id": "1",
+                            "price": {
+                                "currency": "INR",
+                                "value": "60"
+                            }
+                        },
+                        {
+                            "id": "5",
+                            "descriptor": {
+                                "name": "Return Journey Ticket",
+                                "images": ["https://dtc.delhi.gov.in/icons/rjt.ico"]
+                            },
+                            "fulfillment_id": "2",
+                            "price": {
+                                "currency": "INR",
+                                "value": "90"
+                            }
+                        },
+                        {
+                            "id": "6",
+                            "descriptor": {
+                                "name": "Return Journey Ticket",
+                                "images": ["https://dtc.delhi.gov.in/icons/rjt.ico"]
+                            },
+                            "fulfillment_id": "3",
+                            "price": {
+                                "currency": "INR",
+                                "value": "100"
+                            }
+                        },
+                        {
+                            "id": "7",
+                            "descriptor": {
+                                "name": "Monthly Pass",
+                                "images": ["https://dtc.delhi.gov.in/icons/mp.ico"]
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "250"
+                            }
+                        }
+                    ],
+                    "fulfillments": [
+                        {
+                            "id": "1",
+                            "start": {
+                                "location": {
+                                    "descriptor": {
+                                        "name": "Dwarka Sector 10"
+                                    },
+                                    "gps": "28.5811261,77.0548206"
+                                }
+                            },
+                            "end": {
+                                "location": {
+                                    "descriptor": {
+                                        "name": "Patel Chowk"
+                                    },
+                                    "gps": "28.6230972,77.2099917"
+                                }
+                            },
+                            "vehicle": {
+                                "category": "BUS"
+                            },
+                            "tags": {
+                                "groups/0/list/0/descriptor/name": "Transfers",
+                                "groups/0/list/0/value": "0",
+                                "groups/0/list/1/descriptor/name": "Duration",
+                                "groups/0/list/1/value": "60 min",
+                                "groups/0/list/2/descriptor/name": "Route Number",
+                                "groups/0/list/2/value": "680"
+                            },
+                            "tracking": false
+                        },
+                        {
+                            "id": "2",
+                            "start": {
+                                "location": {
+                                    "descriptor": {
+                                        "name": "Dwarka Sector 10"
+                                    },
+                                    "gps": "28.5811261,77.0548206"
+                                }
+                            },
+                            "end": {
+                                "location": {
+                                    "descriptor": {
+                                        "name": "Shivaji Stadium"
+                                    },
+                                    "gps": "28.6288785,77.2085895"
+                                }
+                            },
+                            "vehicle": {
+                                "category": "BUS"
+                            },
+                            "tags": {
+                                "groups/0/list/0/descriptor/name": "Transfers",
+                                "groups/0/list/0/value": "0",
+                                "groups/0/list/1/descriptor/name": "Duration",
+                                "groups/0/list/1/value": "45 min",
+                                "groups/0/list/2/descriptor/name": "Route Number",
+                                "groups/0/list/2/value": "640"
+                            },
+                            "tracking": false
+                        },
+                        {
+                            "id": "3",
+                            "start": {
+                                "location": {
+                                    "descriptor": {
+                                        "name": "Dwarka Sector 21"
+                                    },
+                                    "gps": "9.05,12.06"
+                                },
+                                "time": {
+                                    "timestamp": "2023-05-25T00:32:19.000Z"
+                                }
+                            },
+                            "end": {
+                                "location": {
+                                    "descriptor": {
+                                        "name": "Shivaji Stadium"
+                                    },
+                                    "gps": "9.07,12.07"
+                                },
+                                "time": {
+                                    "timestamp": "2023-05-25T00:43:21.000Z"
+                                }
+                            },
+                            "vehicle": {
+                                "category": "BUS"
+                            },
+                            "tags": {
+                                "groups/0/list/0/descriptor/name": "Transfers",
+                                "groups/0/list/0/value": "0",
+                                "groups/0/list/1/descriptor/name": "Duration",
+                                "groups/0/list/1/value": "30 min",
+                                "groups/0/list/2/descriptor/name": "Route Number",
+                                "groups/0/list/2/value": "610"
+                            },
+                            "tracking": false
+                        }
+                    ],
+                    "tags": {
+                        "groups/0/list/0/descriptor/name": "Timetable",
+                        "groups/0/list/0/value": "https://dtc.delhi.gov.in/timetable.html",
+                        "groups/0/list/1/descriptor/name": "GTFS Schedule",
+                        "groups/0/list/1/value": "https://dtc.delhi.gov.in/gtfs",
+                        "groups/0/list/1/display": "false"
+                    }
+                }
+            ]
+        }
+    }
+}

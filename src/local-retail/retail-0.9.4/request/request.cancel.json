@@ -1,0 +1,24 @@
+{
+    "context": {
+      "domain": "retail:0.9.4",
+      "country": "IND",
+      "city": "std:080",
+      "action": "cancel",
+      "core_version": "0.9.4",
+      "bap_id": "farm-fresh-bap-id",
+      "bap_uri": "https://55a6-124-123-32-28.ngrok-free.app",
+      "bpp_id": "farm-fresh-bpp-subId",
+      "bpp_uri": "https://4e21-124-123-32-28.ngrok-free.app",
+      "message_id": "c53b2e4b-ff6d-434b-ba2c-329a3260b3e9",
+      "transaction_id": "8100d125-76a7-4588-88be-81b97657cd09",
+      "timestamp": "2023-11-06T10:14:10.295Z",
+      "ttl": "PT10M"
+    },
+    "message": {
+        "order_id": "b989c9a9-f603-4d44-b38d-26fd72286b38",
+        "cancellation_reason_id": "4",
+        "descriptor": {
+          "short_desc": "Order delayed"
+        }
+    }
+  }

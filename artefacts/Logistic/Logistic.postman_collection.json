@@ -1,0 +1,297 @@
+{
+    "info": {
+        "_postman_id": "01ca44a9-8bd0-499e-bffb-2291d4f4b244",
+        "name": "Logistic",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "26726166"
+    },
+    "item": [
+        {
+            "name": "search",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"logistics\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:0806\"\n            }\n        },\n        \"action\": \"search\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"transaction_id\": \"aa77b78e-66b0-47a5-9560-527a36cf0d9f\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2024-01-15T16:00:00.000Z\",\n        \"ttl\": \"PT30S\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"category\": {\n                \"descriptor\": {\n                    \"name\": \"Fast delivery\"\n                }\n            }\n        }\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/search",
+                    "host": ["{{base_url}}"],
+                    "path": ["search"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "search-by-fulfillment",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"logistics\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:0806\"\n            }\n        },\n        \"action\": \"search\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"transaction_id\": \"aa77b78e-66b0-47a5-9560-527a36cf0d9f\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2024-01-15T16:00:00.000Z\",\n        \"ttl\": \"PT30S\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"category\": {\n                \"descriptor\": {\n                    \"name\": \"Fast delivery\"\n                }\n            },\n            \"fulfillment\": {\n                \"stops\": [\n                    {\n                        \"type\": \"Pickup\",\n                        \"location\": {\n                            \"gps\": \"14.785638,76.454553\",\n                            \"area_code\": \"320042\"\n                        }\n                    },\n                    {\n                        \"type\": \"Drop\",\n                        \"location\": {\n                            \"gps\": \"14.433424,77.928379\",\n                            \"area_code\": \"540045\"\n                        }\n                    }\n                ]\n            }\n        }\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/search",
+                    "host": ["{{base_url}}"],
+                    "path": ["search"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "select",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"logistics\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:0806\"\n            }\n        },\n        \"action\": \"select\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"aa77b78e-66b0-47a5-9560-527a36cf0d9f\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2024-01-15T16:00:00.000Z\",\n        \"ttl\": \"PT30S\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"P1\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"I1\",\n                    \"quantity\": {\n                        \"selected\": {\n                            \"count\": 5,\n                            \"measure\": {\n                                \"unit\": \"KG\"\n                            }\n                        }\n                    }\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"1\",\n                    \"stops\": [\n                        {\n                            \"type\": \"Pickup\",\n                            \"location\": {\n                                \"gps\": \"14.785638,76.454553\",\n                                \"area_code\": \"320042\"\n                            }\n                        },\n                        {\n                            \"type\": \"Drop\",\n                            \"location\": {\n                                \"gps\": \"14.433424,77.928379\",\n                                \"area_code\": \"320042\"\n                            }\n                        }\n                    ]\n                }\n            ]\n        }\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/select",
+                    "host": ["{{base_url}}"],
+                    "path": ["select"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "init",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"logistics\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:0806\"\n            }\n        },\n        \"action\": \"init\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"aa77b78e-66b0-47a5-9560-527a36cf0d9f\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2024-01-15T16:00:00.000Z\",\n        \"ttl\": \"PT30S\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"P1\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"I1\",\n                    \"quantity\": {\n                        \"selected\": {\n                            \"count\": 5,\n                            \"measure\": {\n                                \"unit\": \"KG\"\n                            }\n                        }\n                    }\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"1\",\n                    \"type\": \"Road-Shipping\",\n                    \"stops\": [\n                        {\n                            \"type\": \"Pickup\",\n                            \"location\": {\n                                \"gps\": \"14.785638,76.454553\",\n                                \"area_code\": \"320042\"\n                            },\n                            \"time\": {\n                                \"timestamp\": \"2024-01-15T16:00:00.000Z\"\n                            },\n                            \"customer\": {\n                                \"person\": {\n                                    \"name\": \"Paul Sterling\"\n                                },\n                                \"contact\": {\n                                    \"phone\": \"+913333333333\"\n                                }\n                            }\n                        },\n                        {\n                            \"type\": \"Drop\",\n                            \"location\": {\n                                \"gps\": \"14.433424,77.928379\",\n                                \"area_code\": \"320042\"\n                            },\n                            \"customer\": {\n                                \"person\": {\n                                    \"name\": \"Anand Ahuja\"\n                                },\n                                \"contact\": {\n                                    \"phone\": \"+914444444444\"\n                                }\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"billing\": {\n                \"name\": \"Paul Sterling\",\n                \"phone\": \"+913333333333\",\n                \"email\": \"sample@gmail.com\"\n            }\n        }\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/init",
+                    "host": ["{{base_url}}"],
+                    "path": ["init"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "confirm",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"logistics\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:0806\"\n            }\n        },\n        \"action\": \"confirm\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"aa77b78e-66b0-47a5-9560-527a36cf0d9f\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2024-01-15T16:00:00.000Z\",\n        \"ttl\": \"PT30S\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"P1\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"I1\",\n                    \"quantity\": {\n                        \"selected\": {\n                            \"count\": 5,\n                            \"measure\": {\n                                \"unit\": \"KG\"\n                            }\n                        }\n                    }\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"1\",\n                    \"type\": \"Road-Shipping\",\n                    \"stops\": [\n                        {\n                            \"type\": \"Pickup\",\n                            \"location\": {\n                                \"gps\": \"14.785638,76.454553\",\n                                \"area_code\": \"320042\"\n                            },\n                            \"time\": {\n                                \"timestamp\": \"2024-01-15T16:00:00.000Z\"\n                            },\n                            \"customer\": {\n                                \"person\": {\n                                    \"name\": \"Paul Sterling\"\n                                },\n                                \"contact\": {\n                                    \"phone\": \"+913333333333\"\n                                }\n                            }\n                        },\n                        {\n                            \"type\": \"Drop\",\n                            \"location\": {\n                                \"gps\": \"14.433424,77.928379\",\n                                \"area_code\": \"320042\"\n                            },\n                            \"customer\": {\n                                \"person\": {\n                                    \"name\": \"Anand Ahuja\"\n                                },\n                                \"contact\": {\n                                    \"phone\": \"+914444444444\"\n                                }\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"billing\": {\n                \"name\": \"Paul Sterling\",\n                \"phone\": \"+919876345623\",\n                \"email\": \"sample@gmail.com\"\n            },\n            \"payment\": {\n                \"status\": \"PAID\",\n                \"type\": \"PRE-FULFILLMENT\",\n                \"params\": {\n                    \"transaction_id\": \"tid/6737457\",\n                    \"amount\": \"50\",\n                    \"currency\": \"INR\"\n                }\n            }\n        }\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/confirm",
+                    "host": ["{{base_url}}"],
+                    "path": ["confirm"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "cancel",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"logistics\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:0806\"\n            }\n        },\n        \"action\": \"cancel\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"aa77b78e-66b0-47a5-9560-527a36cf0d9f\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2024-01-15T16:00:00.000Z\",\n        \"ttl\": \"PT30S\"\n    },\n    \"message\": {\n        \"order_id\": \"oid/12\",\n        \"cancellation_reason_id\": \"3\"\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/cancel",
+                    "host": ["{{base_url}}"],
+                    "path": ["cancel"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "status",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"logistics\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:0806\"\n            }\n        },\n        \"action\": \"status\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"aa77b78e-66b0-47a5-9560-527a36cf0d9f\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2024-01-15T16:00:00.000Z\",\n        \"ttl\": \"PT30S\"\n    },\n    \"message\": {\n        \"order_id\": \"oid/12\"\n    }\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/status",
+                    "host": ["{{base_url}}"],
+                    "path": ["status"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "support",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"logistics\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:0806\"\n            }\n        },\n        \"action\": \"support\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"aa77b78e-66b0-47a5-9560-527a36cf0d9f\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2024-01-15T16:00:00.000Z\",\n        \"ttl\": \"PT30S\"\n    },\n    \"message\": {\n        \"support\": {\n            \"ref_id\": \"oid/12\",\n            \"callback_phone\": \"+919876564534\"\n        }\n    }\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/support",
+                    "host": ["{{base_url}}"],
+                    "path": ["support"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "rating",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"logistics\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:0806\"\n            }\n        },\n        \"action\": \"rating\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"aa77b78e-66b0-47a5-9560-527a36cf0d9f\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2024-01-15T16:00:00.000Z\",\n        \"ttl\": \"PT30S\"\n    },\n    \"message\": {\n        \"ratings\": [\n            {\n                \"rating_category\": \"Order\",\n                \"id\": \"oid/12\",\n                \"value\": \"4\"\n            }\n        ]\n    }\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/rating",
+                    "host": ["{{base_url}}"],
+                    "path": ["rating"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "track",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"logistics\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:0806\"\n            }\n        },\n        \"action\": \"track\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"aa77b78e-66b0-47a5-9560-527a36cf0d9f\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2024-01-15T16:00:00.000Z\",\n        \"ttl\": \"PT30S\"\n    },\n    \"message\": {\n        \"order_id\": \"oid/12\"\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/track",
+                    "host": ["{{base_url}}"],
+                    "path": ["track"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "update",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"logistics\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:0806\"\n            }\n        },\n        \"action\": \"update\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"aa77b78e-66b0-47a5-9560-527a36cf0d9f\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2024-01-15T16:00:00.000Z\",\n        \"ttl\": \"PT30S\"\n    },\n    \"message\": {\n        \"update_target\": \"order.billing\",\n        \"order\": {\n            \"billing\": {\n                \"name\": \"Paul Sterling\",\n                \"phone\": \"+913333333333\",\n                \"email\": \"sterling@gmail.com\"\n            }\n        }\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/update",
+                    "host": ["{{base_url}}"],
+                    "path": ["update"]
+                }
+            },
+            "response": []
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "type": "text/javascript",
+                "packages": {},
+                "exec": [""]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "type": "text/javascript",
+                "packages": {},
+                "exec": [""]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "key": "base_url",
+            "value": "https://ps-bap-client.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bap_id",
+            "value": "ps-bap-network.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bap_uri",
+            "value": "https://ps-bap-network.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bpp_id",
+            "value": "sandbox-bpp-network.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bpp_uri",
+            "value": "https://sandbox-bpp-network.becknprotocol.io",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,176 @@
+{
+    "info": {
+        "_postman_id": "ffd7185f-39de-4efe-b1a1-407b564d03fa",
+        "name": "Retail",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "26726166"
+    },
+    "item": [
+        {
+            "name": "ProtocolServer_Retail",
+            "item": [
+                {
+                    "name": "Search",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"context\": {\n    \"domain\": \"nic2004:52110\",\n    \"country\": \"IND\",\n    \"city\": \"std:080\",\n    \"action\": \"search\",\n    \"core_version\": \"0.9.4\",\n    \"bap_id\": \"ps-bap-network.becknprotocol.io\",\n        \"bap_uri\": \"https://ps-bap-network.becknprotocol.io/\",\n        \"bpp_uri\":\"https://bazaar.becknprotocol.io/boc/bpp\",\n        \"bpp_id\":\"bazaar.becknprotocol.io\",\n    \"message_id\": \"{{$randomUUID}}\",\n    \"timestamp\": \"Thu Nov 02 2023\"\n  },\n  \"message\": { \n      \"intent\": {\n   \n      \"item\": {\n        \"descriptor\": {\n          \"name\": \"flask\"\n        }\n      },\n      \"provider\": {\n        \"descriptor\": {}\n      },\n      \"category\": {\n        \"descriptor\": {\n          \"name\": \"retail\"\n        }\n      }\n    }\n      }\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "https://ps-bap-client.becknprotocol.io/search",
+                            "protocol": "https",
+                            "host": ["ps-bap-client", "becknprotocol", "io"],
+                            "path": ["search"]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Select",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"context\": {\n        \"domain\": \"nic2004:52110\",\n        \"country\": \"IND\",\n        \"city\": \"std:080\",\n        \"action\": \"select\",\n        \"core_version\": \"0.9.4\",\n        \"bap_id\": \"ps-bap-network.becknprotocol.io\",\n        \"bap_uri\": \"https://ps-bap-network.becknprotocol.io/\",\n        \"bpp_uri\": \"https://bazaar.becknprotocol.io/boc/bpp\",\n        \"bpp_id\": \"bazaar.becknprotocol.io\",\n        \"message_id\": \"{{$randomUUID}}\",\n         \"timestamp\": \"Thu Nov 02 2023\",\n         \"transaction_id\": \"54c20c30-2b2c-4fec-88e9-2e09a4ccf229\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                 \"id\": \"./retail.kirana/ind.blr/33@bazaar.becknprotocol.io.provider\",\n                \"locations\": [\n                    {\n                        \"id\": \"./retail.kirana/ind.blr/34@bazaar.becknprotocol.io.provider_location\"\n                    }\n                ]\n            },\n            \"items\": [\n                {\n                      \"id\": \"./retail.kirana/ind.blr/307@bazaar.becknprotocol.io.item\",\n                    \"quantity\": {\n                        \"count\": 1\n                    }\n                }\n            ]\n        }\n    }\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "https://ps-bap-client.becknprotocol.io/select",
+                            "protocol": "https",
+                            "host": ["ps-bap-client", "becknprotocol", "io"],
+                            "path": ["select"]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "init",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"context\": {\n        \"domain\": \"nic2004:52110\",\n        \"country\": \"IND\",\n        \"city\": \"std:080\",\n        \"action\": \"init\",\n        \"core_version\": \"0.9.4\",\n        \"bap_id\": \"ps-bap-network.becknprotocol.io\",\n        \"bap_uri\": \"https://ps-bap-network.becknprotocol.io/\",\n        \"bpp_uri\": \"https://bazaar.becknprotocol.io/boc/bpp\",\n        \"bpp_id\": \"bazaar.becknprotocol.io\",\n        \"message_id\": \"{{$randomUUID}}\",\n       \"timestamp\": \"Thu Nov 02 2023\",\n         \"transaction_id\": \"54c20c30-2b2c-4fec-88e9-2e09a4ccf229\"\n    },\n    \"message\": {\n        \"order\": {\n           \"provider\": {\n                \"id\": \"./retail.kirana/ind.blr/33@bazaar.becknprotocol.io.provider\",\n                \"locations\": [\n                    {\n                        \"id\": \"./retail.kirana/ind.blr/34@bazaar.becknprotocol.io.provider_location\"\n                    }\n                ]\n            },\n            \"items\": [\n                {\n                    \"id\": \"./retail.kirana/ind.blr/307@bazaar.becknprotocol.io.item\",\n                    \"quantity\": {\n                        \"count\": 1\n                    }\n                }\n            ],\n            \"billing\": {\n                \"name\": \"./Ninad/////\",\n                \"phone\": \"9191223433\",\n                \"address\": {\n                    \"door\": \"\",\n                    \"building\": \"\",\n                    \"city\": \"Bengaluru\",\n                    \"state\": \"Karnataka\",\n                    \"country\": \"IND\",\n                    \"area_code\": \"560076\"\n                },\n                \"email\": \"testemail1@mailinator.com\"\n            },\n            \"fulfillment\": {\n                \"type\": \"HOME-DELIVERY\",\n                \"end\": {\n                    \"location\": {\n                        \"gps\": \"12.9715987,77.5945627\",\n                        \"address\": {\n                            \"door\": \"\",\n                            \"building\": \"\",\n                            \"street\": \"Bengaluru, Bengaluru Urban, Bangalore Division, Karnataka\",\n                            \"city\": \"Bengaluru\",\n                            \"state\": \"Karnataka\",\n                            \"country\": \"IND\",\n                            \"area_code\": \"560076\"\n                        }\n                    },\n                    \"contact\": {\n                        \"phone\": \"9191223433\",\n                        \"email\": \"testemail1@mailinator.com\"\n                    }\n                },\n                \"customer\": {\n                    \"person\": {\n                        \"name\": \"./Ninad/////\"\n                    }\n                }\n               \n            }\n        }\n    }\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "https://ps-bap-client.becknprotocol.io/init",
+                            "protocol": "https",
+                            "host": ["ps-bap-client", "becknprotocol", "io"],
+                            "path": ["init"]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "confirm",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"context\": {\n        \"domain\": \"nic2004:52110\",\n        \"country\": \"IND\",\n        \"city\": \"std:080\",\n        \"action\": \"confirm\",\n        \"core_version\": \"0.9.4\",\n        \"bap_id\": \"ps-bap-network.becknprotocol.io\",\n        \"bap_uri\": \"https://ps-bap-network.becknprotocol.io/\",\n        \"bpp_uri\": \"https://bazaar.becknprotocol.io/boc/bpp\",\n        \"bpp_id\": \"bazaar.becknprotocol.io\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"Thu Nov 02 2023\",\n         \"transaction_id\": \"54c20c30-2b2c-4fec-88e9-2e09a4ccf229\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"./retail.kirana/ind.blr/33@bazaar.becknprotocol.io.provider\",\n                \"locations\": [\n                    {\n                        \"id\": \"./retail.kirana/ind.blr/34@bazaar.becknprotocol.io.provider_location\"\n                    }\n                ]\n            },\n            \"items\": [\n                {\n                    \"id\": \"./retail.kirana/ind.blr/307@bazaar.becknprotocol.io.item\",\n                    \"quantity\": {\n                        \"count\": 1\n                    }\n                }\n            ],\n            \"billing\": {\n                \"name\": \"./Ninad/////\",\n                \"phone\": \"9191223433\",\n                \"address\": {\n                    \"door\": \"\",\n                    \"building\": \"\",\n                    \"city\": \"Bengaluru\",\n                    \"state\": \"Karnataka\",\n                    \"country\": \"IND\",\n                    \"area_code\": \"560076\"\n                },\n                \"email\": \"testemail1@mailinator.com\"\n            },\n            \"fulfillment\": {\n                \"type\": \"HOME-DELIVERY\",\n                \"end\": {\n                    \"location\": {\n                        \"gps\": \"12.811140,77.663402\",\n                        \"address\": {\n                            \"door\": \"\",\n                            \"building\": \"\",\n                            \"street\": \"Bengaluru, Bengaluru Urban, Bangalore Division, Karnataka\",\n                            \"city\": \"Bengaluru\",\n                            \"state\": \"Karnataka\",\n                            \"country\": \"IND\",\n                            \"area_code\": \"560076\"\n                        }\n                    },\n                    \"contact\": {\n                        \"phone\": \"0612345678\",\n                        \"email\": \"testemail1@mailinator.com\"\n                    }\n                },\n                \"customer\": {\n                    \"person\": {\n                        \"name\": \"Antoine Dubois \"\n                    }\n                },\n                \"id\": \"./retail.kirana/ind.blr/555@bazaar.becknprotocol.io.fulfillment\",\n                \"tracking\": false\n            },\n            \"payment\": {\n                \"extended_attributes\": {},\n                \"params\": {\n                    \"transaction_id\": \"O:553\",\n                    \"amount\": \"1200.0\",\n                    \"currency\": \"INR\"\n                },\n                \"type\": \"POST-FULFILLMENT\",\n                \"status\": \"NOT-PAID\"\n            }\n        }\n    }\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "https://ps-bap-client.becknprotocol.io/confirm",
+                            "protocol": "https",
+                            "host": ["ps-bap-client", "becknprotocol", "io"],
+                            "path": ["confirm"]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "track",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"context\": {\n        \"domain\": \"nic2004:52110\",\n        \"country\": \"IND\",\n        \"city\": \"std:080\",\n        \"action\": \"track\",\n        \"core_version\": \"0.9.4\",\n        \"bap_id\": \"ps-bap-network.becknprotocol.io\",\n        \"bap_uri\": \"https://ps-bap-network.becknprotocol.io/\",\n        \"bpp_uri\": \"https://bazaar.becknprotocol.io/boc/bpp\",\n        \"bpp_id\": \"bazaar.becknprotocol.io\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"Thu Nov 02 2023\",\n        \"transaction_id\": \"54c20c30-2b2c-4fec-88e9-2e09a4ccf229\"\n    },\n    \"message\": {\n        \"order_id\": \"./retail.kirana/ind.blr/555@bazaar.becknprotocol.io.order\"\n    }\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "https://ps-bap-client.becknprotocol.io/track",
+                            "protocol": "https",
+                            "host": ["ps-bap-client", "becknprotocol", "io"],
+                            "path": ["track"]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "status",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"context\": {\n        \"domain\": \"nic2004:52110\",\n        \"country\": \"IND\",\n        \"city\": \"std:080\",\n        \"action\": \"status\",\n        \"core_version\": \"0.9.4\",\n        \"bap_id\": \"ps-bap-network.becknprotocol.io\",\n        \"bap_uri\": \"https://ps-bap-network.becknprotocol.io/\",\n        \"bpp_uri\": \"https://bazaar.becknprotocol.io/boc/bpp\",\n        \"bpp_id\": \"bazaar.becknprotocol.io\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"Thu Nov 02 2023\",\n        \"transaction_id\": \"54c20c30-2b2c-4fec-88e9-2e09a4ccf229\"\n    },\n    \"message\": {\n        \"order_id\": \"./retail.kirana/ind.blr/555@bazaar.becknprotocol.io.order\"\n    }\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "https://ps-bap-client.becknprotocol.io/status",
+                            "protocol": "https",
+                            "host": ["ps-bap-client", "becknprotocol", "io"],
+                            "path": ["status"]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "support",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"context\": {\n        \"domain\": \"nic2004:52110\",\n        \"country\": \"IND\",\n        \"city\": \"std:080\",\n        \"action\": \"support\",\n        \"core_version\": \"0.9.4\",\n        \"bap_id\": \"ps-bap-network.becknprotocol.io\",\n        \"bap_uri\": \"https://ps-bap-network.becknprotocol.io/\",\n        \"bpp_uri\": \"https://bazaar.becknprotocol.io/boc/bpp\",\n        \"bpp_id\": \"bazaar.becknprotocol.io\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"Thu Nov 02 2023\",\n        \"transaction_id\": \"54c20c30-2b2c-4fec-88e9-2e09a4ccf229\"\n    },\n    \"message\": {\n        \"ref_id\": \"./retail.kirana/ind.blr/555@bazaar.becknprotocol.io.order\"\n    }\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "https://ps-bap-client.becknprotocol.io/support",
+                            "protocol": "https",
+                            "host": ["ps-bap-client", "becknprotocol", "io"],
+                            "path": ["support"]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,185 @@
+{
+    "context": {
+        "domain": "retail:CityOfLight",
+        "location": {
+            "country": {
+                "code": "IND"
+            }
+        },
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+        "message_id": "$bb579fb8-cb82-4824-be12-fcbc405b6608",
+        "action": "on_status",
+        "timestamp": "2023-05-25T05:23:03.443Z",
+        "version": "1.1.0",
+        "bap_uri": "https://odr-network-bap.becknprotocol.io/",
+        "bap_id": "odr-bap.becknprotocol.io",
+        "bpp_id": "alpha-odr-bpp.becknprotocol.io",
+        "bpp_uri": "https://alpha-odr-network-bpp.becknprotocol.io",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "order": {
+            "id": "oid0987",
+            "privider": {
+                "id": "./retail.kirana/ind.blr/177@retail-bpp-infra2.becknprotocol.io.provider",
+                "descriptor": {
+                    "name": "TouringParis"
+                }
+            },
+            "items": [
+                {
+                    "id": "./retail.kirana/ind.blr/485@retail-bpp-infra2.becknprotocol.io.item",
+                    "descriptor": {
+                        "images": [
+                            {
+                                "url": "https://retail-bpp-infra2.becknprotocol.io/attachments/view/433.jpg"
+                            }
+                        ],
+                        "name": "Arctic Monkeys Music Concert",
+                        "short_desc": "Get ready to dance the night away with Arctic Monkeys's high energy performances in France",
+                        "long_desc": "<h3>Highlights:</h3>\r\n      <p>Get ready for an unforgettable night of rock and roll as the Arctic Monkeys take the stage live in concert in Paris. With their signature sound and electrifying stage presence, this British band is known for putting on a show that will leave you buzzing with excitement.\r\nFrom their iconic hits like \"\"Do I Wanna Know?\"\" and \"\"I Bet You Look Good on the Dancefloor\"\" to their newer hits, this concert will have you singing and dancing along to every song. With a dynamic light show and incredible sound quality, the Arctic Monkeys will bring the energy and excitement to make this a night you won't forget.<p>\r\n\r\nDon't miss your chance to see one of rock music's biggest and most beloved bands live in concert. Book your tickets now and experience the thrill of the Arctic Monkeys in the stunning city of Paris. It's a concert experience you won't want to miss!\r\n</p>\r\n\r\n      <h3>Details:</h3>\r\n      <ul>\r\n        <li>Date: 10th June 2023</li>\r\n        <li>Time: 6:30 PM</li>\r\n        <li>Location: Accor Arena, Paris</li>\r\n        <li>Duration: 2 hours, No Intermission</li>\r\n        <li>Language: English</li>\r\n        <li>Handicap Access: Yes</li>\r\n      </ul>"
+                    },
+                    "matched": true,
+                    "location_ids": [
+                        "./retail.kirana/ind.blr/106@retail-bpp-infra2.becknprotocol.io.provider_location"
+                    ],
+                    "fulfillment_ids": [
+                        "1"
+                    ],
+                    "recommended": true,
+                    "price": {
+                        "listed_value": "57.0",
+                        "currency": "INR",
+                        "value": "57.0"
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "name": "item-cataegory"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "category"
+                                    },
+                                    "value": "Tourism"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "name": "search-tags"
+                            },
+                            "list": [
+                                {
+                                    "value": "Festival"
+                                },
+                                {
+                                    "value": "Monkeys"
+                                },
+                                {
+                                    "value": "Concert"
+                                },
+                                {
+                                    "value": "Music"
+                                },
+                                {
+                                    "value": "Show"
+                                },
+                                {
+                                    "value": "Arctic"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "stops": [
+                        {
+                            "type": "start",
+                            "location": {
+                                "gps": "48.86176,2.38081"
+                            },
+                            "time": {
+                                "timestamp": "2024-04-15T08:00:00.000Z"
+                            }
+                        },
+                        {
+                            "type": "end",
+                            "location": {
+                                "gps": "48.86005,2.32656"
+                            },
+                            "time": {
+                                "timestamp": "2024-04-18T08:00:00.000Z"
+                            }
+                        }
+                    ],
+                    "customer": {
+                        "person": {
+                            "name": "Lisa"
+                        },
+                        "contact": {
+                            "phone": "876756454",
+                            "email": "LisaS@mailinator.com"
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "IN-PROGRESS"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "listed_value": "57.0",
+                    "offered_value": "57.0",
+                    "currency": "INR",
+                    "value": "57.0"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "listed_value": "57.0",
+                            "offered_value": "57.0",
+                            "currency": "INR",
+                            "value": "57.0"
+                        },
+                        "title": "Item 1",
+                        "item": {
+                            "id": "./retail.kirana/ind.blr/485@retail-bpp-infra2.becknprotocol.io.item"
+                        }
+                    }
+                ],
+                "ttl": "PT15M"
+            },
+            "billing": {
+                "name": "Lisa",
+                "phone": "0612345678",
+                "address": "15 Rue du Soleil, Paris, France, 7578",
+                "email": "testemail1@mailinator.com",
+                "city": {
+                    "name": "15 Rue du Soleil, Paris, France"
+                },
+                "state": {
+                    "name": "15 Rue du Soleil, Paris, France"
+                }
+            },
+            "payments": [
+                {
+                    "status": "NOT-PAID",
+                    "type": "POST-FULFILLMENT",
+                    "params": {
+                        "amount": "57.0",
+                        "currency": "INR",
+                        "bank_code": "INB0004321",
+                        "bank_account_number": "1234002341"
+                    }
+                }
+            ]
+        }
+    }
+}

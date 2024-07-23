@@ -1,0 +1,206 @@
+{
+    "context": {
+        "domain": "financial-services:credit-personal:0.2.0",
+        "location": {
+            "country": {
+                "code": "IND"
+            }
+        },
+        "version": "1.1.0",
+        "action": "on_status",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+        "message_id": "166a5633-66d2-4ec8-bdcb-65cfeb1e4697",
+        "ttl": "PT10M",
+        "timestamp": "2023-05-25T05:23:03.443Z"
+    },
+    "message": {
+        "order": {
+            "id": "66B7AEDF45",
+            "provider": {
+                "id": "1",
+                "descriptor": {
+                    "images": [
+                        {
+                            "url": "https://www.icicibank.com/content/dam/icicibank/india/assets/images/header/logo.png",
+                            "size_type": "sm"
+                        }
+                    ],
+                    "name": "ICICI Bank",
+                    "short_desc": "ICICI Bank Ltd",
+                    "long_desc": "ICICI Bank Ltd, India."
+                }
+            },
+            "items": [
+                {
+                    "id": "66b7b9bad166-4a3f-ada6-ca063dc9d321",
+                    "descriptor": {
+                        "code": "personal-loan",
+                        "name": "Personal Loan Offer: INR 2,00,000"
+                    },
+                    "price": {
+                        "currency": "INR",
+                        "value": "231800"
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "name": "Personal loan terms"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "Interest Rate",
+                                        "short_desc": "Rate of Interest (p.a)"
+                                    },
+                                    "value": "12%"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Interest Type",
+                                        "short_desc": "Type of Interest Rate"
+                                    },
+                                    "value": "FLOATING"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Term",
+                                        "short_desc": "Max Loan Term"
+                                    },
+                                    "value": "5 months"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Foreclosure Penalty",
+                                        "short_desc": "Loan Foreclosure Penalty"
+                                    },
+                                    "value": "0.5%"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Delayed payments penalty",
+                                        "short_desc": "Delayed payments penalty"
+                                    },
+                                    "value": "5%"
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "Terms & Conditions",
+                                        "short_desc": "Terms and Conditions"
+                                    },
+                                    "value": "https://icicibank.com/loan/tnc.html"
+                                }
+                            ],
+                            "display": true
+                        }
+                    ]
+                }
+            ],
+            "quote": {
+                "id": "b469bb12-9f67-4898-8f39-ea7816f54289",
+                "price": {
+                    "currency": "INR",
+                    "value": "231800"
+                },
+                "breakup": [
+                    {
+                        "title": "Installment 1",
+                        "price": {
+                            "value": "46360",
+                            "currency": "INR"
+                        }
+                    },
+                    {
+                        "title": "Installment 2",
+                        "price": {
+                            "value": "46360",
+                            "currency": "INR"
+                        }
+                    },
+                    {
+                        "title": "Installment 3",
+                        "price": {
+                            "value": "46360",
+                            "currency": "INR"
+                        }
+                    },
+                    {
+                        "title": "Installment 4",
+                        "price": {
+                            "value": "46360",
+                            "currency": "INR"
+                        }
+                    },
+                    {
+                        "title": "Installment 5",
+                        "price": {
+                            "value": "46360",
+                            "currency": "INR"
+                        }
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "customer": {
+                        "person": {
+                            "name": "John Doe"
+                        },
+                        "contact": {
+                            "phone": "+91-9999999999",
+                            "email": "john.doe@example.com"
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "name": "Installment 5/5 received"
+                        }
+                    }
+                }
+            ],
+            "payments": [
+                {
+                    "url": "https://emandate.icicibank.in",
+                    "params": {
+                        "amount": "0",
+                        "currency": "INR"
+                    },
+                    "status": "PAID"
+                }
+            ],
+            "cancellation_terms": [
+                {
+                    "fulfillment_state": {
+                        "descriptor": {
+                            "name": "Loan sanctioned"
+                        }
+                    },
+                    "cancellation_fee": {
+                        "percentage": "3%"
+                    },
+                    "external_ref": {
+                        "mimetype": "text/html",
+                        "url": "https://icicibank.com/loan/tnc.html"
+                    }
+                },
+                {
+                    "fulfillment_state": {
+                        "descriptor": {
+                            "name": "Loan disbursed"
+                        }
+                    },
+                    "cancellation_fee": {
+                        "percentage": "5%"
+                    },
+                    "external_ref": {
+                        "mimetype": "text/html",
+                        "url": "https://icicibank.com/loan/tnc.html"
+                    }
+                }
+            ]
+        }
+    }
+}

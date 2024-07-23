@@ -1,0 +1,141 @@
+{
+    "context": {
+        "domain": "supply-chain-services:assembly",
+        "location": {
+            "country": {
+                "code": "DE"
+            }
+        },
+        "action": "on_select",
+        "version": "1.1.0",
+        "bap_uri": "https://supply-chain-protocol-network.becknprotocol.io/",
+        "bap_id": "supply-chain-protocol.becknprotocol.io",
+        "bpp_id": "bpp.supply-chain.makerspace.io",
+        "bpp_uri": "https://bpp.supply-chain.makerspace.io",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
+        "message_id": "13abc9ad-3d5e-4f68-83cb-d85f96b81cd5",
+        "timestamp": "2023-05-25T05:23:03.443Z",
+        "ttl": "P30M"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "1",
+                "descriptor": {
+                    "images": [
+                        {
+                            "url": "makerspace_logo.png",
+                            "size_type": "sm"
+                        }
+                    ],
+                    "name": "Makerspace",
+                    "short_desc": "Makerspace",
+                    "long_desc": "Makerspace, Hof."
+                }
+            },
+            "items": [
+                {
+                    "id": "66b7b9bad166-4a3f-ada6-ca063dc9d321",
+                    "descriptor": {
+                        "images": [
+                            {
+                                "url": "https://makerspace/assembly/intermittent.img",
+                                "size_type": "sm"
+                            }
+                        ],
+                        "name": "Intermittent assembly type"
+                    },
+                    "category_ids": [
+                        "p2c3"
+                    ],
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "product-info",
+                                "name": "Product Information"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "product-type"
+                                    },
+                                    "value": "electronics"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "assembly-info",
+                                "name": "Assembly Information"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "assembly-method"
+                                    },
+                                    "value": "automated"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "scale-info",
+                                "name": "Scale Information"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "name": "scale-type"
+                                    },
+                                    "value": "industrial"
+                                }
+                            ]
+                        }
+                    ],
+                    "xinput": {
+                        "required": true,
+                        "head": {
+                            "descriptor": {
+                                "name": "Configuration Form Assembly"
+                            },
+                            "index": {
+                                "min": 0,
+                                "cur": 0,
+                                "max": 0
+                            },
+                            "headings": [
+                                "Configuration Details for Assembly Service"
+                            ]
+                        },
+                        "form": {
+                            "mime_type": "text/html",
+                            "url": "https://formurl/orderdetails/assembly",
+                            "resubmit": false,
+                            "auth": {
+                                "descriptor": {
+                                    "code": "jwt"
+                                },
+                                "value": "eyJhbGciOiJIUzI.eyJzdWIiOiIxMjM0NTY3O.SflKxwRJSMeKKF2QT4"
+                            }
+                        }
+                    },
+                    "price": {
+                        "currency": "EUR",
+                        "value": "starting from 50 EUR"
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "f1"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "EUR",
+                    "value": "50"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+{
+    "context": {
+        "domain": "dsep:student-connect",
+        "location": {
+            "city": {
+                "name": "Bangalore",
+                "code": "std:080"
+            },
+            "country": {
+                "name": "India",
+                "code": "IND"
+            }
+        },
+        "action": "on_update",
+        "timestamp": "2023-02-22T12:53:58.965Z",
+        "ttl": "PT10M",
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "edea17fa-b5c4-48c9-86dd-1b80dda67d37",
+        "message_id": "19e94a11-cb13-4762-bfc1-11e782a45c76"
+    },
+    "message": {
+        "order": {
+            "id": "759b905c-5a30-4d18-a6af-0decbac9282f",
+            "provider": {
+                "id": "289edce4-d002-4962-b311-4c025e22b4f6",
+                "descriptor": {
+                    "name": "MuLearn Talent pool app",
+                    "short_desc": "MuLearn Talent pool App Pvt Ltd",
+                    "images": [
+                        {
+                            "url": "https://mulearn.in/images/logo.png"
+                        }
+                    ]
+                }
+            },
+            "items": [
+                {
+                    "id": "1224",
+                    "descriptor": {
+                        "name": "Mayank Bansal",
+                        "short_desc": "Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ",
+                        "long_desc": "Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.",
+                        "media": [
+                            {
+                                "mimetype": "application/pdf",
+                                "url": "https://www.resume-link.com"
+                            },
+                            {
+                                "mimetype": "application/pdf",
+                                "url": "https://www.certificate-link.com/1"
+                            },
+                            {
+                                "mimetype": "application/pdf",
+                                "url": "https://www.certificate-link.com/2"
+                            }
+                        ],
+                        "images": [
+                            {
+                                "url": "https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4"
+                            }
+                        ]
+                    },
+                    "category_ids": [
+                        "cat-02"
+                    ],
+                    "fulfillment_ids": [
+                        "ful-01",
+                        "ful-02"
+                    ]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "ful-01",
+                    "type": "virtual-meet",
+                    "customer": {
+                        "person": {
+                            "name": "Amkur Singh Warikoo",
+                            "gender": "Male"
+                        },
+                        "contact": {
+                            "phone": "+91-9663088848",
+                            "email": "ankur.singh@fide.com"
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "meeting-rescheduled",
+                            "name": "The Meeting has been rescheduled"
+                        }
+                    },
+                    "stops": [
+                        {
+                            "location": {
+                                "state": {
+                                    "name": "Uttar Pradesh"
+                                },
+                                "city": {
+                                    "name": "Kanpur"
+                                }
+                            },
+                            "time": {
+                                "label": "Scheduled Time",
+                                "range": {
+                                    "start": "2023-12-04 14:00",
+                                    "end": "2023-12-04 14:30"
+                                }
+                            },
+                            "contact": {
+                                "phone": "+91-8858150032",
+                                "email": "iammayankbansal@gmail.com"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "docs": [
+                {
+                    "descriptor": {
+                        "name": "Meeting Link",
+                        "short_desc": "To Attend the Meeting, open the given link"
+                    },
+                    "url": "https://meet.google.com/abc-defg-hij",
+                    "mime_type": "text/html"
+                }
+            ]
+        }
+    }
+}

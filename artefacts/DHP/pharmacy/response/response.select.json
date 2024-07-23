@@ -1,0 +1,120 @@
+{
+    "context": {
+        "domain": "dhp:pharmacy:0.1.0",
+        "action": "on_select",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "version": "1.1.0",
+        "bap_id": "ps-bap-network.becknprotocol.io",
+        "bap_url": "https://ps-bap-client.becknprotocol.io/",
+        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "transaction_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "message_id": "6743e9e2-4fb5-487c-92b7-13ba8018f176",
+        "timestamp": "2023-07-16T04:41:16Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "e92e7a6e-1f20-4a8d-b343-956e0d45a48c",
+                "descriptor": {
+                    "name": "QuickPharma",
+                    "short_desc": "QuickPharma Pvt Ltd",
+                    "images": [
+                        {
+                            "url": "https://QuickPharma.in/images/logo.png"
+                        }
+                    ]
+                }
+            },
+            "items": [
+                {
+                    "id": "fb0999b7-7755-46d6-a2ed-b286b7c98436",
+                    "descriptor": {
+                        "code": "benadryl",
+                        "name": "Benadryl cough syrup"
+                    },
+                    "price": {
+                        "value": "100",
+                        "currency": "INR"
+                    },
+                    "quantity": {
+                        "selected": {
+                            "measure": {
+                                "value": "2",
+                                "unit": "units"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "1cef39d8-72d0-46f7-99ca-3f18f4bda8e3",
+                    "descriptor": {
+                        "code": "hycodan",
+                        "name": "Hycodan"
+                    },
+                    "price": {
+                        "value": "150",
+                        "currency": "INR"
+                    },
+                    "quantity": {
+                        "selected": {
+                            "measure": {
+                                "value": "3",
+                                "unit": "units"
+                            }
+                        }
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "ful-02",
+                    "type": "HOME-DELIVERY",
+                    "stops": [
+                        {
+                            "type": "start",
+                            "time": {
+                                "timestamp": "2023-09-15T08:00:00Z"
+                            }
+                        },
+                        {
+                            "type": "end",
+                            "time": {
+                                "timestamp": "2023-09-15T18:30:00Z"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "quote": {
+                "price": {
+                    "value": "650",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "title": "Benadryl 2 units",
+                        "price": {
+                            "currency": "INR",
+                            "value": "200"
+                        }
+                    },
+                    {
+                        "title": "hycodan 3 units",
+                        "price": {
+                            "currency": "INR",
+                            "value": "450"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

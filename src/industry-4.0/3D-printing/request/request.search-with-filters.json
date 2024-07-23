@@ -1,0 +1,120 @@
+{
+    "context": {
+        "domain": "supply-chain-services:3d-printing",
+        "location": {
+            "country": {
+                "code": "DE"
+            }
+        },
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+        "message_id": "bb579fb8-cb82-4824-be12-fcbc405b6608",
+        "action": "search",
+        "timestamp": "2023-05-25T05:23:03.443Z",
+        "version": "1.1.0",
+        "bap_uri": "https://supply-chain-protocol-network.becknprotocol.io/",
+        "bap_id": "supply-chain-protocol.becknprotocol.io",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "intent": {
+            "provider": {
+                "locations": [
+                    {
+                        "circle": {
+                            "gps": "40.748440, -73.984559",
+                            "radius": {
+                                "type": "CONSTANT",
+                                "value": "5",
+                                "unit": "miles"
+                            }
+                        }
+                    }
+                ],
+                "rating": "gte>4"
+            },
+            "category": {
+                "descriptor": {
+                    "code": "3d-printing"
+                },
+                "tags": [
+                    {
+                        "descriptor": {
+                            "code": "material-info",
+                            "name": "Material Information"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "name": "product-material-type"
+                                },
+                                "value": "PVC-Plastic"
+                            }
+                        ]
+                    },
+                    {
+                        "descriptor": {
+                            "code": "technology-info",
+                            "name": "Technology Information"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "name": "printing-technology-type"
+                                },
+                                "value": "FDM"
+                            }
+                        ]
+                    },
+                    {
+                        "descriptor": {
+                            "code": "specialisation-info",
+                            "name": "Specialisation Information"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "name": "specialisation-type"
+                                },
+                                "value": "rapid-prototyping"
+                            }
+                        ]
+                    },
+                    {
+                        "descriptor": {
+                            "code": "scale-info",
+                            "name": "Scale Information"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "name": "scale-type"
+                                },
+                                "value": "industrial"
+                            }
+                        ]
+                    },
+                    {
+                        "descriptor": {
+                            "code": "printer-info",
+                            "name": "Printer Information"
+                        },
+                        "list": [
+                            {
+                                "descriptor": {
+                                    "name": "Resolution"
+                                },
+                                "value": "gte>20%"
+                            },
+                            {
+                                "descriptor": {
+                                    "name": "success-rate"
+                                },
+                                "value": "gte>95%"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

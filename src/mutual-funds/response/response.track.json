@@ -1,0 +1,27 @@
+{
+  "context": {
+    "domain": "financial-services:mutual-funds:0.2.0",
+    "location": {
+      "country": {
+        "code": "IND"
+      }
+    },
+    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+    "message_id": "$bb579fb8-cb82-4824-be12-fcbc405b6608",
+    "action": "on_track",
+    "timestamp": "2023-05-25T05:23:03.443Z",
+    "version": "1.1.0",
+    "ttl": "PT10M",
+    "bap_id": "ps-bap-network.becknprotocol.io",
+    "bap_uri": "https://ps-bap-network.becknprotocol.io/",
+    "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
+    "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/"
+  },
+  "message": {
+    "tracking": {
+      "id": "66b7b9bad166",
+      "url": "https://abcmutualfunds.com/tracking/abc9f0aa-bbfd-4e91-b378-41feee12f05f",
+      "status": "active"
+    }
+  }
+}

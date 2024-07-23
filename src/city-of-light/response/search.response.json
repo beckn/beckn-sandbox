@@ -1,0 +1,391 @@
+{
+    "context": {
+        "domain": "retail:CityOfLight",
+        "location": {
+            "country": {
+                "code": "IND"
+            }
+        },
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+        "message_id": "$bb579fb8-cb82-4824-be12-fcbc405b6608",
+        "action": "on_search",
+        "timestamp": "2023-05-25T05:23:03.443Z",
+        "version": "1.1.0",
+        "bap_uri": "https://odr-network-bap.becknprotocol.io/",
+        "bap_id": "odr-bap.becknprotocol.io",
+        "bpp_id": "alpha-odr-bpp.becknprotocol.io",
+        "bpp_uri": "https://alpha-odr-network-bpp.becknprotocol.io",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "catalog": {
+            "descriptor": {
+                "name": "HBO"
+            },
+            "providers": [
+                {
+                    "id": "./retail.kirana/ind.blr/177@retail-bpp-infra2.becknprotocol.io.provider",
+                    "descriptor": {
+                        "name": "TouringParis"
+                    },
+                    "locations": [
+                        {
+                            "id": "./retail.kirana/ind.blr/106@retail-bpp-infra2.becknprotocol.io.provider_location",
+                            "gps": "26.846694,80.946166"
+                        }
+                    ],
+                    "fulfillments": [
+                        {
+                            "id": "1",
+                            "stops": [
+                                {
+                                    "type": "start",
+                                    "location": {
+                                        "gps": "48.86176,2.38081"
+                                    },
+                                    "time": {
+                                        "timestamp": "2024-04-15T08:00:00.000Z"
+                                    }
+                                },
+                                {
+                                    "type": "end",
+                                    "location": {
+                                        "gps": "48.86005,2.32656"
+                                    },
+                                    "time": {
+                                        "timestamp": "2024-04-18T08:00:00.000Z"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "2",
+                            "stops": [
+                                {
+                                    "type": "start",
+                                    "location": {
+                                        "gps": "48.86176,2.38081"
+                                    },
+                                    "time": {
+                                        "timestamp": "2024-04-15T08:00:00.000Z"
+                                    }
+                                },
+                                {
+                                    "type": "end",
+                                    "location": {
+                                        "gps": "48.86005,2.32656"
+                                    },
+                                    "time": {
+                                        "timestamp": "2024-04-18T08:00:00.000Z"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "3",
+                            "stops": [
+                                {
+                                    "type": "start",
+                                    "location": {
+                                        "gps": "48.86176,2.38081"
+                                    },
+                                    "time": {
+                                        "timestamp": "2024-04-15T08:00:00.000Z"
+                                    }
+                                },
+                                {
+                                    "type": "end",
+                                    "location": {
+                                        "gps": "48.86005,2.32656"
+                                    },
+                                    "time": {
+                                        "timestamp": "2024-04-18T08:00:00.000Z"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "4",
+                            "stops": [
+                                {
+                                    "type": "start",
+                                    "location": {
+                                        "gps": "48.86176,2.38081"
+                                    },
+                                    "time": {
+                                        "timestamp": "2024-04-15T08:00:00.000Z"
+                                    }
+                                },
+                                {
+                                    "type": "end",
+                                    "location": {
+                                        "gps": "48.86005,2.32656"
+                                    },
+                                    "time": {
+                                        "timestamp": "2024-04-18T08:00:00.000Z"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "./retail.kirana/ind.blr/485@retail-bpp-infra2.becknprotocol.io.item",
+                            "descriptor": {
+                                "images": [
+                                    {
+                                        "url": "https://retail-bpp-infra2.becknprotocol.io/attachments/view/433.jpg"
+                                    }
+                                ],
+                                "name": "Arctic Monkeys Music Concert",
+                                "short_desc": "Get ready to dance the night away with Arctic Monkeys's high energy performances in France",
+                                "long_desc": "<h3>Highlights:</h3>\r\n      <p>Get ready for an unforgettable night of rock and roll as the Arctic Monkeys take the stage live in concert in Paris. With their signature sound and electrifying stage presence, this British band is known for putting on a show that will leave you buzzing with excitement.\r\nFrom their iconic hits like \"\"Do I Wanna Know?\"\" and \"\"I Bet You Look Good on the Dancefloor\"\" to their newer hits, this concert will have you singing and dancing along to every song. With a dynamic light show and incredible sound quality, the Arctic Monkeys will bring the energy and excitement to make this a night you won't forget.<p>\r\n\r\nDon't miss your chance to see one of rock music's biggest and most beloved bands live in concert. Book your tickets now and experience the thrill of the Arctic Monkeys in the stunning city of Paris. It's a concert experience you won't want to miss!\r\n</p>\r\n\r\n      <h3>Details:</h3>\r\n      <ul>\r\n        <li>Date: 10th June 2023</li>\r\n        <li>Time: 6:30 PM</li>\r\n        <li>Location: Accor Arena, Paris</li>\r\n        <li>Duration: 2 hours, No Intermission</li>\r\n        <li>Language: English</li>\r\n        <li>Handicap Access: Yes</li>\r\n      </ul>"
+                            },
+                            "matched": true,
+                            "location_ids": [
+                                "./retail.kirana/ind.blr/106@retail-bpp-infra2.becknprotocol.io.provider_location"
+                            ],
+                            "fulfillment_ids": [
+                                "1"
+                            ],
+                            "recommended": true,
+                            "price": {
+                                "listed_value": "57.0",
+                                "currency": "INR",
+                                "value": "57.0"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "name": "item-cataegory"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "name": "category"
+                                            },
+                                            "value": "Tourism"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "search-tags"
+                                    },
+                                    "list": [
+                                        {
+                                            "value": "Festival"
+                                        },
+                                        {
+                                            "value": "Monkeys"
+                                        },
+                                        {
+                                            "value": "Concert"
+                                        },
+                                        {
+                                            "value": "Music"
+                                        },
+                                        {
+                                            "value": "Show"
+                                        },
+                                        {
+                                            "value": "Arctic"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "./retail.kirana/ind.blr/487@retail-bpp-infra2.becknprotocol.io.item",
+                            "descriptor": {
+                                "images": [
+                                    {
+                                        "url": "https://retail-bpp-infra2.becknprotocol.io/attachments/view/434.webp"
+                                    }
+                                ],
+                                "name": "Orsay Museum Exhibition",
+                                "short_desc": "Experience the beauty of french art and culture at the Orsay Museum",
+                                "long_desc": "<h3>Highlights:</h3>\r\n      <p>Explore the museum's galleries and exhibitions, which include works by some of the greatest artists of all time, such as Vincent van Gogh, Claude Monet, Auguste Renoir, and more. Admire the beauty of some of the world's most iconic paintings, such as van Gogh's \"Starry Night Over the Rhône\" and \"Self-Portrait,\" Monet's \"Water Lilies,\" and Renoir's \"Dance at Le Moulin de la Galette.\" <p>\r\nIn addition to paintings, the Musée d'Orsay also features an impressive collection of sculptures, photography, and decorative arts, giving visitors a comprehensive look at the cultural achievements of the 19th and early 20th centuries.<p>\r\n\r\nWith its stunning architecture and unparalleled collection of art, the Musée d'Orsay is a must-visit destination for art lovers and history enthusiasts alike. Book your tickets now and experience the beauty and wonder of this incredible museum.\r\n</p>\r\n\r\n      <h3>Details:</h3>\r\n      <ul>\r\n        <li>Date: 24th May 2023</li>\r\n        <li>Timings: 9:30 AM to 6:00 PM from Tuesday to Sunday. On Thursdays, it is open until 9:45 PM</li>\r\n        <li>Location: Orsay museum, Paris</li>\r\n        <li>Language: French, English</li>\r\n        <li>Handicap Access: Yes</li>\r\n      </ul>"
+                            },
+                            "location_ids": [
+                                "./retail.kirana/ind.blr/106@retail-bpp-infra2.becknprotocol.io.provider_location"
+                            ],
+                            "fulfillment_ids": [
+                                "2"
+                            ],
+                            "recommended": true,
+                            "price": {
+                                "listed_value": "16.0",
+                                "currency": "INR",
+                                "value": "16.0"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "name": "item-cataegory"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "name": "category"
+                                            },
+                                            "value": "Tourism"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "search-tags"
+                                    },
+                                    "list": [
+                                        {
+                                            "value": "Art"
+                                        },
+                                        {
+                                            "value": "Orsay"
+                                        },
+                                        {
+                                            "value": "Exhibition"
+                                        },
+                                        {
+                                            "value": "Painting"
+                                        },
+                                        {
+                                            "value": "Museum"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "./retail.kirana/ind.blr/491@retail-bpp-infra2.becknprotocol.io.item",
+                            "descriptor": {
+                                "images": [
+                                    {
+                                        "url": "https://retail-bpp-infra2.becknprotocol.io/attachments/view/439.jpg"
+                                    }
+                                ],
+                                "name": "The Weeknd Concert",
+                                "short_desc": "Experience unforgettable R&B music, stunning visuals and mesmerizing performances by The Weeknd",
+                                "long_desc": "<h3>Highlights:</h3>\r\n      <p>Get ready to experience the mesmerizing energy and sound of The Weeknd live in concert in the heart of Paris. With his chart-topping hits like \"Blinding Lights\" and \"Starboy,\" and his signature R&B and pop-infused sound, this concert promises to be an unforgettable experience. Featuring mesmerizing visuals, stunning pyrotechnics, and an epic stage show, this concert is the ultimate way to see one of music's biggest stars in action. From the moment The Weeknd takes the stage, you'll be swept up in the magic of his music and unforgettable voice.<p>\r\n\r\nWhether you're a die-hard fan or simply love great music, this concert is not to be missed. Book your tickets now and join thousands of fans for a night of incredible music, unforgettable memories, and the electric atmosphere of one of the world's most beautiful cities. Don't miss your chance to see The Weeknd live in concert in Paris!</p>\r\n\r\n      <h3>Details:</h3>\r\n      <ul>\r\n        <li>Date: 3rd June 2023</li>\r\n        <li>Time: 6:30 PM</li>\r\n        <li>Location: Stade de France</li>\r\n        <li>Duration: 2 hours, No Intermission</li>\r\n        <li>Language: English</li>\r\n        <li>Handicap Access: Yes</li>\r\n      </ul>"
+                            },
+                            "matched": true,
+                            "location_ids": [
+                                "./retail.kirana/ind.blr/106@retail-bpp-infra2.becknprotocol.io.provider_location"
+                            ],
+                            "fulfillment_ids": [
+                                "3"
+                            ],
+                            "recommended": true,
+                            "price": {
+                                "listed_value": "67.0",
+                                "currency": "INR",
+                                "value": "67.0"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "name": "item-cataegory"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "name": "category"
+                                            },
+                                            "value": "Tourism"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "search-tags"
+                                    },
+                                    "list": [
+                                        {
+                                            "value": "Festival"
+                                        },
+                                        {
+                                            "value": "Concert"
+                                        },
+                                        {
+                                            "value": "Music"
+                                        },
+                                        {
+                                            "value": "Show"
+                                        },
+                                        {
+                                            "value": "Weekend"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "./retail.kirana/ind.blr/493@retail-bpp-infra2.becknprotocol.io.item",
+                            "descriptor": {
+                                "images": [
+                                    {
+                                        "url": "https://retail-bpp-infra2.becknprotocol.io/attachments/view/441.jpg"
+                                    }
+                                ],
+                                "name": "Louvre Museum Exhibition",
+                                "short_desc": "Step into the world of art, culture and architecture of centuries past at the Louvre Museum",
+                                "long_desc": "<h3>Highlights:</h3>\r\n      <p>Explore the Louvre's many galleries and exhibitions, which include iconic works of art such as the Mona Lisa, the Winged Victory of Samothrace, and the Venus de Milo, as well as ancient Egyptian and Greek sculptures, and much more. With works from some of the world's most renowned artists, you'll be left breathless by the beauty and skill on display.\r\nIn addition to its permanent collection, the Louvre also features a rotating selection of temporary exhibitions, giving visitors the chance to explore new and exciting corners of the art world. From ancient artifacts to contemporary masterpieces, there's something for everyone at the Louvre.<p>\r\n\r\nWith its stunning architecture, rich cultural history, and unparalleled collection of art, the Louvre is an experience not to be missed. Book your tickets now and immerse yourself in the beauty and wonder of one of the world's greatest museums. It's an experience you'll cherish for a lifetime.\r\n</p>\r\n\r\n      <h3>Details:</h3>\r\n      <ul>\r\n        <li>Date: 31st May 2023</li>\r\n        <li>Timings: 9:30 AM to 6:00 PM on Mon, Wed, Thur, Sat and Sun. On Fridays, it is open until 9:45 PM</li>\r\n        <li>Location: Louvre museum, Paris</li>\r\n        <li>Language: French, English</li>\r\n        <li>Handicap Access: Yes</li>\r\n      </ul>"
+                            },
+                            "matched": true,
+                            "location_ids": [
+                                "./retail.kirana/ind.blr/106@retail-bpp-infra2.becknprotocol.io.provider_location"
+                            ],
+                            "fulfillment_ids": [
+                                "4"
+                            ],
+                            "recommended": true,
+                            "price": {
+                                "listed_value": "17.0",
+                                "currency": "INR",
+                                "value": "17.0"
+                            },
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "name": "item-cataegory"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "name": "category"
+                                            },
+                                            "value": "Tourism"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "name": "search-tags"
+                                    },
+                                    "list": [
+                                        {
+                                            "value": "Art"
+                                        },
+                                        {
+                                            "value": "Louvre"
+                                        },
+                                        {
+                                            "value": "Exhibition"
+                                        },
+                                        {
+                                            "value": "Painting"
+                                        },
+                                        {
+                                            "value": "Museum"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

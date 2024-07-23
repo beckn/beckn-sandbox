@@ -1,0 +1,275 @@
+{
+    "info": {
+        "_postman_id": "14cd727c-efe1-4240-806a-e177fdea961c",
+        "name": "Tourism Sandbox",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "26726166"
+    },
+    "item": [
+        {
+            "name": "search",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"tourism\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"search\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-11-06T09:41:09.673Z\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"category\": {\n                \"descriptor\": {\n                    \"code\": \"trekking\"\n                }\n            },\n            \"fulfillment\": {\n                \"stops\": [\n                    {\n                        \"type\": \"start\",\n                        \"location\": {\n                            \"gps\": \"32.19742, 77.23599\"\n                        },\n                        \"time\": {\n                            \"range\": {\n                                \"start\": \"2023-04-14T14:30:00.000Z\",\n                                \"end\": \"2023-04-16T14:30:00.000Z\"\n                            }\n                        }\n                    }\n                ]\n            }\n        }\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/search",
+                    "host": ["{{base_url}}"],
+                    "path": ["search"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "select",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"tourism\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"select\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T09:41:09.708Z\",\n        \"ttl\": \"PT10M\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"provider48@becknprotocol.io.provider\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"items1.becknprotocol.io.item\",\n                    \"quantity\": {\n                        \"selected\": {\n                            \"count\": 2\n                        }\n                    }\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"f1\"\n                }\n            ]\n        }\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/select",
+                    "host": ["{{base_url}}"],
+                    "path": ["select"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "status",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"tourism\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"status\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T09:41:09.708Z\",\n        \"ttl\": \"PT10M\"\n    },\n    \"message\": {\n        \"order_id\": \"oid0909\"\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/status",
+                    "host": ["{{base_url}}"],
+                    "path": ["status"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "confirm",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"tourism\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"confirm\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T09:41:09.708Z\",\n        \"ttl\": \"PT10M\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"provider48@becknprotocol.io.provider\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"items1.becknprotocol.io.item\",\n                    \"quantity\": {\n                        \"selected\": {\n                            \"count\": 2\n                        }\n                    }\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"f1\",\n                    \"customer\": {\n                        \"person\": {\n                            \"name\": \"Shubham Thakur\"\n                        },\n                        \"contact\": {\n                            \"phone\": \"919122343344\"\n                        }\n                    }\n                }\n            ],\n            \"billing\": {\n                \"name\": \"Shubham Thakur\",\n                \"phone\": \"9191223433\",\n                \"email\": \"thakur.s@gmail.com\",\n                \"address\": \"123, Terminal 1, Kempegowda Int'l Airport Rd, A - Block, Gangamuthanahalli, Karnataka 560300, India\",\n                \"city\": {\n                    \"name\": \"Gangamuthanahalli\"\n                },\n                \"state\": {\n                    \"name\": \"Karnataka\"\n                }\n            },\n            \"payments\": [\n                {\n                    \"status\": \"PAID\",\n                    \"type\": \"PRE-FULFILLMENT\",\n                    \"transaction_id\": \"tid0101\",\n                    \"params\": {\n                        \"amount\": \"1500\",\n                        \"currency\": \"INR\",\n                        \"bank_code\": \"INB0004321\",\n                        \"bank_account_number\": \"1234002341\"\n                    }\n                }\n            ]\n        }\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/confirm",
+                    "host": ["{{base_url}}"],
+                    "path": ["confirm"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "init",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"tourism\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"init\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T09:41:09.708Z\",\n        \"ttl\": \"PT10M\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"provider48@becknprotocol.io.provider\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"items1.becknprotocol.io.item\",\n                    \"quantity\": {\n                        \"selected\": {\n                            \"count\": 2\n                        }\n                    }\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"f1\",\n                    \"customer\": {\n                        \"person\": {\n                            \"name\": \"Shubham Thakur\"\n                        },\n                        \"contact\": {\n                            \"phone\": \"919122343344\"\n                        }\n                    }\n                }\n            ],\n            \"billing\": {\n                \"name\": \"Shubham Thakur\",\n                \"phone\": \"9191223433\",\n                \"email\": \"thakur.s@gmail.com\",\n                \"address\": \"123, Terminal 1, Kempegowda Int'l Airport Rd, A - Block, Gangamuthanahalli, Karnataka 560300, India\",\n                \"city\": {\n                    \"name\": \"Gangamuthanahalli\"\n                },\n                \"state\": {\n                    \"name\": \"Karnataka\"\n                }\n            }\n        }\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/init",
+                    "host": ["{{base_url}}"],
+                    "path": ["init"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "rating",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"tourism\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"rating\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T09:41:09.708Z\",\n        \"ttl\": \"PT10M\"\n    },\n    \"message\": {\n        \"ratings\": [\n            {\n                \"id\": \"oid0909\",\n                \"rating_category\": \"Order\",\n                \"value\": \"8\"\n            }\n        ]\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/rating",
+                    "host": ["{{base_url}}"],
+                    "path": ["rating"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "support",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"tourism\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"support\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T09:41:09.708Z\",\n        \"ttl\": \"PT10M\"\n    },\n    \"message\": {\n        \"support\": {\n            \"ref_id\": \"oid0909\",\n            \"phone\": \"+91 4444444444\",\n            \"email\": \"me@gmail.com\"\n        }\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/support",
+                    "host": ["{{base_url}}"],
+                    "path": ["support"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "update",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"tourism\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"update\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T09:41:09.708Z\",\n        \"ttl\": \"PT10M\"\n    },\n    \"message\": {\n        \"order\": {\n            \"id\": \"oid0909\",\n            \"fulfillments\": [\n                {\n                    \"customer\": {\n                        \"contact\": {\n                            \"phone\": \"+91-8056475647\"\n                        }\n                    }\n                }\n            ]\n        },\n        \"update_target\": \"order.fulfillments[0].customer.contact.phone\"\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/update",
+                    "host": ["{{base_url}}"],
+                    "path": ["update"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "cancel",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"tourism\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"cancel\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T09:41:09.708Z\",\n        \"ttl\": \"PT10M\"\n    },\n    \"message\": {\n        \"order_id\": \"oid0909\",\n        \"cancellation_reason_id\": \"4\",\n        \"descriptor\": {\n            \"short_desc\": \"Change in plan \"\n        }\n    }\n}\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/cancel",
+                    "host": ["{{base_url}}"],
+                    "path": ["cancel"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "track",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"context\": {\n        \"domain\": \"tourism\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"track\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"8100d125-76a7-4588-88be-81b97657cd09\",\n        \"timestamp\": \"2023-11-06T09:41:09.708Z\",\n        \"ttl\": \"PT10M\"\n    },\n    \"message\": {\n        \"order_id\": \"b989c9a9-f603-4d44-b38d-26fd72286b38\"\n    }\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/track",
+                    "host": ["{{base_url}}"],
+                    "path": ["track"]
+                }
+            },
+            "response": []
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "type": "text/javascript",
+                "packages": {},
+                "exec": [""]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "type": "text/javascript",
+                "packages": {},
+                "exec": [""]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "key": "base_url",
+            "value": "https://ps-bap-client.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bap_id",
+            "value": "ps-bap-network.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bap_uri",
+            "value": "https://ps-bap-network.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bpp_id",
+            "value": "sandbox-bpp-network.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bpp_uri",
+            "value": "https://sandbox-bpp-network.becknprotocol.io",
+            "type": "string"
+        }
+    ]
+}

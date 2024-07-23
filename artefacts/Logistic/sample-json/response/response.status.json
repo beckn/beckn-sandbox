@@ -1,0 +1,183 @@
+{
+    "context": {
+        "domain": "logistics",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:0806"
+            }
+        },
+        "action": "on_status",
+        "version": "1.1.0",
+        "bap_id": "logistics_bap",
+        "bap_uri": "https://logistics_bap.com",
+        "bpp_id": "logistics_bpp",
+        "bpp_uri": "https://logistics_bpp.com",
+        "transaction_id": "aa77b78e-66b0-47a5-9560-527a36cf0d9f",
+        "message_id": "9d498536-4dba-4c69-a47e-bed245623ecc",
+        "timestamp": "2024-01-15T16:00:00.000Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "oid/12",
+            "provider": {
+                "id": "P1",
+                "descriptor": {
+                    "name": "Logistics",
+                    "short_desc": "Logistics Org",
+                    "long_desc": "Logistics Org",
+                    "images": [
+                        {
+                            "url": "https://logistics-guru-image.png",
+                            "size_type": "sm"
+                        }
+                    ]
+                },
+                "locations": [
+                    {
+                        "id": "L1",
+                        "gps": "13.786587,76.872309",
+                        "address": "Shubhash nagar, 3rd block",
+                        "city": {
+                            "name": "Bengaluru"
+                        },
+                        "state": {
+                            "name": "Karnataka"
+                        },
+                        "country": {
+                            "name": "India"
+                        },
+                        "area_code": "560042"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "I1",
+                    "descriptor": {
+                        "Name": "Lightweight delivery",
+                        "short_desc": "Delivery in just 1 hours",
+                        "long_desc": "Delivery in just 1 hours"
+                    },
+                    "price": {
+                        "currency": "INR",
+                        "value": "starting from 50.0"
+                    },
+                    "category_ids": ["category1"],
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "name": "charges"
+                            },
+                            "List": [
+                                {
+                                    "descriptor": {
+                                        "code": "Min-Chargable-Weight-in-KG"
+                                    },
+                                    "value": "10"
+                                }
+                            ]
+                        }
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": "5",
+                            "measure": {
+                                "unit": "KG"
+                            }
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "50"
+                },
+                "breakup": [
+                    {
+                        "title": "item price",
+                        "item": {
+                            "id": "I1"
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "50"
+                        }
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Road-Shipping",
+                    "stops": [
+                        {
+                            "type": "Pickup",
+                            "location": {
+                                "gps": "14.785638,76.454553",
+                                "area_code": "320042"
+                            },
+                            "time": {
+                                "timestamp": "2024-01-15T16:00:00.000Z"
+                            },
+                            "customer": {
+                                "person": {
+                                    "name": "Paul Sterling"
+                                },
+                                "contact": {
+                                    "phone": "+913333333333"
+                                }
+                            }
+                        },
+                        {
+                            "type": "Drop",
+                            "location": {
+                                "gps": "14.433424,77.928379",
+                                "area_code": "320042"
+                            },
+                            "customer": {
+                                "person": {
+                                    "name": "Anand Ahuja"
+                                },
+                                "contact": {
+                                    "phone": "+914444444444"
+                                }
+                            }
+                        }
+                    ],
+                    "state": {
+                        "descriptor": {
+                            "code": "Agent-Assigned"
+                        }
+                    },
+                    "agent": {
+                        "person": {
+                            "name": "Ramesh"
+                        },
+                        "contact": {
+                            "phone": "+915555555555"
+                        }
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Paul Sterling",
+                "phone": "+913333333333",
+                "email": "sample@gmail.com"
+            },
+            "payment": {
+                "status": "PAID",
+                "type": "PRE-FULFILLMENT",
+                "params": {
+                    "transaction_id": "tid/6737457",
+                    "amount": "50",
+                    "currency": "INR"
+                }
+            }
+        }
+    }
+}

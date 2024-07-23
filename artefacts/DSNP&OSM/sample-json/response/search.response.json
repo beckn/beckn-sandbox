@@ -1,0 +1,301 @@
+{
+    "context": {
+        "domain": "localretail:shopping",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
+            }
+        },
+        "action": "on_search",
+        "version": "1.1.0",
+        "bap_id": "dsnp-bap-id",
+        "bap_uri": "https://55a6-124-123-32-28.ngrok-free.app",
+        "bpp_id": "dsnp-bpp-id",
+        "bpp_uri": "https://4e21-124-123-32-28.ngrok-free.app",
+        "message_id": "6104c0a3-d1d1-4ded-aaa4-76e4caf727ce",
+        "transaction_id": "8100d125-76a7-4588-88be-81b97657cd09",
+        "timestamp": "2023-11-06T09:41:09.708Z",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "catalog": {
+            "descriptor": {
+                "name": "HBO"
+            },
+            "providers": [
+                {
+                    "id": "af304e37-2a64-4d7d-b61c-8cbb79b48d9f",
+                    "descriptor": {
+                        "name": "WorldHikes",
+                        "images": [
+                            {
+                                "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4CQBASVPFbCXIytAUZF7c00_dS-2bSmF1huQXWmnCg&s"
+                            }
+                        ],
+                        "short_desc": "WorldHikes is dedicated to serving outdoor enthusiasts with top-quality trekking gear for their adventures around the globe. From premium sunglasses and ergonomic backpacks to efficient camping stoves and reliable headlamps, we ensure that every hiker is equipped with the best tools for their journey. Join us in exploring the world's most breathtaking trails!"
+                    },
+                    "locations": [
+                        {
+                            "id": "1",
+                            "gps": "12.936938,77.695088"
+                        }
+                    ],
+                    "categories": [
+                        {
+                            "id": "c1",
+                            "descriptor": {
+                                "code": "dsnp",
+                                "name": "dsnp"
+                            }
+                        }
+                    ],
+                    "fulfillments": [
+                        {
+                            "id": "1",
+                            "type": "delivery"
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "2e0c2b39-84d2-4b58-af8b-8b6d7b0c3f97",
+                            "descriptor": {
+                                "images": [{ "url": "https://m.media-amazon.com/images/I/61kQ4hs3LpL._AC_UY1100_.jpg" }],
+                                "name": "Adventure Sunglasses",
+                                "short_desc": "Experience the outdoors in style with our Adventure Sunglasses. These high-quality sunglasses provide UV protection and are designed for maximum comfort during your treks and hikes.",
+                                "long_desc": "<p>Upgrade your outdoor adventures with our Adventure Sunglasses. Whether you're trekking through rugged terrain or relaxing at the campsite, these sunglasses offer superior UV protection and glare reduction. Featuring durable frames and polarized lenses, they provide clarity and comfort in any environment.</p>"
+                            },
+                            "matched": true,
+                            "price": {
+                                "listed_value": "999.0",
+                                "currency": "INR",
+                                "value": "999.0"
+                            },
+                            "recommended": true,
+                            "location_ids": ["1"],
+                            "category_ids": ["c1"],
+                            "fulfillment_ids": ["1"],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "name": "search-tags"
+                                    },
+                                    "list": [
+                                        {
+                                            "value": "sunglasses"
+                                        },
+                                        {
+                                            "value": "adventure"
+                                        },
+                                        {
+                                            "value": "UV protection"
+                                        },
+                                        {
+                                            "value": "hiking"
+                                        },
+                                        {
+                                            "value": "trekking"
+                                        },
+                                        {
+                                            "value": "outdoor gear"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "4dfe2998-17e0-45cc-a52e-49f3f5a8eb47",
+                            "descriptor": {
+                                "images": [{ "url": "https://bombaytrooper.com/wp-content/uploads/2019/03/brownexplorer-360-01-1.jpg" }],
+                                "name": "Explorer Backpack",
+                                "short_desc": "The Explorer Backpack is your reliable companion for all your outdoor adventures. With its spacious compartments, ergonomic design, and durable construction, it's perfect for hiking, camping, and backpacking.",
+                                "long_desc": "<p>Embark on your next adventure with confidence with our Explorer Backpack. This versatile backpack features multiple compartments and pockets to keep your gear organized and easily accessible. The ergonomic design and adjustable straps ensure a comfortable fit, while the durable materials provide long-lasting performance in rugged conditions.</p>"
+                            },
+                            "matched": true,
+                            "price": {
+                                "listed_value": "1999.0",
+                                "currency": "INR",
+                                "value": "1999.0"
+                            },
+                            "recommended": true,
+                            "location_ids": ["1"],
+                            "category_ids": ["c1"],
+                            "fulfillment_ids": ["1"],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "name": "search-tags"
+                                    },
+                                    "list": [
+                                        {
+                                            "value": "backpack"
+                                        },
+                                        {
+                                            "value": "explorer"
+                                        },
+                                        {
+                                            "value": "camping"
+                                        },
+                                        {
+                                            "value": "hiking"
+                                        },
+                                        {
+                                            "value": "trekking"
+                                        },
+                                        {
+                                            "value": "outdoor gear"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "82c8d8a1-eb10-44de-ba78-cb37c2e98630",
+                            "descriptor": {
+                                "images": [{ "url": "https://images-cdn.ubuy.co.in/6605ee95cae6cb675d0b9d59-onlyfire-rocket-stove-outdoor-portable.jpg" }],
+                                "name": "Campfire Camping Stove",
+                                "short_desc": "The Campfire Camping Stove is a must-have for any outdoor enthusiast. Compact, lightweight, and easy to use, it's perfect for cooking delicious meals on your camping trips.",
+                                "long_desc": "<p>Take your outdoor cooking to the next level with our Campfire Camping Stove. Designed for portability and convenience, this compact stove is ideal for backpacking, camping, and picnicking. With its adjustable flame and sturdy construction, it's perfect for boiling water, cooking meals, and making s'mores around the campfire.</p>"
+                            },
+                            "matched": true,
+                            "price": {
+                                "listed_value": "1499.0",
+                                "currency": "INR",
+                                "value": "1499.0"
+                            },
+                            "recommended": true,
+                            "location_ids": ["1"],
+                            "category_ids": ["c1"],
+                            "fulfillment_ids": ["1"],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "name": "search-tags"
+                                    },
+                                    "list": [
+                                        {
+                                            "value": "camping stove"
+                                        },
+                                        {
+                                            "value": "campfire"
+                                        },
+                                        {
+                                            "value": "outdoor cooking"
+                                        },
+                                        {
+                                            "value": "camping gear"
+                                        },
+                                        {
+                                            "value": "trekking"
+                                        },
+                                        {
+                                            "value": "backpacking"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "f8ff1168-f7d0-4b14-9437-2b20f54f0f40",
+                            "descriptor": {
+                                "images": [{ "url": "https://cdni.llbean.net/is/image/wim/518417_51386_41?hei=1095&wid=950&resMode=sharp2&defaultImage=llbprod/518417_51386_41" }],
+                                "name": "Trailblazer Headlamp",
+                                "short_desc": "Illuminate your path with our Trailblazer Headlamp. Lightweight, durable, and easy to use, it's the perfect companion for night hikes, camping trips, and outdoor adventures.",
+                                "long_desc": "<p>Light up the night with our Trailblazer Headlamp. Whether you're exploring dark trails, setting up camp, or reading in your tent, this versatile headlamp provides bright, reliable illumination. With adjustable brightness settings and a comfortable strap, it's designed for comfort and convenience on all your outdoor adventures.</p>"
+                            },
+                            "matched": true,
+                            "price": {
+                                "listed_value": "799.0",
+                                "currency": "INR",
+                                "value": "799.0"
+                            },
+                            "recommended": true,
+                            "location_ids": ["1"],
+                            "category_ids": ["c1"],
+                            "fulfillment_ids": ["1"],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "name": "search-tags"
+                                    },
+                                    "list": [
+                                        {
+                                            "value": "headlamp"
+                                        },
+                                        {
+                                            "value": "trailblazer"
+                                        },
+                                        {
+                                            "value": "night hiking"
+                                        },
+                                        {
+                                            "value": "camping gear"
+                                        },
+                                        {
+                                            "value": "outdoor lighting"
+                                        },
+                                        {
+                                            "value": "trekking"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "1b38f7e7-18f7-4978-9a2f-816a2d9029af",
+                            "descriptor": {
+                                "images": [
+                                    {
+                                        "url": "https://www.seatosummitindia.com/cdn/shop/products/S4131_TraverseTvIIISleepingBag_Angle_ForWeb_14d6bbde-fae8-441e-b770-25552896653f.jpg?v=1661858175"
+                                    }
+                                ],
+                                "name": "Summit Sleeping Bag",
+                                "short_desc": "Stay warm and comfortable on your camping trips with our Summit Sleeping Bag. Designed for cold weather conditions, it's perfect for overnight stays in the great outdoors.",
+                                "long_desc": "<p>Get a restful night's sleep in any environment with our Summit Sleeping Bag. Whether you're camping in the mountains or backpacking through the wilderness, this sleeping bag provides warmth and comfort in cold weather conditions. Featuring a soft, cozy lining and a durable outer shell, it's designed for durability and performance on all your outdoor adventures.</p>"
+                            },
+                            "matched": true,
+                            "price": {
+                                "listed_value": "2499.0",
+                                "currency": "INR",
+                                "value": "2499.0"
+                            },
+                            "recommended": true,
+                            "location_ids": ["1"],
+                            "category_ids": ["c1"],
+                            "fulfillment_ids": ["1"],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "name": "search-tags"
+                                    },
+                                    "list": [
+                                        {
+                                            "value": "sleeping bag"
+                                        },
+                                        {
+                                            "value": "summit"
+                                        },
+                                        {
+                                            "value": "camping gear"
+                                        },
+                                        {
+                                            "value": "cold weather"
+                                        },
+                                        {
+                                            "value": "outdoor sleeping"
+                                        },
+                                        {
+                                            "value": "trekking"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
