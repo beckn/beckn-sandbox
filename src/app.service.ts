@@ -14,7 +14,7 @@ export class AppService {
                 domainPath = `financial-services`;
             } else if (body.context.domain.includes("dsep") || body.context.domain.includes("onest")) {
                 domainPath = `dsep`;
-            } else if (body.context.domain.includes("dent")) {
+            } else if (body.context.domain.includes("dent") || body.context.domain.includes("uei")) {
                 domainPath = `dent`;
             } else if (body.context.domain.includes("dhp")) {
                 domainPath = `dhp`;
