@@ -11,6 +11,7 @@ export class DentService {
     get(domain: string): DentApiInterface {
         switch (domain) {
             case DentTypeEnum.DENTEVCHARGIN:
+            case DentTypeEnum.EVCHARGINGUEI:
                 return new EVApiService();
             default:
                 throw new DomainNotFoundException();
