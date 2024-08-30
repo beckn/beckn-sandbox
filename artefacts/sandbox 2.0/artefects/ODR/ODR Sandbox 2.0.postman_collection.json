@@ -1,0 +1,306 @@
+{
+	"info": {
+		"_postman_id": "36c84a92-b21e-4a63-a43e-2a6d55f0dff7",
+		"name": "ODR Sandbox 2.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23690031"
+	},
+	"item": [
+		{
+			"name": "ODR Sandbox",
+			"item": [
+				{
+					"name": "Search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"{{domain}}\",\r\n        \"location\": {\r\n            \"country\": {\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n        \"message_id\": \"{{$randomUUID}}\",\r\n        \"action\": \"search\",\r\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n        \"version\": \"1.1.0\",\r\n        \"bap_uri\": \"{{bap_uri}}\",\r\n        \"bap_id\": \"{{bap_id}}\",\r\n        \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"intent\": {\r\n            \"item\": {\r\n                \"descriptor\": {\r\n                    \"name\": \"mediation\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/search",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Select",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n      \"domain\": \"{{domain}}\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"select\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"order\": {\r\n            \"provider\": {\r\n                \"id\": \"35\"\r\n            },\r\n            \"items\": [\r\n                {\r\n                    \"id\": \"50\"\r\n                }\r\n            ]\r\n        }\r\n    }\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/select",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"select"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Init",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"context\": {\r\n    \"domain\": \"{{domain}}\",\r\n    \"location\": {\r\n      \"country\": {\r\n        \"code\": \"IND\"\r\n      }\r\n    },\r\n    \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n    \"message_id\": \"{{$randomUUID}}\",\r\n    \"action\": \"init\",\r\n    \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n    \"version\": \"1.1.0\",\r\n    \"bap_uri\": \"{{bap_uri}}\",\r\n    \"bap_id\": \"{{bap_id}}\",\r\n    \"bpp_id\": \"{{bpp_id}}\",\r\n    \"bpp_uri\": \"{{bpp_uri}}\",\r\n    \"ttl\": \"PT10M\"\r\n  },\r\n  \"message\": {\r\n        \"order\": {\r\n            \"provider\": {\r\n                \"id\": \"35\"\r\n            },\r\n            \"items\": [\r\n                {\r\n                    \"id\": \"50\"\r\n                }\r\n            ],\r\n            \"billing\": {\r\n                \"name\": \"John Doe\",\r\n                \"email\": \"john.doe@example.com\",\r\n                \"address\": \"21A, ABC Appartments, HSR Layout, Bengaluru\",\r\n                \"city\": {\r\n                    \"name\": \"Bengaluru\"\r\n                }\r\n            },\r\n            \"fulfillments\": [\r\n                {\r\n                    \"id\":\"15\",\r\n                    \"customer\": {\r\n                        \"person\": {\r\n                            \"name\": \"John Doe\"\r\n                        },\r\n                        \"contact\": {\r\n                            \"phone\": \"+91-9999999999\",\r\n                            \"email\": \"john.doe@example.com\"\r\n                        }\r\n                    }\r\n                }\r\n            ],\r\n            \"tags\": [\r\n                {\r\n                    \"descriptor\": {\r\n                        \"name\": \"consent-form\"\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/init",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"init"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confirm",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n      \"domain\": \"{{domain}}\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"confirm\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"order\": {\r\n            \"provider\": {\r\n                \"id\": \"35\"\r\n            },\r\n            \"items\": [\r\n                {\r\n                    \"id\": \"50\"\r\n                }\r\n            ],\r\n            \"billing\": {\r\n                \"name\": \"John Doe\",\r\n                \"email\": \"john.doe@example.com\",\r\n                \"address\": \"21A, ABC Appartments, HSR Layout, Bengaluru\",\r\n                 \"city\": {\r\n                    \"name\": \"Bengaluru\"\r\n                 }\r\n            },\r\n            \"fulfillments\": [\r\n                {\r\n                    \"customer\": {\r\n                        \"person\": {\r\n                            \"name\": \"John Doe\"\r\n                        },\r\n                        \"contact\": {\r\n                            \"phone\": \"+91-9999999999\",\r\n                            \"email\": \"john.doe@example.com\"\r\n                        }\r\n                    }\r\n                }\r\n            ],\r\n            \"payments\": [\r\n                {\r\n                    \"id\":\"15\",\r\n                    \"params\": {\r\n                        \"amount\": \"12000\",\r\n                        \"currency\": \"INR\",\r\n                        \"transaction_id\": \"tranIdajkdh37e8\"\r\n                    },\r\n                    \"type\": \"PRE-ORDER\",\r\n                    \"status\": \"PAID\",\r\n                    \"time\": {\r\n                        \"timestamp\": \"2023-05-25T05:25:03.443Z\"\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    }\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/confirm",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"confirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n      \"domain\": \"{{domain}}\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"status\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"ttl\": \"PT10M\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\"\r\n    },\r\n    \"message\": {\r\n      \"order_id\": \"1693\"\r\n    }\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/status",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"{{domain}}\",\r\n        \"location\": {\r\n            \"country\": {\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"version\": \"1.1.0\",\r\n        \"action\": \"update\",\r\n        \"bap_uri\": \"{{bap_uri}}\",\r\n        \"bap_id\": \"{{bap_id}}\",\r\n        \"bpp_id\": \"{{bpp_id}}\",\r\n        \"bpp_uri\": \"{{bpp_uri}}\",\r\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n        \"message_id\": \"{{$randomUUID}}\",\r\n        \"ttl\": \"PT10M\",\r\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\"\r\n    },\r\n    \"message\": {\r\n        \"update_target\": \"order.fulfillments[0].agent\",\r\n        \"order\": {\r\n            \"id\": \"1693\",\r\n            \"fulfillments\": [\r\n                {\r\n                    \"agent\": {\r\n                        \"person\": {\r\n                            \"id\": \"ca063dc9d321\",\r\n                            \"name\": \"Mr Adama Smith\"\r\n                        }\r\n                    }\r\n                }\r\n            ],\r\n            \"tags\": [\r\n                {\r\n                    \"descriptor\": {\r\n                        \"name\": \"agent\"\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Support",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n      \"domain\": \"{{domain}}\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"support\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n      \"support\": {\r\n        \"ref_id\": \"fcbc405b6608\",\r\n        \"callback_phone\": \"+919876543210\",\r\n        \"email\": \"john.doe@gmail.com\"\r\n      }\r\n    }\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/support",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"support"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rating",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n      \"domain\": \"{{domain}}\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"rating\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n      \"ratings\": [\r\n        {\r\n          \"id\": \"a9aaecca-10b7-4d19-b640-b047a7c621961676906777032\",\r\n          \"rating_category\": \"Order\",\r\n          \"value\": \"4\"\r\n        }\r\n      ]\r\n    }\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/rating",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"rating"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n      \"domain\": \"{{domain}}\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"cancel\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n      \"order_id\": \"1693\",\r\n      \"cancellation_reason_id\": \"5\",\r\n      \"descriptor\": {\r\n        \"short_desc\": \"Dispute dropped\"\r\n      }\r\n    }\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/cancel",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cancel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "bap_id",
+			"value": "ps-bap-network.becknprotocol.io",
+			"type": "string"
+		},
+		{
+			"key": "bap_uri",
+			"value": "https://ps-bap-network.becknprotocol.io",
+			"type": "string"
+		},
+		{
+			"key": "bpp_id",
+			"value": "bpp-network-strapi-sandbox.becknprotocol.io",
+			"type": "string"
+		},
+		{
+			"key": "bpp_uri",
+			"value": "https://bpp-network-strapi-sandbox.becknprotocol.io",
+			"type": "string"
+		},
+		{
+			"key": "base_url",
+			"value": "https://ps-bap-client.becknprotocol.io",
+			"type": "string"
+		},
+		{
+			"key": "domain",
+			"value": "online-dispute-resolution:0.1.0",
+			"type": "string"
+		},
+		{
+			"key": "transc_id",
+			"value": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+			"type": "string"
+		}
+	]
+}
