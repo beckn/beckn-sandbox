@@ -1,0 +1,319 @@
+{
+	"info": {
+		"_postman_id": "80d02e9e-5f80-4e88-b6b0-4782e8667514",
+		"name": "DHP Pharmacy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23690031"
+	},
+	"item": [
+		{
+			"name": "Search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dhp:pharmacy:0.1.0\",\n        \"action\": \"search\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"city\": \"std:080\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"transaction_id\": \"6743e9e2-4fb5-487c-92b7-13ba8018f176\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-07-16T04:41:16Z\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"item\": {\n                \"descriptor\": {\n                    \"name\": \"cream\"\n                }\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/search",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Select",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dhp:pharmacy:0.1.0\",\n        \"action\": \"select\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"city\": \"std:080\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"6743e9e2-4fb5-487c-92b7-13ba8018f176\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-07-16T04:41:16Z\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"e92e7a6e-1f20-4a8d-b343-956e0d45a48c\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"fb0999b7-7755-46d6-a2ed-b286b7c98436\",\n                    \"quantity\": {\n                        \"selected\": {\n                            \"measure\": {\n                                \"value\": \"2\",\n                                \"unit\": \"units\"\n                            }\n                        }\n                    }\n                },\n                {\n                    \"id\": \"1cef39d8-72d0-46f7-99ca-3f18f4bda8e3\",\n                    \"quantity\": {\n                        \"selected\": {\n                            \"measure\": {\n                                \"value\": \"3\",\n                                \"unit\": \"units\"\n                            }\n                        }\n                    }\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"ful-02\",\n                    \"stops\": [\n                        {\n                            \"location\": {\n                                \"gps\": \"1.3806217468119772, 103.74636438437074\",\n                                \"area_code\": \"680230\"\n                            }\n                        }\n                    ]\n                }\n            ]\n        }\n    }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/select",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"select"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Init",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dhp:pharmacy:0.1.0\",\n        \"action\": \"init\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"city\": \"std:080\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"6743e9e2-4fb5-487c-92b7-13ba8018f176\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-07-16T04:41:16Z\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"e92e7a6e-1f20-4a8d-b343-956e0d45a48c\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"fb0999b7-7755-46d6-a2ed-b286b7c98436\",\n                    \"quantity\": {\n                        \"selected\": {\n                            \"measure\": {\n                                \"value\": \"2\",\n                                \"unit\": \"units\"\n                            }\n                        }\n                    }\n                },\n                {\n                    \"id\": \"1cef39d8-72d0-46f7-99ca-3f18f4bda8e3\",\n                    \"quantity\": {\n                        \"selected\": {\n                            \"measure\": {\n                                \"value\": \"3\",\n                                \"unit\": \"units\"\n                            }\n                        }\n                    }\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"ful-02\",\n                    \"customer\": {\n                        \"contact\": {\n                            \"email\": \"fox.judie@abc.org\",\n                            \"phone\": \"+91-9999999999\"\n                        },\n                        \"person\": {\n                            \"name\": \"Judie Fox\"\n                        }\n                    },\n                    \"stops\": [\n                        {\n                            \"location\": {\n                                \"gps\": \"1.3806217468119772, 103.74636438437074\",\n                                \"address\": \"My House #, My building\",\n                                \"city\": {\n                                    \"name\": \"Jurong East\"\n                                },\n                                \"country\": {\n                                    \"code\": \"SGP\"\n                                },\n                                \"area_code\": \"680230\",\n                                \"state\": {\n                                    \"name\": \"bayern\"\n                                }\n                            },\n                            \"contact\": {\n                                \"phone\": \"9886098860\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"billing\": {\n                \"name\": \"Alice Smith\",\n                \"address\": \"Apt 303, Maple Towers, Richmond Road, 560001\",\n                \"state\": {\n                    \"name\": \"Jurong East\"\n                },\n                \"city\": {\n                    \"name\": \"Jurong East\"\n                },\n                \"email\": \"alice.smith@example.com\",\n                \"phone\": \"9886098860\"\n            },\n            \"docs\": [\n                {\n                    \"descriptor\": {\n                        \"code\": \"prescription\",\n                        \"name\": \"Medicine prescription\",\n                        \"short_desc\": \"Prescription uploaded here\"\n                    },\n                    \"mime_type\": \"application/pdf\",\n                    \"url\": \"https://quickpharma.in/prescription/04389d8c-6a50-4664-9c08-4ee45fef44e8.pdf\"\n                }\n            ]\n        }\n    }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/init",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"init"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dhp:pharmacy:0.1.0\",\n        \"action\": \"confirm\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"city\": \"std:080\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"6743e9e2-4fb5-487c-92b7-13ba8018f176\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-07-16T04:41:16Z\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"e92e7a6e-1f20-4a8d-b343-956e0d45a48c\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"fb0999b7-7755-46d6-a2ed-b286b7c98436\",\n                    \"quantity\": {\n                        \"selected\": {\n                            \"measure\": {\n                                \"value\": \"2\",\n                                \"unit\": \"units\"\n                            }\n                        }\n                    }\n                },\n                {\n                    \"id\": \"1cef39d8-72d0-46f7-99ca-3f18f4bda8e3\",\n                    \"quantity\": {\n                        \"selected\": {\n                            \"measure\": {\n                                \"value\": \"3\",\n                                \"unit\": \"units\"\n                            }\n                        }\n                    }\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"ful-02\",\n                    \"customer\": {\n                        \"contact\": {\n                            \"email\": \"fox.judie@abc.org\",\n                            \"phone\": \"+91-9999999999\"\n                        },\n                        \"person\": {\n                            \"name\": \"Judie Fox\"\n                        }\n                    },\n                    \"stops\": [\n                        {\n                            \"location\": {\n                                \"gps\": \"1.3806217468119772, 103.74636438437074\",\n                                \"address\": \"My House #, My building\",\n                                \"city\": {\n                                    \"name\": \"Jurong East\"\n                                },\n                                \"country\": {\n                                    \"code\": \"SGP\"\n                                },\n                                \"area_code\": \"680230\",\n                                \"state\": {\n                                    \"name\": \"bayern\"\n                                }\n                            },\n                            \"contact\": {\n                                \"phone\": \"9886098860\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"billing\": {\n                \"name\": \"Alice Smith\",\n                \"address\": \"Apt 303, Maple Towers, Richmond Road, 560001\",\n                \"state\": {\n                    \"name\": \"Jurong East\"\n                },\n                \"city\": {\n                    \"name\": \"Jurong East\"\n                },\n                \"email\": \"alice.smith@example.com\",\n                \"phone\": \"9886098860\"\n            },\n            \"payments\": [\n                {\n                    \"collected_by\": \"BPP\",\n                    \"params\": {\n                        \"amount\": \"700\",\n                        \"currency\": \"INR\",\n                        \"bank_account_number\": \"1234002341\",\n                        \"bank_code\": \"INB0004321\",\n                        \"bank_account_name\": \"Strapi BPP Limited\"\n                    },\n                    \"status\": \"PAID\",\n                    \"type\": \"PRE-ORDER\",\n                    \"transaction_id\": \"a35b56cf-e5cf-41f1-9b5d-fa99d8d5ac8c\"\n                }\n            ]\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/confirm",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"confirm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dhp:pharmacy:0.1.0\",\n        \"action\": \"status\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"city\": \"std:080\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"6743e9e2-4fb5-487c-92b7-13ba8018f176\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-07-16T04:41:16Z\"\n    },\n    \"message\": {\n        \"order_id\": \"853c7593-f4bf-4557-8832-118a591787ba\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/status",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rating",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dhp:pharmacy:0.1.0\",\n        \"action\": \"rating\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"city\": \"std:080\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"6743e9e2-4fb5-487c-92b7-13ba8018f176\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-07-16T04:41:16Z\"\n    },\n    \"message\": {\n        \"ratings\": [\n            {\n                \"id\": \"853c7593-f4bf-4557-8832-118a591787ba\",\n                \"rating_category\": \"Item\",\n                \"value\": \"5\"\n            }\n        ]\n    }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/rating",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"rating"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Track",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dhp:pharmacy:0.1.0\",\n        \"action\": \"track\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"city\": \"std:080\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"6743e9e2-4fb5-487c-92b7-13ba8018f176\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-07-16T04:41:16Z\"\n    },\n    \"message\": {\n        \"order_id\": \"853c7593-f4bf-4557-8832-118a591787ba\",\n        \"callback_url\": \"https://dhp-network-bap.becknprotocol.io/track/callback\"\n    }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/track",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"track"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dhp:pharmacy:0.1.0\",\n        \"action\": \"update\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"city\": \"std:080\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"6743e9e2-4fb5-487c-92b7-13ba8018f176\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-07-16T04:41:16Z\"\n    },\n    \"message\": {\n        \"update_target\": \"order.fulfillments[0].stops[0]\",\n        \"order\": {\n            \"id\": \"853c7593-f4bf-4557-8832-118a591787ba\",\n            \"fulfillments\": [\n                {\n                    \"stops\": [\n                        {\n                            \"location\": {\n                                \"gps\": \"1.3806217468119772, 103.74636438437074\",\n                                \"address\": \"My House #, My building\",\n                                \"city\": {\n                                    \"name\": \"Jurong East\"\n                                },\n                                \"country\": {\n                                    \"code\": \"SGP\"\n                                },\n                                \"area_code\": \"680230\",\n                                \"state\": {\n                                    \"name\": \"bayern\"\n                                }\n                            },\n                            \"contact\": {\n                                \"phone\": \"9886098860\"\n                            }\n                        }\n                    ]\n                }\n            ]\n        }\n    }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/update",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Support",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dhp:pharmacy:0.1.0\",\n        \"action\": \"support\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"city\": \"std:080\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"6743e9e2-4fb5-487c-92b7-13ba8018f176\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-07-16T04:41:16Z\"\n    },\n    \"message\": {\n        \"support\": {\n            \"order_id\": \"853c7593-f4bf-4557-8832-118a591787ba\",\n            \"callback_phone\": \"+91-8858150053\"\n        }\n    }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/support",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"support"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"context\": {\n        \"domain\": \"dhp:pharmacy:0.1.0\",\n        \"action\": \"cancel\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            }\n        },\n        \"city\": \"std:080\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"6743e9e2-4fb5-487c-92b7-13ba8018f176\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-07-16T04:41:16Z\"\n    },\n    \"message\": {\n        \"order_id\": \"853c7593-f4bf-4557-8832-118a591787ba\",\n        \"cancellation_reason_id\": \"4\",\n        \"descriptor\": {\n            \"short_desc\": \"Prescription Changed\",\n            \"long_desc\": \"The patient's prescription has been changed, and the medication order is no longer valid.\"\n        }\n    }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/cancel",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"cancel"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "https://ps-bap-client.becknprotocol.io",
+			"type": "string"
+		},
+		{
+			"key": "bap_id",
+			"value": "ps-bap-network.becknprotocol.io",
+			"type": "string"
+		},
+		{
+			"key": "bap_uri",
+			"value": "https://ps-bap-network.becknprotocol.io",
+			"type": "string"
+		},
+		{
+			"key": "bpp_id",
+			"value": "sandbox-bpp-network.becknprotocol.io",
+			"type": "string"
+		},
+		{
+			"key": "bpp_uri",
+			"value": "https://sandbox-bpp-network.becknprotocol.io",
+			"type": "string"
+		}
+	]
+}
