@@ -1,301 +1,261 @@
 {
-	"info": {
-		"_postman_id": "c99efd1f-7582-46ed-9d82-97bcd6476454",
-		"name": "City-Of-Light",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "23690031"
-	},
-	"item": [
-		{
-			"name": "Search1",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"context\": {\r\n    \"domain\": \"{{domain}}\",\r\n    \"location\": {\r\n      \"country\": {\r\n        \"code\": \"IND\"\r\n      }\r\n    },\r\n    \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n    \"message_id\": \"{{$randomUUID}}\",\r\n    \"action\": \"search\",\r\n    \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n    \"version\": \"1.1.0\",\r\n    \"bap_uri\": \"{{bap_uri}}\",\r\n    \"bap_id\": \"{{bap_id}}\",\r\n    \"bapp_uri\": \"{{bpp_uri}}\",\r\n    \"bpp_id\": \"{{bpp_id}}\",\r\n    \"ttl\": \"PT10M\"\r\n  },\r\n\"message\": {\r\n    \"intent\": {\r\n      \"item\": {\r\n        \"descriptor\": {\r\n          \"name\": \"Paris\"\r\n        }\r\n      }\r\n    }\r\n  }\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/search",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"search"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Select",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"{{domain}}\",\r\n        \"location\": {\r\n            \"country\": {\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n        \"message_id\": \"{{$randomUUID}}\",\r\n        \"action\": \"select\",\r\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n        \"version\": \"1.1.0\",\r\n        \"bap_uri\": \"{{bap_uri}}\",\r\n        \"bap_id\": \"{{bap_id}}\",\r\n        \"bpp_id\": \"{{bpp_id}}\",\r\n        \"bpp_uri\": \"{{bpp_uri}}\",\r\n        \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"order\": {\r\n            \"provider\": {\r\n                \"id\": \"825\"\r\n            },\r\n            \"items\": [\r\n                {\r\n                    \"id\": \"364\"\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/select",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"select"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Init",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"context\": {\r\n    \"domain\": \"{{domain}}\",\r\n    \"location\": {\r\n      \"country\": {\r\n        \"code\": \"IND\"\r\n      }\r\n    },\r\n    \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n    \"message_id\": \"{{$randomUUID}}\",\r\n    \"action\": \"init\",\r\n    \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n    \"version\": \"1.1.0\",\r\n    \"bap_uri\": \"{{bap_uri}}\",\r\n    \"bap_id\": \"{{bap_id}}\",\r\n    \"bpp_id\": \"{{bpp_id}}\",\r\n    \"bpp_uri\": \"{{bpp_uri}}\",\r\n    \"ttl\": \"PT10M\"\r\n  },\r\n  \"message\": {\r\n    \"order\": {\r\n      \"provider\": {\r\n                \"id\": \"825\"\r\n            },\r\n            \"items\": [\r\n                {\r\n                    \"id\": \"364\"\r\n                }\r\n            ],\r\n      \"billing\": {\r\n        \"name\": \"Lisa\",\r\n        \"phone\": \"0612345678\",\r\n        \"address\": \"15 Rue du Soleil, Paris, France, 7578\",\r\n        \"email\": \"testemail1@mailinator.com\",\r\n        \"city\": {\r\n          \"name\": \"15 Rue du Soleil, Paris, France\"\r\n        },\r\n        \"state\": {\r\n          \"name\": \"15 Rue du Soleil, Paris, France\"\r\n        }\r\n      }\r\n    }\r\n  }\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/init",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"init"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Confirm",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"{{domain}}\",\r\n        \"location\": {\r\n            \"country\": {\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n        \"message_id\": \"{{$randomUUID}}\",\r\n        \"action\": \"confirm\",\r\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n        \"version\": \"1.1.0\",\r\n        \"bap_uri\": \"{{bap_uri}}\",\r\n        \"bap_id\": \"{{bap_id}}\",\r\n        \"bpp_id\": \"{{bpp_id}}\",\r\n        \"bpp_uri\": \"{{bpp_uri}}\",\r\n        \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"order\": {\r\n            \"provider\": {\r\n                \"id\": \"825\"\r\n            },\r\n            \"items\": [\r\n                {\r\n                    \"id\": \"364\"\r\n                }\r\n            ],\r\n            \"fulfillments\": [\r\n                {\r\n                    \"id\": \"32\",\r\n                    \"customer\": {\r\n                        \"person\": {\r\n                            \"name\": \"Lisa\"\r\n                        },\r\n                        \"contact\": {\r\n                            \"phone\": \"876756454\",\r\n                            \"email\": \"LisaS@mailinator.com\"\r\n                        }\r\n                    }\r\n                }\r\n            ],\r\n            \"billing\": {\r\n                \"name\": \"Lisa\",\r\n                \"phone\": \"0612345678\",\r\n                \"address\": \"15 Rue du Soleil, Paris, France, 7578\",\r\n                \"email\": \"testemail1@mailinator.com\",\r\n                \"city\": {\r\n                    \"name\": \"15 Rue du Soleil, Paris, France\"\r\n                },\r\n                \"state\": {\r\n                    \"name\": \"15 Rue du Soleil, Paris, France\"\r\n                }\r\n            },\r\n            \"payments\": [\r\n                {\r\n                    \"status\": \"NOT-PAID\",\r\n                    \"type\": \"POST-FULFILLMENT\",\r\n                    \"params\": {\r\n                        \"amount\": \"57.0\",\r\n                        \"currency\": \"INR\",\r\n                        \"bank_code\": \"INB0004321\",\r\n                        \"bank_account_number\": \"1234002341\"\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/confirm",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"confirm"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Status",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"context\": {\r\n      \"domain\": \"{{domain}}\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"status\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"ttl\": \"PT10M\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"key\": \"completed\"\r\n    },\r\n    \"message\": {\r\n      \"order_id\": \"66b7b9bad166\"\r\n    }\r\n  }",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/status",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"status"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"context\": {\r\n    \"domain\": \"{{domain}}\",\r\n    \"location\": {\r\n      \"country\": {\r\n        \"code\": \"IND\"\r\n      }\r\n    },\r\n    \"version\": \"1.1.0\",\r\n    \"action\": \"update\",\r\n    \"bap_uri\": \"{{bap_uri}}\",\r\n    \"bap_id\": \"{{bap_id}}\",\r\n    \"bpp_id\": \"{{bpp_id}}\",\r\n    \"bpp_uri\": \"{{bpp_uri}}\",\r\n    \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n    \"message_id\": \"{{$randomUUID}}\",\r\n    \"ttl\": \"PT10M\",\r\n    \"timestamp\": \"2023-05-25T05:23:03.443Z\"\r\n  },\r\n   \"message\": {\r\n    \"order\": {\r\n      \"id\": \"oid0909\",\r\n      \"fulfillments\": [\r\n        {\r\n          \"customer\": {\r\n            \"contact\": {\r\n              \"phone\": \"+91-8056475647\"\r\n            }\r\n          }\r\n        }\r\n      ]\r\n    },\r\n    \"update_target\": \"order.fulfillments[0].customer.contact.phone\"\r\n  }\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/update",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"update"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Support",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"context\": {\r\n      \"domain\": \"{{domain}}\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"support\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"support\": {\r\n            \"ref_id\": \"oid0909\",\r\n            \"phone\": \"+91 4444444444\",\r\n            \"email\": \"me@gmail.com\"\r\n        }\r\n    }\r\n  }",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/support",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"support"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Rating",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"context\": {\r\n      \"domain\": \"{{domain}}\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"rating\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"ratings\": [\r\n            {\r\n                \"id\": \"oid0909\",\r\n                \"rating_category\": \"Order\",\r\n                \"value\": \"8\"\r\n            }\r\n        ]\r\n    }\r\n  }",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/rating",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"rating"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Cancel",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"context\": {\r\n      \"domain\": \"{{domain}}\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"cancel\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"order_id\": \"oid987\",\r\n        \"cancellation_reason_id\": \"4\",\r\n        \"descriptor\": {\r\n            \"short_desc\": \"Change in plan\"\r\n        }\r\n    }\r\n  }",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/cancel",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"cancel"
-					]
-				}
-			},
-			"response": []
-		}
-	],
-	"event": [
-		{
-			"listen": "prerequest",
-			"script": {
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		},
-		{
-			"listen": "test",
-			"script": {
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		}
-	],
-	"variable": [
-		{
-			"key": "bap_id",
-			"value": "ps-bap-network.becknprotocol.io",
-			"type": "string"
-		},
-		{
-			"key": "bap_uri",
-			"value": "https://ps-bap-network.becknprotocol.io",
-			"type": "string"
-		},
-		{
-			"key": "bpp_id",
-			"value": "sandbox-bpp-network.becknprotocol.io",
-			"type": "string"
-		},
-		{
-			"key": "bpp_uri",
-			"value": "https://sandbox-bpp-network.becknprotocol.io/",
-			"type": "string"
-		},
-		{
-			"key": "base_url",
-			"value": "https://ps-bap-client.becknprotocol.io",
-			"type": "string"
-		},
-		{
-			"key": "domain",
-			"value": "tourism",
-			"type": "string"
-		},
-		{
-			"key": "transc_id",
-			"value": "a9aaecca-10b7-4d19-b640-b047a7c62196",
-			"type": "string"
-		}
-	]
+    "info": {
+        "_postman_id": "5de7f80c-d247-4e51-bfba-d089e34e8d12",
+        "name": "City-Of-Light",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "23690031"
+    },
+    "item": [
+        {
+            "name": "Search1",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n  \"context\": {\r\n    \"domain\": \"{{domain}}\",\r\n    \"location\": {\r\n      \"country\": {\r\n        \"code\": \"IND\"\r\n      }\r\n    },\r\n    \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n    \"message_id\": \"{{$randomUUID}}\",\r\n    \"action\": \"search\",\r\n    \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n    \"version\": \"1.1.0\",\r\n    \"bap_uri\": \"{{bap_uri}}\",\r\n    \"bap_id\": \"{{bap_id}}\",\r\n    \"ttl\": \"PT10M\"\r\n  },\r\n\"message\": {\r\n    \"intent\": {\r\n      \"item\": {\r\n        \"descriptor\": {\r\n          \"name\": \"Paris\"\r\n        }\r\n      }\r\n    }\r\n  }\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/search",
+                    "host": ["{{base_url}}"],
+                    "path": ["search"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Select",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"context\": {\r\n        \"domain\": \"{{domain}}\",\r\n        \"location\": {\r\n            \"country\": {\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n        \"message_id\": \"{{$randomUUID}}\",\r\n        \"action\": \"select\",\r\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n        \"version\": \"1.1.0\",\r\n        \"bap_uri\": \"{{bap_uri}}\",\r\n        \"bap_id\": \"{{bap_id}}\",\r\n        \"bpp_id\": \"{{bpp_id}}\",\r\n        \"bpp_uri\": \"{{bpp_uri}}\",\r\n        \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"order\": {\r\n            \"provider\": {\r\n                \"id\": \"825\"\r\n            },\r\n            \"items\": [\r\n                {\r\n                    \"id\": \"364\"\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/select",
+                    "host": ["{{base_url}}"],
+                    "path": ["select"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Init",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n  \"context\": {\r\n    \"domain\": \"{{domain}}\",\r\n    \"location\": {\r\n      \"country\": {\r\n        \"code\": \"IND\"\r\n      }\r\n    },\r\n    \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n    \"message_id\": \"{{$randomUUID}}\",\r\n    \"action\": \"init\",\r\n    \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n    \"version\": \"1.1.0\",\r\n    \"bap_uri\": \"{{bap_uri}}\",\r\n    \"bap_id\": \"{{bap_id}}\",\r\n    \"bpp_id\": \"{{bpp_id}}\",\r\n    \"bpp_uri\": \"{{bpp_uri}}\",\r\n    \"ttl\": \"PT10M\"\r\n  },\r\n  \"message\": {\r\n    \"order\": {\r\n      \"provider\": {\r\n                \"id\": \"825\"\r\n            },\r\n            \"items\": [\r\n                {\r\n                    \"id\": \"364\"\r\n                }\r\n            ],\r\n      \"billing\": {\r\n        \"name\": \"Lisa\",\r\n        \"phone\": \"0612345678\",\r\n        \"address\": \"15 Rue du Soleil, Paris, France, 7578\",\r\n        \"email\": \"testemail1@mailinator.com\",\r\n        \"city\": {\r\n          \"name\": \"15 Rue du Soleil, Paris, France\"\r\n        },\r\n        \"state\": {\r\n          \"name\": \"15 Rue du Soleil, Paris, France\"\r\n        }\r\n      }\r\n    }\r\n  }\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/init",
+                    "host": ["{{base_url}}"],
+                    "path": ["init"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Confirm",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"context\": {\r\n        \"domain\": \"{{domain}}\",\r\n        \"location\": {\r\n            \"country\": {\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n        \"message_id\": \"{{$randomUUID}}\",\r\n        \"action\": \"confirm\",\r\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n        \"version\": \"1.1.0\",\r\n        \"bap_uri\": \"{{bap_uri}}\",\r\n        \"bap_id\": \"{{bap_id}}\",\r\n        \"bpp_id\": \"{{bpp_id}}\",\r\n        \"bpp_uri\": \"{{bpp_uri}}\",\r\n        \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"order\": {\r\n            \"provider\": {\r\n                \"id\": \"825\"\r\n            },\r\n            \"items\": [\r\n                {\r\n                    \"id\": \"364\"\r\n                }\r\n            ],\r\n            \"fulfillments\": [\r\n                {\r\n                    \"id\": \"32\",\r\n                    \"customer\": {\r\n                        \"person\": {\r\n                            \"name\": \"Lisa\"\r\n                        },\r\n                        \"contact\": {\r\n                            \"phone\": \"876756454\",\r\n                            \"email\": \"LisaS@mailinator.com\"\r\n                        }\r\n                    }\r\n                }\r\n            ],\r\n            \"billing\": {\r\n                \"name\": \"Lisa\",\r\n                \"phone\": \"0612345678\",\r\n                \"address\": \"15 Rue du Soleil, Paris, France, 7578\",\r\n                \"email\": \"testemail1@mailinator.com\",\r\n                \"city\": {\r\n                    \"name\": \"15 Rue du Soleil, Paris, France\"\r\n                },\r\n                \"state\": {\r\n                    \"name\": \"15 Rue du Soleil, Paris, France\"\r\n                }\r\n            },\r\n            \"payments\": [\r\n                {\r\n                    \"status\": \"NOT-PAID\",\r\n                    \"type\": \"POST-FULFILLMENT\",\r\n                    \"params\": {\r\n                        \"amount\": \"57.0\",\r\n                        \"currency\": \"INR\",\r\n                        \"bank_code\": \"INB0004321\",\r\n                        \"bank_account_number\": \"1234002341\"\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/confirm",
+                    "host": ["{{base_url}}"],
+                    "path": ["confirm"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Status",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"context\": {\r\n      \"domain\": \"{{domain}}\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"status\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"ttl\": \"PT10M\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"key\": \"completed\"\r\n    },\r\n    \"message\": {\r\n      \"order_id\": \"66b7b9bad166\"\r\n    }\r\n  }",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/status",
+                    "host": ["{{base_url}}"],
+                    "path": ["status"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Update",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n  \"context\": {\r\n    \"domain\": \"{{domain}}\",\r\n    \"location\": {\r\n      \"country\": {\r\n        \"code\": \"IND\"\r\n      }\r\n    },\r\n    \"version\": \"1.1.0\",\r\n    \"action\": \"update\",\r\n    \"bap_uri\": \"{{bap_uri}}\",\r\n    \"bap_id\": \"{{bap_id}}\",\r\n    \"bpp_id\": \"{{bpp_id}}\",\r\n    \"bpp_uri\": \"{{bpp_uri}}\",\r\n    \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n    \"message_id\": \"{{$randomUUID}}\",\r\n    \"ttl\": \"PT10M\",\r\n    \"timestamp\": \"2023-05-25T05:23:03.443Z\"\r\n  },\r\n   \"message\": {\r\n    \"order\": {\r\n      \"id\": \"oid0909\",\r\n      \"fulfillments\": [\r\n        {\r\n          \"customer\": {\r\n            \"contact\": {\r\n              \"phone\": \"+91-8056475647\"\r\n            }\r\n          }\r\n        }\r\n      ]\r\n    },\r\n    \"update_target\": \"order.fulfillments[0].customer.contact.phone\"\r\n  }\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/update",
+                    "host": ["{{base_url}}"],
+                    "path": ["update"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Support",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"context\": {\r\n      \"domain\": \"{{domain}}\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"support\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"support\": {\r\n            \"ref_id\": \"oid0909\",\r\n            \"phone\": \"+91 4444444444\",\r\n            \"email\": \"me@gmail.com\"\r\n        }\r\n    }\r\n  }",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/support",
+                    "host": ["{{base_url}}"],
+                    "path": ["support"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Rating",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"context\": {\r\n      \"domain\": \"{{domain}}\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"rating\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"ratings\": [\r\n            {\r\n                \"id\": \"oid0909\",\r\n                \"rating_category\": \"Order\",\r\n                \"value\": \"8\"\r\n            }\r\n        ]\r\n    }\r\n  }",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/rating",
+                    "host": ["{{base_url}}"],
+                    "path": ["rating"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Cancel",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"context\": {\r\n      \"domain\": \"{{domain}}\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"cancel\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"order_id\": \"oid987\",\r\n        \"cancellation_reason_id\": \"4\",\r\n        \"descriptor\": {\r\n            \"short_desc\": \"Change in plan\"\r\n        }\r\n    }\r\n  }",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/cancel",
+                    "host": ["{{base_url}}"],
+                    "path": ["cancel"]
+                }
+            },
+            "response": []
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "type": "text/javascript",
+                "exec": [""]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "type": "text/javascript",
+                "exec": [""]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "key": "bap_id",
+            "value": "ps-bap-network.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bap_uri",
+            "value": "https://ps-bap-network.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bpp_id",
+            "value": "sandbox-bpp-network.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bpp_uri",
+            "value": "https://sandbox-bpp-network.becknprotocol.io/",
+            "type": "string"
+        },
+        {
+            "key": "base_url",
+            "value": "https://ps-bap-client.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "domain",
+            "value": "tourism",
+            "type": "string"
+        },
+        {
+            "key": "transc_id",
+            "value": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+            "type": "string"
+        }
+    ]
 }
