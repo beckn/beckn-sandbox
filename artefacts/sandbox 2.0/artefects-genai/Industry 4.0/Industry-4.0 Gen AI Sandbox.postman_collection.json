@@ -1,0 +1,597 @@
+{
+	"info": {
+		"_postman_id": "f1b2651a-63d4-42e0-9de7-be5464fed398",
+		"name": "Industry-4.0 Gen AI Sandbox",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23690031"
+	},
+	"item": [
+		{
+			"name": "3D-Printing",
+			"item": [
+				{
+					"name": "Search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n      \"domain\": \"{{domain_3D_printing}}\",\n      \"location\": {\n        \"country\": {\n          \"code\": \"IND\"\n        }\n      },\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n      \"message_id\": \"{{$randomUUID}}\",\n      \"action\": \"search\",\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\n      \"version\": \"1.1.0\",\n      \"bap_uri\": \"{{bap_uri}}\",\n      \"bap_id\": \"{{bap_id}}\",\n      \"ttl\": \"PT10M\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"item\":{\n                \"descriptor\":{\n                    \"name\":\"FDM 3D Printing Service - PVC Plastic\"\n                }\n            }\n        }\n    }\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/search",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Select",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"{{domain_3D_printing}}\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            }\n        },\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"action\": \"select\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"ttl\": \"PT10M\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"831\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"402\"\n                }\n            ]\n        }\n    }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/select",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"select"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Init",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"{{domain_3D_printing}}\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            }\n        },\n        \"action\": \"init\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\n        \"ttl\": \"P30M\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"831\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"402\"\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"68\",\n                    \"customer\": {\n                        \"contact\": {\n                            \"email\": \"fox.judie@abc.org\",\n                            \"phone\": \"+91-9999999999\"\n                        },\n                        \"person\": {\n                            \"name\": \"Judie Fox\"\n                        }\n                    }\n                }\n            ],\n            \"billing\": {\n                \"name\": \"Industry buyer\",\n                \"address\": \"B005 aspire heights, Jurong East, SGP, 680230\",\n                \"state\": {\n                    \"name\": \"Jurong East\"\n                },\n                \"city\": {\n                    \"name\": \"Jurong East\"\n                },\n                \"email\": \"nobody@nomail.com\",\n                \"phone\": \"9886098860\"\n            }\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/init",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"init"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confirm",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"{{domain_3D_printing}}\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"DE\"\n            }\n        },\n        \"action\": \"confirm\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\n        \"ttl\": \"P30M\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"831\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"402\"\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"68\",\n                    \"customer\": {\n                        \"contact\": {\n                            \"email\": \"fox.judie@abc.org\",\n                            \"phone\": \"+91-9999999999\"\n                        },\n                        \"person\": {\n                            \"name\": \"Judie Fox\"\n                        }\n                    }\n                }\n            ],\n            \"billing\": {\n                \"name\": \"Industry buyer\",\n                \"address\": \"B005 aspire heights, Jurong East, SGP, 680230\",\n                \"state\": {\n                    \"name\": \"Jurong East\"\n                },\n                \"city\": {\n                    \"name\": \"Jurong East\"\n                },\n                \"email\": \"nobody@nomail.com\",\n                \"phone\": \"9886098860\"\n            },\n            \"payments\": [\n                {\n                    \"collected_by\": \"BPP\",\n                    \"params\": {\n                        \"amount\": \"550\",\n                        \"currency\": \"EUR\",\n                        \"bank_code\": \"INB0004321\",\n                        \"bank_account_number\": \"1234002341\",\n                        \"source_bank_code\": \"YDYYE8789574\",\n                        \"source_bank_account_number\": \"54378958487\",\n                        \"transaction_id\": \"a35b56cf-e5cf-41f1-9b5d-fa99d8d5ac8c\"\n                    },\n                    \"status\": \"PAID\",\n                    \"type\": \"PRE-ORDER\"\n                }\n            ]\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/confirm",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"confirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"{{domain_3D_printing}}\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"DE\"\n            }\n        },\n        \"action\": \"status\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"2382b170-16ac-4092-a969-bc413932572a\",\n        \"timestamp\": \"2023-05-25T05:23:04.443Z\",\n        \"ttl\": \"P30M\",\n        \"key\": \"dispatched\"\n    },\n    \"message\": {\n        \"order_id\": \"b989c9a9-f603-4d44-b38d-26fd72286b38\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/status",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"{{domain_3D_printing}}\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"DE\"\n            }\n        },\n        \"action\": \"cancel\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"27f9d99a-5ec6-11ee-8c99-0242ac120002\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\n        \"ttl\": \"P30M\"\n    },\n    \"message\": {\n        \"order_id\": \"04389d8c-6a50-4664-9c08-4ee45fef44e8\",\n        \"cancellation_reason_id\": \"4\",\n        \"descriptor\": {\n            \"short_desc\": \"Order delayed\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/cancel",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cancel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"{{domain_3D_printing}}\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"DE\"\n            }\n        },\n        \"action\": \"update\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"27f9d99a-5ec6-11ee-8c99-0242ac120002\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\n        \"ttl\": \"P30M\"\n    },\n    \"message\": {\n        \"order\": {\n            \"id\": \"b989c9a9-f603-4d44-b38d-26fd72286b38\",\n            \"fulfillments\": [\n                {\n                    \"customer\": {\n                        \"contact\": {\n                            \"phone\": \"+91-81347776660\"\n                        }\n                    }\n                }\n            ]\n        },\n        \"updated_target\": \"order.fulfillments[0].customer.contact.phone\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rating",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"{{domain_3D_printing}}\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"DE\"\n            }\n        },\n        \"action\": \"rating\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"27f9d99a-5ec6-11ee-8c99-0242ac120002\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\n        \"ttl\": \"P30M\"\n    },\n    \"message\": {\n        \"ratings\": [\n            {\n                \"id\": \"66b7b9bad166-4a3f-ada6-ca063dc9d321\",\n                \"rating_category\": \"Item\",\n                \"value\": \"7\"\n            }\n        ]\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/rating",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"rating"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Support",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"{{domain_3D_printing}}\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"DE\"\n            }\n        },\n        \"action\": \"support\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"27f9d99a-5ec6-11ee-8c99-0242ac120002\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\n        \"ttl\": \"P30M\"\n    },\n    \"message\": {\n        \"support\": {\n            \"ref_id\": \"04389d8c-6a50-4664-9c08-4ee45fef44e8\",\n            \"callback_phone\": \"+91-81347776660\",\n            \"email\": \"manjunath@gmail.com\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/support",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"support"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Track",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"{{domain_3D_printing}}\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"DE\"\n            }\n        },\n        \"action\": \"track\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"27f9d99a-5ec6-11ee-8c99-0242ac120002\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\n        \"ttl\": \"P30M\"\n    },\n    \"message\": {\n        \"order_id\": \"04389d8c-6a50-4664-9c08-4ee45fef44e8\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/track",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"track"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Assembly",
+			"item": [
+				{
+					"name": "Search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"{{domain_assembly}}\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            }\n        },\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"action\": \"search\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"ttl\": \"PT10M\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"item\": {\n                \"descriptor\": {\n                    \"name\": \"Box packaging assembly\"\n                }\n            }\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/search",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Select",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"{{domain_assembly}}\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            }\n        },\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"action\": \"select\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"ttl\": \"PT10M\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"41\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"403\"\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"69\"\n                }\n            ]\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/select",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"select"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Init",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"supply-chain-services:assembly\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"DE\"\n            }\n        },\n        \"action\": \"init\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\n        \"ttl\": \"P30M\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"41\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"403\"\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"69\",\n                    \"customer\": {\n                        \"contact\": {\n                            \"email\": \"fox.judie@abc.org\",\n                            \"phone\": \"+91-9999999999\"\n                        },\n                        \"person\": {\n                            \"name\": \"Judie Fox\"\n                        }\n                    }\n                }\n            ],\n            \"billing\": {\n                \"name\": \"Industry buyer\",\n                \"address\": \"B005 aspire heights, Jurong East, SGP, 680230\",\n                \"state\": {\n                    \"name\": \"Jurong East\"\n                },\n                \"city\": {\n                    \"name\": \"Jurong East\"\n                },\n                \"email\": \"nobody@nomail.com\",\n                \"phone\": \"9886098860\"\n            }\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/init",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"init"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confirm",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"supply-chain-services:assembly\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"DE\"\n            }\n        },\n        \"action\": \"confirm\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-05-25T05:23:04.443Z\",\n        \"ttl\": \"P30M\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"41\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"403\"\n                }\n            ],\n            \"fulfillments\": [\n                {\n                    \"id\": \"69\",\n                    \"customer\": {\n                        \"contact\": {\n                            \"email\": \"fox.judie@abc.org\",\n                            \"phone\": \"+91-9999999999\"\n                        },\n                        \"person\": {\n                            \"name\": \"Judie Fox\"\n                        }\n                    }\n                }\n            ],\n            \"billing\": {\n                \"name\": \"Industry buyer\",\n                \"address\": \"B005 aspire heights, Jurong East, SGP, 680230\",\n                \"state\": {\n                    \"name\": \"Jurong East\"\n                },\n                \"city\": {\n                    \"name\": \"Jurong East\"\n                },\n                \"email\": \"nobody@nomail.com\",\n                \"phone\": \"9886098860\"\n            },\n            \"payments\": [\n                {\n                    \"collected_by\": \"BPP\",\n                    \"params\": {\n                        \"amount\": \"250\",\n                        \"currency\": \"EUR\",\n                        \"bank_code\": \"INB0004321\",\n                        \"bank_account_number\": \"1234002341\",\n                        \"source_bank_code\": \"DYF8765447\",\n                        \"source_bank_account_number\": \"25373894794747\",\n                        \"transaction_id\": \"a35b56cf-e5cf-41f1-9b5d-fa99d8d5ac8c\"\n                    },\n                    \"status\": \"PAID\",\n                    \"type\": \"PRE-ORDER\"\n                }\n            ]\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/confirm",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"confirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"supply-chain-services:assembly\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"DE\"\n            }\n        },\n        \"action\": \"status\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"2382b170-16ac-4092-a969-bc413932572a\",\n        \"timestamp\": \"2023-05-25T05:23:04.443Z\",\n        \"ttl\": \"P30M\"\n    },\n    \"message\": {\n        \"order_id\": \"b989c9a9-f603-4d44-b38d-26fd72286b38\"\n    }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/status",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Support",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"supply-chain-services:assembly\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"DE\"\n            }\n        },\n        \"action\": \"support\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"90883e2b-7798-4278-90eb-00646400e615\",\n        \"timestamp\": \"2023-05-25T05:23:04.443Z\",\n        \"ttl\": \"P30M\"\n    },\n    \"message\": {\n        \"support\": {\n            \"ref_id\": \"894789-43954\",\n            \"callback_phone\": \"+91-81347776660\",\n            \"email\": \"supportperson@gmail.com\"\n        }\n    }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/support",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"support"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"supply-chain-services:assembly\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"DE\"\n            }\n        },\n        \"action\": \"update\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"96bba52b5-b45f-47ab-9775-a69a32fdba13\",\n        \"timestamp\": \"2023-05-25T05:23:04.443Z\",\n        \"ttl\": \"P30M\"\n    },\n    \"message\": {\n        \"order\": {\n            \"id\": \"b989c9a9-f603-4d44-b38d-26fd72286b38\",\n            \"fulfillments\": [\n                {\n                    \"customer\": {\n                        \"contact\": {\n                            \"phone\": \"+91-8056475647\"\n                        }\n                    }\n                }\n            ]\n        },\n        \"updated_target\": \"order.fulfillments[0].customer.contact.phone\"\n    }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Track",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"supply-chain-services:assembly\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"DE\"\n            }\n        },\n        \"action\": \"track\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"d94e398c-8142-48d7-8710-6242f6738729\",\n        \"timestamp\": \"2023-05-25T05:23:04.443Z\",\n        \"ttl\": \"P30M\"\n    },\n    \"message\": {\n        \"order_id\": \"b989c9a9-f603-4d44-b38d-26fd72286b38\"\n    }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/track",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"track"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rating",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"supply-chain-services:assembly\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"DE\"\n            }\n        },\n        \"action\": \"rating\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"2f21ebf5-7ca2-416f-8c9f-9a0aed0c14d9\",\n        \"timestamp\": \"2023-05-25T05:23:04.443Z\",\n        \"ttl\": \"P30M\"\n    },\n    \"message\": {\n        \"ratings\": [\n            {\n                \"id\": \"b989c9a9-f603-4d44-b38d-26fd72286b38\",\n                \"rating_category\": \"Order\",\n                \"value\": \"8\"\n            }\n        ]\n    }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/rating",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"rating"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"supply-chain-services:assembly\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"DE\"\n            }\n        },\n        \"action\": \"cancel\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"7f3f5b44-fa87-4ea2-b675-4991dd25728e\",\n        \"timestamp\": \"2023-05-25T05:23:04.443Z\",\n        \"ttl\": \"P30M\"\n    },\n    \"message\": {\n        \"order_id\": \"04389d8c-6a50-4664-9c08-4ee45fef44e8\",\n        \"cancellation_reason_id\": \"4\",\n        \"descriptor\": {\n            \"short_desc\": \"Order delayed\"\n        }\n    }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/cancel",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cancel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "bap_id",
+			"value": "ps-bap-network.becknprotocol.io",
+			"type": "string"
+		},
+		{
+			"key": "bap_uri",
+			"value": "https://ps-bap-network.becknprotocol.io/",
+			"type": "string"
+		},
+		{
+			"key": "bpp_id",
+			"value": "beckn-sandbox-bpp.becknprotocol.io",
+			"type": "string"
+		},
+		{
+			"key": "bpp_uri",
+			"value": "https://sandbox-bpp-network.becknprotocol.io/",
+			"type": "string"
+		},
+		{
+			"key": "base_url",
+			"value": "https://ps-bap-client.becknprotocol.io",
+			"type": "string"
+		},
+		{
+			"key": "domain_3D_printing",
+			"value": "supply-chain-services:3d-printing",
+			"type": "string"
+		},
+		{
+			"key": "domain_assembly",
+			"value": "supply-chain-services:assembly",
+			"type": "string"
+		}
+	]
+}
