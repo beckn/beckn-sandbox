@@ -1,0 +1,134 @@
+{
+    "info": {
+        "_postman_id": "1c96a8e5-c132-467f-b716-dfe2436e4c20",
+        "name": "Vistaar Sandbox 2.0",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "23690031"
+    },
+    "item": [
+        {
+            "name": "Knowledge",
+            "item": [
+                {
+                    "name": "Search",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"context\": {\r\n        \"domain\": \"{{domain}}\",\r\n        \"location\": {\r\n            \"country\": {\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n        \"message_id\": \"{{$randomUUID}}\",\r\n        \"action\": \"search\",\r\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n        \"version\": \"1.1.0\",\r\n        \"bap_uri\": \"{{bap_uri}}\",\r\n        \"bap_id\": \"{{bap_id}}\",\r\n        \"bpp_id\": \"{{bpp_id}}\",\r\n        \"bpp_uri\": \"{{bpp_uri}}\",\r\n        \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n        \"intent\": {\r\n            \"item\": {\r\n                \"descriptor\": {\r\n                    \"name\": \"cottons aphid\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{base_url}}/search",
+                            "host": ["{{base_url}}"],
+                            "path": ["search"]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Support",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"context\": {\r\n      \"domain\": \"{{domain}}\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"support\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n      \"support\": {\r\n        \"ref_id\": \"fcbc405b6608\",\r\n        \"callback_phone\": \"+919876543210\",\r\n        \"email\": \"john.doe@gmail.com\"\r\n      }\r\n    }\r\n  }",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{base_url}}/support",
+                            "host": ["{{base_url}}"],
+                            "path": ["support"]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Rating",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"context\": {\r\n      \"domain\": \"{{domain}}\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"rating\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n      \"ratings\": [\r\n        {\r\n          \"id\": \"a9aaecca-10b7-4d19-b640-b047a7c621961676906777032\",\r\n          \"rating_category\": \"Order\",\r\n          \"value\": \"4\"\r\n        }\r\n      ]\r\n    }\r\n  }",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{base_url}}/rating",
+                            "host": ["{{base_url}}"],
+                            "path": ["rating"]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "type": "text/javascript",
+                "exec": [""]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "type": "text/javascript",
+                "exec": [""]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "key": "bap_id",
+            "value": "ps-bap-network.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bap_uri",
+            "value": "https://ps-bap-network.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bpp_id",
+            "value": "bpp-network-strapi-sandbox.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "bpp_uri",
+            "value": "https://bpp-network-strapi-sandbox.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "base_url",
+            "value": "https://ps-bap-client.becknprotocol.io",
+            "type": "string"
+        },
+        {
+            "key": "domain",
+            "value": "knowledge-advisory:agrinet:vistaar",
+            "type": "string"
+        },
+        {
+            "key": "transc_id",
+            "value": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+            "type": "string"
+        }
+    ]
+}
