@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "2ec2b5ca-ce60-48bc-a5a9-bb9dd732e2c5",
+		"name": "Retail",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23690031"
+	},
+	"item": [
+		{
+			"name": "ProtocolServer_Retail",
+			"item": [
+				{
+					"name": "Search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"retail:1.1.0\",\n        \"country\": \"IND\",\n        \"city\": \"std:080\",\n        \"action\": \"search\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\":\"{{$randomUUID}}\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"item\": {\n                \"descriptor\": {\n                    \"name\": \"2 ltr flask\"\n                }\n            }\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/search",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Select",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"retail:1.1.0\",\n        \"country\": \"IND\",\n        \"city\": \"std:080\",\n        \"action\": \"select\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"{{$randomUUID}}\",\n        \"bpp_id\":\"{{bpp_id}}\",\n        \"bpp_uri\":\"{{bpp_uri}}\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"713\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"433\"\n                }\n            ]\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/select",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"select"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "init",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"retail:1.1.0\",\n        \"country\": \"IND\",\n        \"city\": \"std:080\",\n        \"action\": \"init\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"{{$randomUUID}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"713\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"433\"\n                }\n            ],\n            \"billing\": {\n                \"name\": \"Ninad\",\n                \"phone\": \"9191223433\",\n                \"address\": \"Bengaluru\",\n                \"email\": \"testemail1@mailinator.com\"\n            },\n            \"fulfillments\": [\n                {\n                    \"id\": \"98\",\n                    \"end\": {\n                        \"location\": {\n                            \"gps\": \"12.9715987,77.5945627\",\n                            \"address\": {\n                                \"door\": \"\",\n                                \"building\": \"\",\n                                \"street\": \"Bengaluru, Bengaluru Urban, Bangalore Division, Karnataka\",\n                                \"city\": \"Bengaluru\",\n                                \"state\": \"Karnataka\",\n                                \"country\": \"IND\",\n                                \"area_code\": \"560076\"\n                            }\n                        },\n                        \"contact\": {\n                            \"phone\": \"9191223433\",\n                            \"email\": \"testemail1@mailinator.com\"\n                        }\n                    },\n                    \"customer\": {\n                        \"person\": {\n                            \"name\": \"Ninad\"\n                        }\n                    }\n                }\n            ]\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/init",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"init"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "confirm",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"retail:1.1.0\",\n        \"country\": \"IND\",\n        \"city\": \"std:080\",\n        \"action\": \"confirm\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"{{$randomUUID}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"713\"\n            },\n            \"items\": [\n                {\n                    \"id\": \"433\"\n                }\n            ],\n            \"billing\": {\n                \"name\": \"Ninad\",\n                \"phone\": \"9191223433\",\n                \"address\": \"Bengaluru\",\n                \"email\": \"testemail1@mailinator.com\"\n            },\n            \"fulfillments\": [\n                {\n                    \"id\": \"98\",\n                    \"end\": {\n                        \"location\": {\n                            \"gps\": \"12.9715987,77.5945627\",\n                            \"address\": {\n                                \"door\": \"\",\n                                \"building\": \"\",\n                                \"street\": \"Bengaluru, Bengaluru Urban, Bangalore Division, Karnataka\",\n                                \"city\": \"Bengaluru\",\n                                \"state\": \"Karnataka\",\n                                \"country\": \"IND\",\n                                \"area_code\": \"560076\"\n                            }\n                        },\n                        \"contact\": {\n                            \"phone\": \"9191223433\",\n                            \"email\": \"testemail1@mailinator.com\"\n                        }\n                    },\n                    \"customer\": {\n                        \"person\": {\n                            \"name\": \"Ninad\"\n                        }\n                    }\n                }\n            ],\n            \"payment\": {\n                \"extended_attributes\": {},\n                \"params\": {\n                    \"transaction_id\": \"O:553\",\n                    \"amount\": \"1200.0\",\n                    \"currency\": \"INR\"\n                },\n                \"type\": \"POST-FULFILLMENT\",\n                \"status\": \"NOT-PAID\"\n            }\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/confirm",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"confirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "track",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"retail:1.1.0\",\n        \"country\": \"IND\",\n        \"city\": \"std:080\",\n        \"action\": \"track\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"{{$randomUUID}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\"\n    },\n    \"message\": {\n        \"order_id\": \"2264\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/track",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"track"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n       \"domain\": \"retail:1.1.0\",\n        \"country\": \"IND\",\n        \"city\": \"std:080\",\n        \"action\": \"status\",\n        \"version\": \"1.1.0\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"{{$randomUUID}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\"\n    },\n    \"message\": {\n        \"order_id\": \"2265\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/status",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "support",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"retail:1.1.0\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"DE\"\n            }\n        },\n        \"action\": \"support\",\n        \"version\": \"1.1.0\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-05-25T05:23:04.443Z\",\n        \"ttl\": \"P30M\"\n    },\n    \"message\": {\n        \"support\": {\n            \"ref_id\": \"894789-43954\",\n            \"callback_phone\": \"+91-81347776660\",\n            \"email\": \"supportperson@gmail.com\"\n        }\n    }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/support",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"support"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n        \"domain\": \"retail:1.1.0\",\r\n        \"location\": {\r\n            \"country\": {\r\n                \"code\": \"IND\"\r\n            }\r\n        },\r\n        \"version\": \"1.1.0\",\r\n        \"action\": \"update\",\r\n        \"bap_uri\": \"{{bap_uri}}\",\r\n        \"bap_id\": \"{{bap_id}}\",\r\n        \"bpp_id\": \"{{bpp_id}}\",\r\n        \"bpp_uri\": \"{{bpp_uri}}\",\r\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n        \"message_id\": \"{{$randomUUID}}\",\r\n        \"ttl\": \"PT10M\",\r\n        \"timestamp\": \"2023-05-25T05:23:03.443Z\"\r\n    },\r\n    \"message\": {\r\n        \"update_target\": \"order.fulfillments[0].agent\",\r\n        \"order\": {\r\n            \"id\": \"2265\",\r\n            \"fulfillments\": [\r\n                {\r\n                    \"agent\": {\r\n                        \"person\": {\r\n                            \"id\": \"ca063dc9d321\",\r\n                            \"name\": \"Mr Adama Smith\"\r\n                        }\r\n                    }\r\n                }\r\n            ],\r\n            \"tags\": [\r\n                {\r\n                    \"descriptor\": {\r\n                        \"name\": \"agent\"\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rating",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n      \"domain\": \"retail:1.1.0\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"rating\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n      \"ratings\": [\r\n        {\r\n          \"id\": \"a9aaecca-10b7-4d19-b640-b047a7c621961676906777032\",\r\n          \"rating_category\": \"Order\",\r\n          \"value\": \"4\"\r\n        }\r\n      ]\r\n    }\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/rating",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"rating"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"context\": {\r\n      \"domain\": \"retail:1.1.0\",\r\n      \"location\": {\r\n        \"country\": {\r\n          \"code\": \"IND\"\r\n        }\r\n      },\r\n      \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62196\",\r\n      \"message_id\": \"{{$randomUUID}}\",\r\n      \"action\": \"cancel\",\r\n      \"timestamp\": \"2023-05-25T05:23:03.443Z\",\r\n      \"version\": \"1.1.0\",\r\n      \"bap_uri\": \"{{bap_uri}}\",\r\n      \"bap_id\": \"{{bap_id}}\",\r\n      \"bpp_id\": \"{{bpp_id}}\",\r\n      \"bpp_uri\": \"{{bpp_uri}}\",\r\n      \"ttl\": \"PT10M\"\r\n    },\r\n    \"message\": {\r\n      \"order_id\": \"2265\",\r\n      \"cancellation_reason_id\": \"5\",\r\n      \"descriptor\": {\r\n        \"short_desc\": \"Order Cancelled\"\r\n      }\r\n    }\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/cancel",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cancel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "https://ps-bap-client.becknprotocol.io",
+			"type": "string"
+		},
+		{
+			"key": "bpp_id",
+			"value": "bpp-ps-network-strapi.becknprotocol.io",
+			"type": "string"
+		},
+		{
+			"key": "bpp_uri",
+			"value": "http://bpp-ps-network-strapi.becknprotocol.io",
+			"type": "string"
+		},
+		{
+			"key": "bap_id",
+			"value": "ps-bap-network.becknprotocol.io",
+			"type": "string"
+		},
+		{
+			"key": "bap_uri",
+			"value": "https://ps-bap-network.becknprotocol.io",
+			"type": "string"
+		}
+	]
+}
