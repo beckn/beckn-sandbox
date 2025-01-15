@@ -267,12 +267,12 @@
         },
         {
             "key": "bpp_id",
-            "value": "sandbox-bpp-network.becknprotocol.io",
+            "value": "bpp-ps-network-strapi.becknprotocol.io",
             "type": "string"
         },
         {
             "key": "bpp_uri",
-            "value": "https://sandbox-bpp-network.becknprotocol.io",
+            "value": "https://bpp-ps-network-strapi.becknprotocol.io",
             "type": "string"
         },
         {
